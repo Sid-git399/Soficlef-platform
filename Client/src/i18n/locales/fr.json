@@ -1,0 +1,3302 @@
+{
+  "common": {
+    "actions": {
+      "add": "Ajouter",
+      "apply": "Appliquer",
+      "archive": "Archiver",
+      "back": "Retour",
+      "cancel": "Annuler",
+      "close": "Fermer",
+      "confirm": "Confirmer",
+      "create": "Créer",
+      "delete": "Supprimer",
+      "download": "Télécharger",
+      "duplicate": "Dupliquer",
+      "edit": "Modifier",
+      "export": "Exporter",
+      "filter": "Filtrer",
+      "import": "Importer",
+      "logout": "Déconnexion",
+      "next": "Suivant",
+      "open": "Ouvrir",
+      "previous": "Précédent",
+      "publish": "Publier",
+      "refresh": "Actualiser",
+      "reset": "Réinitialiser",
+      "retry": "Réessayer",
+      "save": "Enregistrer",
+      "search": "Rechercher",
+      "seeAll": "Tout voir",
+      "select": "Sélectionner",
+      "send": "Envoyer",
+      "submit": "Soumettre",
+      "validate": "Valider",
+      "view": "Voir"
+    },
+    "all": "Tous",
+    "avatarAlt": "Photo de {{name}}",
+    "labels": {
+      "actions": "Actions",
+      "createdAt": "Créé le",
+      "date": "Date",
+      "department": "Département",
+      "description": "Description",
+      "details": "Détails",
+      "dueDate": "Échéance",
+      "email": "E-mail",
+      "employee": "Collaborateur",
+      "manager": "Responsable",
+      "name": "Nom",
+      "notes": "Notes",
+      "position": "Poste",
+      "progress": "Progression",
+      "status": "Statut",
+      "title": "Titre",
+      "total": "Total",
+      "type": "Type",
+      "updatedAt": "Mis à jour le"
+    },
+    "language": {
+      "en": "anglais",
+      "fr": "français",
+      "switcherLabel": "Choix de la langue",
+      "switchTo": "Passer en {{language}}",
+      "ar": "arabe"
+    },
+    "no": "Non",
+    "notifications": {
+      "empty": "Aucune notification.",
+      "seeAll": "Voir tout →",
+      "title": "Notifications"
+    },
+    "optional": "Facultatif",
+    "org": {
+      "vacantPosition": "Poste vacant"
+    },
+    "required": "Obligatoire",
+    "states": {
+      "empty": "Aucun résultat",
+      "error": "Une erreur est survenue",
+      "loadFailed": "Impossible de charger les données",
+      "loading": "Chargement…",
+      "none": "Aucun",
+      "notSpecified": "Non renseigné",
+      "saveFailed": "Impossible d’enregistrer",
+      "saving": "Enregistrement…",
+      "sending": "Envoi…",
+      "unavailable": "Indisponible",
+      "unavailableForNow": "Indisponible pour le moment."
+    },
+    "yes": "Oui"
+  },
+  "nav": {
+    "groups": {
+      "administration": "Administration",
+      "direction": "Direction",
+      "hr": "Ressources humaines",
+      "manager": "Encadrement",
+      "me": "Mon espace",
+      "onboarding": "Intégration",
+      "references": "Référentiels",
+      "steering": "Pilotage",
+      "tools": "Outils"
+    },
+    "items": {
+      "adminAi": "IA",
+      "adminAudit": "Journal d'audit",
+      "adminBackups": "Sauvegardes",
+      "adminConsole": "Console",
+      "adminGdpr": "RGPD",
+      "adminIntegrations": "Intégrations",
+      "adminOrganization": "Structures",
+      "adminProvisioning": "File de provisionnement",
+      "adminRoles": "Rôles",
+      "adminSecurity": "Sécurité",
+      "adminSettings": "Paramètres",
+      "adminUsers": "Comptes",
+      "company": "Entreprise",
+      "competencies": "Compétences",
+      "contacts": "Contacts",
+      "dashboard": "Pilotage",
+      "documents": "Documents",
+      "hrAiKnowledge": "Base de connaissances",
+      "hrAlerts": "Alertes",
+      "hrAnalytics": "Analytique",
+      "hrDashboard": "Tableau de bord",
+      "hrDocuments": "Documents",
+      "hrEmployees": "Collaborateurs",
+      "hrOrganigram": "Organigramme",
+      "hrPositions": "Postes",
+      "hrProbation": "Périodes d'essai",
+      "hrReports": "Rapports",
+      "hrRequestAccount": "Demandes de compte",
+      "hrSurveyResults": "Résultats des enquêtes",
+      "hrSurveys": "Enquêtes",
+      "hrTemplates": "Modèles d'intégration",
+      "hrTraining": "Formation",
+      "hrUnassigned": "Non affectés",
+      "hse": "HSE",
+      "jobDescription": "Fiches de poste",
+      "kaizen": "Kaizen",
+      "management": "Direction",
+      "managerArchive": "Archive",
+      "managerAssistant": "Assistant",
+      "managerCalendar": "Calendrier",
+      "managerDashboard": "Tableau de bord",
+      "managerDocuments": "Documents",
+      "managerEvaluations": "Évaluations",
+      "managerOrganigram": "Organigramme",
+      "managerRecruits": "Nouvelles recrues",
+      "managerReports": "Rapports",
+      "managerSettings": "Paramètres",
+      "managerTeam": "Mon équipe",
+      "meAssistant": "Assistant",
+      "meCertificates": "Mes attestations",
+      "meDashboard": "Tableau de bord",
+      "meDocuments": "Mes documents",
+      "meFiles": "Mes justificatifs",
+      "meJourney": "Mon parcours",
+      "meOrganigram": "Organigramme",
+      "mePosition": "Ma fiche de poste",
+      "meSurveys": "Mes enquêtes",
+      "meTeam": "Mon équipe",
+      "meTraining": "Ma formation",
+      "onboardingChecklist": "Checklist onboarding",
+      "organization": "Organisation",
+      "qms": "SMQ",
+      "recruitment": "Recrutement",
+      "remarks": "Remarques",
+      "strategy": "Stratégie",
+      "surveys": "Enquêtes",
+      "training": "Formation",
+      "welcome": "Bienvenue",
+      "managerJobDescriptions": "Fiches de poste",
+      "managerQuests": "Quêtes",
+      "meQuests": "Mes quêtes"
+    },
+    "public": {
+      "brandHome": "SOFICLEF — accueil",
+      "closeMenu": "Fermer le menu",
+      "company": "Entreprise",
+      "home": "Accueil",
+      "login": "Connexion",
+      "mainNav": "Navigation principale",
+      "openMenu": "Ouvrir le menu",
+      "orgChart": "Organigramme",
+      "strategy": "Stratégie"
+    }
+  },
+  "auth": {
+    "login": {
+      "backToSite": "Retour au site",
+      "emailLabel": "E-mail professionnel",
+      "emailPlaceholder": "prenom.nom@soficlef.local",
+      "highlight1": "Votre parcours d’intégration, étape par étape",
+      "highlight2": "Vos documents, formations et justificatifs",
+      "highlight3": "Votre position dans l’organigramme",
+      "hidePassword": "Masquer",
+      "invalidCredentials": "Identifiants invalides.",
+      "lede": "Accédez à votre parcours et à vos documents.",
+      "noAccessNote": "Vous n’avez pas encore d’accès ? Votre compte est créé par le service informatique, puis affecté par les ressources humaines.",
+      "panelTitle": "Votre espace collaborateur",
+      "passwordLabel": "Mot de passe",
+      "showPassword": "Afficher",
+      "submit": "Se connecter",
+      "submitting": "Connexion…",
+      "title": "Connexion",
+      "tooManyAttempts": "Trop de tentatives. Patientez quelques minutes avant de réessayer."
+    },
+    "pending": {
+      "body": "Votre compte n’est pas encore affecté à un poste. Les ressources humaines vous placeront prochainement.",
+      "title": "Compte en attente"
+    }
+  },
+  "public": {
+    "assistant": {
+      "askButton": "Demander",
+      "asking": "Recherche…",
+      "askFailed": "La recherche a échoué. Réessayez dans un instant.",
+      "defaultEmptyDetail": "Posez une question, ou choisissez l’une des suggestions ci-dessus.",
+      "defaultPlaceholder": "Posez votre question…",
+      "degraded": {
+        "error": "Le modèle n’a pas pu être joint — voici les résultats de la recherche.",
+        "modelLoading": "Le modèle est en cours de démarrage (comptez ~20 s) — voici les résultats de la recherche en attendant.",
+        "rateLimited": "Le quota du modèle est atteint — voici les résultats de la recherche.",
+        "timeout": "Le modèle n’a pas répondu à temps — voici les résultats de la recherche."
+      },
+      "noAnswer": "Je n’ai rien trouvé qui corresponde dans les données que vous êtes autorisé à consulter. Plutôt qu’une réponse approximative, l’assistant préfère ne rien affirmer : reformulez la question, ou consultez directement la rubrique concernée.",
+      "providerNone": "Aucun modèle de langage n’est raccordé : l’assistant répond par recherche dans vos données visibles, et cite ce qu’il a trouvé.",
+      "providerNote": "Réponses formulées par {{model}} ({{provider}}), à partir des seules données que vous pouvez déjà consulter.",
+      "providerNoteFallbackModel": "un modèle de langage",
+      "questionLabel": "Votre question",
+      "sources": "Sources",
+      "tooManyQuestions": "Trop de questions en peu de temps. Réessayez dans un instant.",
+      "ungroundedBadge": "Connaissances générales — hors données SOFICLEF",
+      "ungroundedNote": "Aucune information interne ne correspondait à cette question. Cette réponse vient des connaissances générales du modèle : vérifiez-la auprès des RH avant de vous en servir."
+    },
+    "company": {
+      "ctaLede": "Structures, unités de production et cellules fonctionnelles — l’organigramme complet.",
+      "ctaTitle": "Comment nous sommes organisés",
+      "eyebrow": "L’entreprise",
+      "heroLede": "De la fabrication de corps de serrure à la distribution nationale, SOFICLEF conçoit et produit depuis Boumerdès les composants qui ferment portes, coffres et bâtiments.",
+      "heroTitle": "Trente ans de <0>serrurerie industrielle</0> algérienne",
+      "identity": {
+        "certification": "Certification",
+        "eyebrow": "Carte d’identité",
+        "foundedCity": "Ville de création",
+        "foundedYear": "Année de création",
+        "generalManager": "Direction générale",
+        "headquarters": "Siège",
+        "legalForm": "Forme juridique",
+        "legalName": "Raison sociale",
+        "status": "Statut",
+        "title": "Les faits, sans emballage"
+      },
+      "loadFailed": "Les informations de l’entreprise ne sont pas disponibles pour le moment.",
+      "milestones": {
+        "eyebrow": "Repères",
+        "m1994Body": "SOFICLEF est fondée comme SARL, sur les solutions d’ouverture et de verrouillage.",
+        "m1994Title": "Création à Alger",
+        "m2017Body": "Le système de management de la qualité est certifié ISO 9001:2015 en septembre.",
+        "m2017Title": "Certification ISO 9001",
+        "mTodayBody": "Le statut OEA reconnaît la fiabilité de la chaîne logistique et douanière.",
+        "mTodayTitle": "Opérateur Économique Agréé",
+        "title": "Quelques dates",
+        "today": "Aujourd’hui"
+      },
+      "mission": "Mission",
+      "tradesTitle": "Produire, distribuer, livrer",
+      "vision": "Vision"
+    },
+    "footer": {
+      "discover": "Découvrir",
+      "employeeArea": "Espace collaborateur",
+      "headquarters": "Siège",
+      "headquartersAddress": "Si Mustapha\nBoumerdès, Algérie",
+      "quality": "Qualité",
+      "qualityDetail": "ISO 9001:2015\nOpérateur Économique Agréé",
+      "rights": "© {{year}} SOFICLEF SARL — Tous droits réservés.",
+      "tagline": "Solutions d’ouverture et de verrouillage, fabriquées en Algérie depuis 1994."
+    },
+    "home": {
+      "capabilities": {
+        "journeyBody": "De l’affectation à la fin de la période d’essai, chaque étape a une échéance et un responsable. Les retards se voient avant l’échéance, pas après.",
+        "journeyTitle": "Un parcours suivi",
+        "skillsBody": "Une matrice par poste, comparée au niveau réel du collaborateur. Les écarts nourrissent le plan de formation plutôt qu’un classeur.",
+        "skillsTitle": "Des compétences évaluées",
+        "structureBody": "Chaque poste est rattaché à un responsable, chaque responsable à une structure. L’organigramme n’est pas un document annuel : il est la source que lisent les affectations et les évaluations.",
+        "structureLink": "Voir l’organigramme",
+        "structureTitle": "Une structure lisible"
+      },
+      "ctaLede": "Votre espace collaborateur réunit votre parcours, vos documents, vos formations et votre organigramme.",
+      "ctaLink": "Accéder à mon espace",
+      "ctaTitle": "Vous rejoignez SOFICLEF ?",
+      "cursorDiscover": "Découvrir",
+      "cursorView": "Voir",
+      "eyebrow": "SOFICLEF SARL · depuis 1994",
+      "heroCtaCompany": "Découvrir l’entreprise",
+      "heroCtaOrg": "Notre organisation",
+      "heroLedeFallback": "Des solutions alliant design, fiabilité et confort — conçues, fabriquées et distribuées depuis Boumerdès.",
+      "heroTitle": "Protéger la vie et les biens,<0> pièce après pièce.</0>",
+      "platform": {
+        "eyebrow": "La plateforme d’intégration",
+        "lede": "SOFICLEF accompagne chaque collaborateur de son affectation jusqu’à la fin de sa période d’essai. Le parcours est le même pour tous ; ce qu’il contient dépend du poste.",
+        "title": "Une intégration suivie, pas seulement lancée."
+      },
+      "stats": {
+        "certifiedSince": "Certifiée depuis 2017",
+        "foundedIn": "Fondée à {{city}}",
+        "trustedOperator": "Opérateur Économique Agréé",
+        "trustedOperatorAcronym": "OEA",
+        "warehouse": "Entrepôt logistique"
+      },
+      "tradesEyebrow": "Nos métiers",
+      "tradesTitle": "Trois pôles, une même exigence de fiabilité.",
+      "valuesEyebrow": "Ce qui nous tient",
+      "valuesTitle": "Nos valeurs",
+      "visionEyebrow": "Notre vision",
+      "visionFallback": "Devenir le leader national dans les solutions d’ouverture et de verrouillage innovantes.",
+      "visionQuote": "« {{vision}} »",
+      "visionRole": "Directeur Général"
+    },
+    "links": {
+      "theCompany": "L’entreprise",
+      "ourStrategy": "Notre stratégie",
+      "viewOrgChart": "Voir l’organigramme"
+    },
+    "marks": {
+      "key": "Clé SOFICLEF, marque graphique",
+      "lockKey": "Serrure et clé, marque graphique de SOFICLEF",
+      "takeover": "SOFICLEF en un mot"
+    },
+    "org": {
+      "chartEyebrow": "Vue d’ensemble",
+      "chartLede": "Cliquez sur une entité pour lire son périmètre. Le schéma se fait défiler horizontalement sur les niveaux les plus larges.",
+      "chartTitle": "La structure, du sommet au terrain",
+      "ctaLede": "En interne, chaque poste de cet organigramme porte une fiche, un responsable et un parcours d’intégration.",
+      "ctaTitle": "Cette structure vit au quotidien",
+      "detailEyebrow": "Le détail",
+      "detailTitle": "Ce que fait chaque entité",
+      "eyebrow": "Organisation",
+      "heroLede": "Des structures opérationnelles, des unités de production et des cellules fonctionnelles, chacune avec un périmètre défini. C’est cette même structure que lisent les affectations et les parcours d’intégration en interne.",
+      "heroTitle": "L’organigramme de <0>SOFICLEF</0>",
+      "loadFailed": "L’organigramme n’est pas disponible pour le moment.",
+      "loading": "Chargement de l’organigramme…",
+      "notPublished": "La structure n’est pas encore publiée.",
+      "types": {
+        "celluleHelp": "Les fonctions transverses de support.",
+        "celluleLabel": "Cellules fonctionnelles",
+        "directionHelp": "Le sommet de la structure.",
+        "directionLabel": "Direction",
+        "structureHelp": "Les grands ensembles opérationnels.",
+        "structureLabel": "Structures",
+        "uniteProductionHelp": "Les ateliers, rattachés à une structure.",
+        "uniteProductionLabel": "Unités de production"
+      }
+    },
+    "strategy": {
+      "ctaLede": "Ces objectifs se déclinent dans les structures, unités et cellules de l’entreprise.",
+      "ctaTitle": "Une stratégie portée par une structure",
+      "eyebrowFallback": "Plan stratégique",
+      "heroTitle": "Où nous allons, et <0>comment nous y allons</0>",
+      "loadFailed": "La stratégie n’est pas disponible pour le moment.",
+      "loading": "Chargement de la stratégie…",
+      "marketsEyebrow": "Nos marchés",
+      "marketsLede": "Pour chaque marché servi, une approche, une cible de part de marché et une cible de chiffre d’affaires.",
+      "marketsTitle": "Un objectif par marché",
+      "marketShare": "Part de marché",
+      "projectsEyebrow": "Projets structurants",
+      "projectsTitle": "Les chantiers en cours",
+      "revenue": "Chiffre d’affaires"
+    },
+    "takeover": {
+      "body": "Depuis 1994, nous concevons et fabriquons en Algérie les serrures, poignées et coffres qui protègent la vie et les biens — du corps de serrure à la distribution nationale."
+    }
+  },
+  "hr": {
+    "employeeDirectory": {
+      "loading": "Chargement du répertoire...",
+      "loadError": "Impossible de charger le répertoire.",
+      "title": "Collaborateurs",
+      "subtitle": "Le répertoire complet de votre périmètre : recherche, filtres et export.",
+      "unassigned": "Non affectés",
+      "exportButton": "Exporter (CSV)",
+      "search": "Rechercher un nom, un e-mail, un poste...",
+      "allStructures": "Toutes les structures",
+      "allManagers": "Tous les managers",
+      "allStatuses": "Tous les états",
+      "reset": "Réinitialiser les filtres",
+      "stats": {
+        "displayed": "Collaborateurs affichés",
+        "onboarding": "En intégration",
+        "unassigned": "Sans affectation"
+      },
+      "emptyTitle": "Aucun collaborateur",
+      "emptyFiltered": "Aucun collaborateur ne correspond à ces filtres.",
+      "emptyScope": "Aucun collaborateur visible dans votre périmètre.",
+      "status": {
+        "pending": "En attente d’affectation",
+        "assigned": "Affecté",
+        "onboarding": "En intégration",
+        "active": "Actif",
+        "archived": "Archivé"
+      },
+      "table": {
+        "employee": "Collaborateur",
+        "position": "Poste",
+        "structure": "Structure",
+        "manager": "Manager",
+        "status": "État",
+        "onboarding": "Intégration"
+      },
+      "export": {
+        "name": "Nom",
+        "email": "E-mail",
+        "phone": "Téléphone",
+        "position": "Poste",
+        "direction": "Direction",
+        "department": "Service",
+        "structure": "Structure",
+        "manager": "Manager",
+        "status": "État",
+        "hireDate": "Date d’embauche",
+        "onboarding": "Intégration (%)"
+      }
+    },
+    "accountRequests": {
+      "loading": "Chargement des demandes...",
+      "loadError": "Impossible de charger les demandes de compte.",
+      "title": "Demander un compte",
+      "subtitle": "Les RH ne créent pas de compte : cette demande ouvre un ticket que le SI traite, puis le compte revient ici pour affectation.",
+      "confirmation": "Demande envoyée au SI pour {{name}}.",
+      "validationError": "Vérifiez les champs du formulaire.",
+      "saveError": "La demande n’a pas pu être enregistrée.",
+      "form": {
+        "title": "Nouvelle demande",
+        "candidate": "Nom du candidat",
+        "position": "Poste prévu",
+        "hireDate": "Embauche prévue",
+        "urgency": "Urgence",
+        "note": "Note (facultatif)",
+        "sending": "Envoi...",
+        "submit": "Envoyer la demande au SI"
+      },
+      "urgency": {
+        "normal": "Normale",
+        "urgent": "Urgente"
+      },
+      "status": {
+        "open": "Ouverte",
+        "created": "Compte créé",
+        "rejected": "Rejetée"
+      },
+      "list": {
+        "title": "Demandes enregistrées",
+        "empty": "Aucune demande de compte enregistrée."
+      },
+      "table": {
+        "candidate": "Candidat",
+        "position": "Poste prévu",
+        "urgency": "Urgence",
+        "status": "Statut",
+        "waiting": "Attente"
+      },
+      "days_one": "{{count}} jour",
+      "days_other": "{{count}} jours"
+    },
+    "organigram": {
+      "loading": "Chargement de l’organigramme…",
+      "loadError": "Impossible de charger l’organigramme.",
+      "title": "Organigramme",
+      "subtitle": "La structure complète de l’entreprise, de la direction générale aux postes de terrain.",
+      "tabs": {
+        "tree": "Organigramme",
+        "anomalies": "Anomalies ({{count}})"
+      },
+      "search": "Rechercher un poste, un code, une personne…",
+      "allStructures": "Toutes les structures",
+      "vacantOnly": "Postes vacants uniquement",
+      "positionCount": "{{visible}} / {{total}} postes",
+      "emptyFiltered": "Aucun poste ne correspond à ces filtres.",
+      "noAnomaly": "Aucune anomalie de ce type.",
+      "vacant": "Vacant",
+      "table": {
+        "position": "Poste",
+        "code": "Code",
+        "structure": "Structure",
+        "holder": "Titulaire"
+      },
+      "anomalies": {
+        "vacant": {
+          "title": "Postes vacants",
+          "rule": "Le poste existe dans l’organigramme mais personne ne l’occupe aujourd’hui."
+        },
+        "headless": {
+          "title": "Branches sans responsable",
+          "rule": "Des postes sont rattachés à ce poste, mais celui-ci n’a pas de titulaire."
+        },
+        "orphans": {
+          "title": "Nœuds orphelins",
+          "rule": "Le poste déclare un poste parent qui n’existe pas (ou plus) dans l’organigramme."
+        },
+        "unattached": {
+          "title": "Postes sans structure",
+          "rule": "Le poste n’est rattaché à aucune direction ni service."
+        }
+      }
+    },
+    "positions": {
+      "loading": "Chargement des postes…",
+      "loadError": "Impossible de charger les postes.",
+      "saveError": "L’enregistrement du poste a échoué.",
+      "archiveConfirm": "Archiver le poste « {{title}} » ?",
+      "archiveError": "L’archivage a échoué.",
+      "title": "Postes",
+      "subtitle": "Chaque poste est un nœud de l’organigramme : intitulé, mission et ligne hiérarchique.",
+      "newPosition": "Nouveau poste",
+      "readOnlyNotice": "Votre rôle donne un accès en lecture aux postes. La création et la modification des postes relèvent de l’administration.",
+      "stats": {
+        "active": "Postes actifs",
+        "vacant": "Postes vacants",
+        "withoutDescription": "Sans fiche de poste"
+      },
+      "form": {
+        "editTitle": "Modifier le poste",
+        "newTitle": "Nouveau poste",
+        "code": "Code",
+        "codeHint": "Le code identifie le poste et ne se modifie pas.",
+        "title": "Intitulé",
+        "mission": "Mission",
+        "structure": "Structure",
+        "noStructure": "Aucune structure",
+        "parent": "Rattaché à (ligne hiérarchique)",
+        "noParent": "Aucun (racine)"
+      },
+      "cancel": "Annuler",
+      "saving": "Enregistrement…",
+      "save": "Enregistrer",
+      "search": "Rechercher un poste…",
+      "allStructures": "Toutes les structures",
+      "positionCount": "{{visible}} / {{total}}",
+      "empty": "Aucun poste ne correspond à ces critères.",
+      "table": {
+        "code": "Code",
+        "title": "Intitulé",
+        "structure": "Structure",
+        "parent": "Rattaché à",
+        "occupation": "Occupation",
+        "description": "Fiche de poste"
+      },
+      "vacant": "Vacant",
+      "occupied": "Occupé",
+      "viewDescription": "Consulter",
+      "missingDescription": "Absente"
+    },
+    "templates": {
+      "loading": "Chargement des modèles…",
+      "loadError": "Impossible de charger les modèles de parcours.",
+      "createError": "La création du modèle a échoué.",
+      "title": "Modèles d’intégration",
+      "subtitle": "La bibliothèque des parcours types, par profil de poste.",
+      "cancel": "Annuler",
+      "newTemplate": "Nouveau modèle",
+      "readOnlyNotice": "Votre rôle donne un accès en lecture à la bibliothèque de modèles. La création et la modification d’un modèle relèvent de l’administration (permissions",
+      "stats": {
+        "templates": "Modèles disponibles",
+        "steps": "Étapes décrites",
+        "generated": "Parcours générés"
+      },
+      "form": {
+        "title": "Nouveau modèle",
+        "code": "Code du modèle",
+        "codeHint": "Minuscules, chiffres et tirets.",
+        "titleLabel": "Intitulé",
+        "position": "Profil de poste",
+        "generic": "Modèle générique (tous profils)",
+        "creating": "Création…",
+        "create": "Créer le modèle"
+      },
+      "emptyTitle": "Aucun modèle",
+      "emptyDetail": "La bibliothèque de parcours est vide. Un modèle décrit la séquence d’étapes qu’un profil suit à son arrivée.",
+      "profile": "Profil",
+      "genericProfile": "Modèle générique — tous profils",
+      "stepsCount_one": "{{count}} étape",
+      "stepsCount_other": "{{count}} étapes",
+      "generatedCount_one": "{{count}} parcours généré",
+      "generatedCount_other": "{{count}} parcours générés"
+    },
+    "templateBuilder": {
+      "loading": "Chargement du modèle…",
+      "notFound": "Modèle introuvable.",
+      "saveError": "L’enregistrement de la séquence a échoué.",
+      "back": "← Retour à la bibliothèque",
+      "profileSubtitle": "Profil : {{profile}} — {{steps}} étape(s), {{journeys}} parcours généré(s).",
+      "genericSubtitle": "Modèle générique — {{steps}} étape(s), {{journeys}} parcours généré(s).",
+      "addStep": "Ajouter une étape",
+      "saving": "Enregistrement…",
+      "saveSequence": "Enregistrer la séquence",
+      "readOnlyNotice": "Votre rôle donne un accès en lecture aux modèles de parcours. La modification de la séquence relève de l’administration (permission",
+      "saved": "Séquence enregistrée.",
+      "unsaved": "Modifications non enregistrées.",
+      "emptyTitle": "Séquence vide",
+      "emptyEditable": "Ce modèle ne décrit encore aucune étape. Ajoutez la première ci-dessus.",
+      "emptyReadOnly": "Ce modèle ne décrit encore aucune étape.",
+      "moveUp": "Déplacer l’étape {{number}} vers le haut",
+      "moveDown": "Déplacer l’étape {{number}} vers le bas",
+      "fields": {
+        "stepTitle": "Intitulé de l’étape",
+        "offset": "Décalage (jours)",
+        "department": "Service responsable",
+        "description": "Description",
+        "phase": "Phase",
+        "mandatory": "Étape obligatoire"
+      },
+      "departments": {
+        "HR": "RH",
+        "IT": "SI",
+        "HSE": "HSE",
+        "QUALITY": "Qualité",
+        "MANAGER": "Manager",
+        "EMPLOYEE": "Collaborateur"
+      },
+      "phases": {
+        "PRE_ONBOARDING": "Avant l’arrivée",
+        "DAY_ONE": "Jour 1",
+        "PROBATION": "Période d’essai"
+      },
+      "remove": "Supprimer",
+      "existingJourneys": "{{count}} parcours ont été générés depuis ce modèle. Modifier la séquence n’altère pas les parcours déjà en cours ; supprimer une étape déjà suivie par quelqu’un est refusé par le serveur, pour ne pas effacer une validation existante."
+    },
+    "documentLibrary": {
+      "loadError": "Impossible de charger la bibliothèque documentaire.",
+      "createError": "La création du document a échoué.",
+      "uploaded": "« {{name}} » a été téléversé et le document est publié.",
+      "uploadError": "Le téléversement a échoué.",
+      "updateError": "La mise à jour a échoué.",
+      "publishError": "La publication a échoué.",
+      "cancel": "Annuler",
+      "newDocument": "Nouveau document",
+      "storageUnavailable": "Aucun espace de stockage n’est configuré sur ce serveur : les fiches documentaires peuvent être créées et décrites, mais le téléversement de fichiers est indisponible jusqu’à la configuration des identifiants Cloudinary.",
+      "stats": {
+        "documents": "Documents",
+        "published": "Publiés",
+        "acknowledgements": "Accusés de lecture"
+      },
+      "form": {
+        "title": "Nouveau document",
+        "reference": "Référence",
+        "documentTitle": "Titre",
+        "description": "Description",
+        "order": "Ordre",
+        "creating": "Création…",
+        "create": "Créer la fiche",
+        "hint": "La fiche est créée « en préparation » ; téléversez ensuite le fichier depuis la liste pour la publier."
+      },
+      "search": "Rechercher un document…",
+      "emptySearch": "Aucun document ne correspond à cette recherche.",
+      "table": {
+        "document": "Document",
+        "file": "Fichier",
+        "status": "État",
+        "acknowledgements": "Accusés"
+      },
+      "status": {
+        "published": "Publié",
+        "pending": "En préparation"
+      },
+      "open": "Ouvrir",
+      "noFile": "Aucun fichier",
+      "noDepartments": "aucun département ciblé",
+      "allPersonnel": "tout le personnel",
+      "uploading": "Téléversement…",
+      "replaceFile": "Remplacer le fichier",
+      "upload": "Téléverser",
+      "unpublish": "Dépublier",
+      "publish": "Publier…",
+      "versionNote": "Le modèle de données ne conserve pas d’historique de versions : téléverser un nouveau fichier remplace le précédent. Chaque remplacement est consigné au journal d’audit, avec le nom du fichier remplacé.",
+      "publishAction": "Publier",
+      "dialog": {
+        "ariaLabel": "Publier le document",
+        "title": "Publier « {{title}} »",
+        "subtitle": "Le document deviendra visible dans l’espace des personnes concernées.",
+        "audience": "Destinataires",
+        "allHint": "Toute personne pouvant consulter la bibliothèque.",
+        "departments": "Départements ciblés",
+        "departmentsHint": "Seules les personnes rattachées aux départements choisis verront le document.",
+        "noDepartments": "Aucun département n’est renseigné dans l’annuaire : les fiches collaborateurs n’ont ni direction ni service. Renseignez-les avant de cibler une publication.",
+        "selectedDepartments": "Sera visible par les comptes rattachés à : {{departments}}.",
+        "chooseDepartment": "Choisissez au moins un département.",
+        "allSummary": "Sera visible par l’ensemble du personnel."
+      }
+    },
+    "training": {
+      "loading": "Chargement du catalogue…",
+      "loadError": "Impossible de charger le catalogue de formation.",
+      "createError": "La création du module a échoué.",
+      "title": "Catalogue de formation",
+      "subtitle": "Les modules d’intégration, leur caractère obligatoire et leur quiz de validation.",
+      "cancel": "Annuler",
+      "newModule": "Nouveau module",
+      "readOnlyNotice": "Votre rôle donne un accès en lecture au catalogue. La création d’un module relève de l’administration.",
+      "stats": {
+        "modules": "Modules",
+        "mandatory": "Obligatoires",
+        "withoutQuiz": "Sans quiz",
+        "coverage": "Couverture"
+      },
+      "coverage": "{{trained}}/{{people}} collaborateurs à jour",
+      "form": {
+        "title": "Nouveau module",
+        "code": "Code",
+        "titleLabel": "Titre",
+        "summary": "Résumé",
+        "content": "Contenu du module",
+        "mandatory": "Module obligatoire",
+        "threshold": "Seuil (%)",
+        "order": "Ordre",
+        "creating": "Création…",
+        "create": "Créer le module"
+      },
+      "emptyTitle": "Catalogue vide",
+      "emptyDetail": "Aucun module de formation n’est publié.",
+      "mandatory": "Obligatoire",
+      "noQuiz": "Aucun quiz",
+      "quizSummary_one": "{{count}} question — seuil {{score}}%",
+      "quizSummary_other": "{{count}} questions — seuil {{score}}%",
+      "quiz": "Quiz"
+    },
+    "surveys": {
+      "loading": "Chargement des enquêtes…",
+      "loadError": "Impossible de charger la configuration des enquêtes.",
+      "title": "Enquêtes de satisfaction",
+      "subtitle": "Les jalons, le questionnaire et les règles de relance qui encadrent le suivi d’intégration.",
+      "reminderRules": "Règles de relance",
+      "viewResults": "Voir les résultats",
+      "stats": {
+        "issued": "Enquêtes émises",
+        "answered": "Renseignées",
+        "overdue": "En retard",
+        "responseRate": "Taux de réponse"
+      },
+      "responses": "{{answered}}/{{issued}} réponses",
+      "score": "Score de satisfaction",
+      "milestones": {
+        "title": "Jalons d’enquête",
+        "detail": "Les quatre jalons sont générés automatiquement à l’affectation, à partir de la date d’embauche. Ils sont définis dans le domaine (J+7, J+30, J+60, J+90) et s’appliquent à tout parcours ; les modifier relèverait d’un changement de modèle, pas d’un réglage.",
+        "firstWeek": "Première semaine — accueil, matériel, premiers repères.",
+        "firstMonth": "Premier mois — clarté du rôle et accompagnement.",
+        "secondMonth": "Deux mois — autonomie et intégration dans l’équipe.",
+        "trialEnd": "Fin de période d’essai — bilan global."
+      },
+      "questionnaire": {
+        "title": "Questionnaire",
+        "detail": "Les cinq indicateurs notés de 1 à 5 qui composent chaque enquête. Ce sont des valeurs d’énumération en base : ajouter un indicateur suppose une migration, la liste n’est donc pas modifiable depuis l’interface."
+      },
+      "indicators": {
+        "welcomeQuality": "Qualité de l’accueil",
+        "supportLevel": "Accompagnement reçu",
+        "roleClarity": "Clarté du rôle",
+        "managerRelationship": "Relation avec le manager",
+        "workingConditions": "Conditions de travail"
+      },
+      "table": {
+        "indicator": "Indicateur",
+        "average": "Moyenne (/5)",
+        "score": "Score",
+        "responses": "Réponses"
+      },
+      "rules": {
+        "title": "Règles de relance",
+        "detail": "Les règles qui déclenchent une relance sur une enquête restée sans réponse. Elles se configurent sur la page des alertes.",
+        "emptyTitle": "Aucune règle de relance sur les enquêtes",
+        "emptyDetail": "Rien ne relance automatiquement une enquête sans réponse aujourd’hui. Créez une règle « enquête sans réponse » depuis la page Alertes."
+      },
+      "active": "Active",
+      "inactive": "Inactive",
+      "ruleSummary": "Relance après {{threshold}} jour(s), notification à {{department}}",
+      "escalation": ", escalade après {{days}} jour(s).",
+      "noEscalation": ", sans escalade."
+    },
+    "surveyResults": {
+      "loading": "Chargement des résultats…",
+      "loadError": "Impossible de charger les résultats des enquêtes.",
+      "back": "← Retour aux enquêtes",
+      "title": "Résultats des enquêtes",
+      "subtitle": "Scores par indicateur, par jalon et réponses individuelles, filtrables par structure, manager et période.",
+      "allStructures": "Toutes les structures",
+      "allManagers": "Tous les managers",
+      "reset": "Réinitialiser",
+      "responseCount_one": "{{count}} réponse affichée",
+      "responseCount_other": "{{count}} réponses affichées",
+      "metrics": {
+        "overall": "Score global",
+        "responseRate": "Taux de réponse",
+        "issued": "Enquêtes émises",
+        "answered": "Renseignées"
+      },
+      "byIndicator": "Scores par indicateur",
+      "byMilestone": "Scores par jalon",
+      "individual": "Réponses individuelles",
+      "notMeasurable": "Non mesurable",
+      "responsePair": "{{answered}}/{{issued}} réponses",
+      "emptyTitle": "Aucune réponse",
+      "emptyFiltered": "Aucune enquête renseignée ne correspond à ces filtres.",
+      "emptyScope": "Aucune enquête n’a encore été renseignée dans votre périmètre.",
+      "hide": "Masquer",
+      "detail": "Détail",
+      "periods": {
+        "30": "30 derniers jours",
+        "90": "90 derniers jours",
+        "180": "6 derniers mois",
+        "all": "Toute la période"
+      },
+      "table": {
+        "employee": "Collaborateur",
+        "milestone": "Jalon",
+        "structure": "Structure",
+        "manager": "Manager",
+        "score": "Score",
+        "answeredAt": "Répondu le"
+      }
+    },
+    "analytics": {
+      "loadError": "Impossible de charger les indicateurs.",
+      "reportLink": "Générateur de rapports",
+      "emptyTitle": "Aucun indicateur",
+      "emptyDetail": "Aucun indicateur n’est disponible pour votre périmètre.",
+      "moduleTitle": "Indicateurs Module 10",
+      "dayShort": "j",
+      "metrics": {
+        "completion": "Taux de complétion",
+        "duration": "Durée moyenne",
+        "confirmation": "Taux de confirmation",
+        "noCohort": "Aucune cohorte de six mois",
+        "cohort": "Sur {{count}} parcours de plus de six mois",
+        "satisfaction": "Satisfaction",
+        "training": "Formation à jour"
+      },
+      "moduleNote": "Un tiret signifie « non mesurable » et non « zéro » : la plateforme distingue l’absence de données d’un résultat nul. Ces six indicateurs portent sur l’ensemble de votre périmètre ; les filtres ci-dessous s’appliquent à la vue détaillée.",
+      "filteredTitle": "Vue filtrée et comparaison",
+      "allStructures": "Toutes les structures",
+      "allManagers": "Tous les managers",
+      "period": "Période : {{period}}",
+      "periods": {
+        "30": "30 jours",
+        "90": "90 jours",
+        "180": "6 mois",
+        "365": "12 mois"
+      },
+      "reset": "Réinitialiser",
+      "peopleCount_one": "{{count}} collaborateur",
+      "peopleCount_other": "{{count}} collaborateurs",
+      "hires": "Recrutements ({{period}})",
+      "stable": "Stable par rapport aux {{days}} jours précédents ({{count}})",
+      "delta": "{{delta}} par rapport à la période précédente ({{count}})",
+      "filteredInProgress": "Intégrations en cours",
+      "filteredCompleted": "Intégrations terminées",
+      "averageProgress": "Avancement moyen",
+      "filteredScope": "Sur le périmètre filtré",
+      "journeyHealth": "Santé des parcours",
+      "activeJourneys": "Parcours actifs",
+      "overdueSteps": "Étapes en retard",
+      "blockedSteps": "Étapes bloquées",
+      "satisfactionByMilestone": "Satisfaction par jalon",
+      "noSurveys": "Aucune enquête émise.",
+      "dataQuality": "Qualité des données",
+      "unitsWithoutHead": "Structures sans responsable",
+      "jobsWithoutDescription": "Postes sans fiche",
+      "descriptionCoverage": "Couverture des fiches",
+      "trainedEmployees": "Collaborateurs formés"
+    },
+    "reportBuilder": {
+      "loadError": "Impossible de charger les données du rapport.",
+      "notMeasurable": "non mesurable",
+      "days": "jours",
+      "back": "← Retour à l’analytique",
+      "export": "Exporter le rapport (CSV)",
+      "naturalTitle": "Rédaction en langage naturel",
+      "unavailable": "Non disponible",
+      "naturalDetail": "La rédaction automatique d’un rapport (« Agent 5 ») suppose un fournisseur de modèle de langage, dont aucun n’est raccordé à cette plateforme. Les données ci-dessous sont celles que la plateforme calcule effectivement et sont exportables telles quelles.",
+      "sectionsTitle": "Sections du rapport",
+      "preview": "Aperçu",
+      "rowCount_one": "{{count}} ligne",
+      "rowCount_other": "{{count}} lignes",
+      "selectSection": "Sélectionnez au moins une section pour composer un rapport.",
+      "unknownPosition": "poste non renseigné",
+      "noStructure": "sans structure",
+      "noManager": "sans manager",
+      "noJourney": "hors parcours",
+      "sections": {
+        "indicators": "Indicateurs RH",
+        "onboarding": "Parcours",
+        "satisfaction": "Satisfaction",
+        "quality": "Qualité des données",
+        "directory": "Répertoire"
+      },
+      "sectionLabels": {
+        "indicators": "Indicateurs RH (Module 10)",
+        "onboarding": "Santé des parcours",
+        "satisfaction": "Satisfaction par jalon",
+        "directory": "Répertoire des collaborateurs",
+        "quality": "Qualité des données"
+      },
+      "sectionDetails": {
+        "indicators": "Complétion, durée, confirmation, turnover, satisfaction, formation.",
+        "onboarding": "Parcours actifs, étapes en retard et bloquées, avancement moyen.",
+        "satisfaction": "Score et taux de réponse pour J+7, J+30, J+60, J+90.",
+        "directory": "Nom, poste, structure, manager, état, avancement.",
+        "quality": "Structures sans responsable, postes sans fiche de poste."
+      },
+      "rows": {
+        "completion": "Taux de complétion des parcours",
+        "duration": "Durée moyenne d’intégration",
+        "confirmation": "Taux de confirmation",
+        "turnover": "Turnover à six mois",
+        "cohort": "Cohorte turnover",
+        "satisfaction": "Satisfaction",
+        "training": "Formation à jour",
+        "activeJourneys": "Parcours actifs",
+        "overdue": "Étapes en retard",
+        "blocked": "Étapes bloquées",
+        "progress": "Avancement moyen",
+        "overall": "Score global",
+        "responseRate": "Taux de réponse",
+        "milestone": "Score J+{{day}}",
+        "units": "Structures sans responsable",
+        "jobs": "Postes sans fiche de poste",
+        "coverage": "Couverture des fiches"
+      },
+      "table": {
+        "section": "Section",
+        "indicator": "Indicateur",
+        "value": "Valeur"
+      }
+    },
+    "alerts": {
+      "loadError": "Impossible de charger les règles d’alerte.",
+      "saveError": "L’enregistrement de la règle a échoué.",
+      "updateError": "La mise à jour a échoué.",
+      "deleteConfirm": "Supprimer la règle « {{label}} » ?",
+      "deleteError": "La suppression a échoué.",
+      "cancel": "Annuler",
+      "newRule": "Nouvelle règle",
+      "stats": {
+        "total": "Règles définies",
+        "active": "Actives",
+        "escalating": "Avec escalade"
+      },
+      "form": {
+        "editTitle": "Modifier la règle",
+        "newTitle": "Nouvelle règle",
+        "label": "Intitulé",
+        "labelPlaceholder": "Relance des étapes SI non traitées",
+        "trigger": "Déclencheur",
+        "department": "Notifier le service",
+        "threshold": "Relancer après (jours)",
+        "escalation": "Escalader après (jours)",
+        "noEscalation": "Aucune escalade",
+        "escalationHint": "Laisser vide si la règle ne remonte jamais plus haut.",
+        "active": "Règle active"
+      },
+      "triggers": {
+        "taskOverdue": "Étape d’intégration en retard",
+        "surveyUnanswered": "Enquête restée sans réponse",
+        "evaluationDue": "Évaluation à échéance"
+      },
+      "departments": {
+        "HR": "RH",
+        "IT": "SI",
+        "HSE": "HSE",
+        "QUALITY": "Qualité",
+        "MANAGER": "Manager",
+        "EMPLOYEE": "Collaborateur"
+      },
+      "saving": "Enregistrement…",
+      "save": "Enregistrer la règle",
+      "emptyTitle": "Aucune règle définie",
+      "emptyDetail": "Aucune relance automatique n’est configurée. Une règle décrit la situation qui déclenche un rappel, le délai avant ce rappel et le service à prévenir.",
+      "active": "Active",
+      "inactive": "Inactive",
+      "ruleSummary": "Rappel envoyé à {{department}} après {{days}} jour(s)",
+      "escalationSummary": ", puis escalade après {{days}} jour(s) supplémentaires.",
+      "noEscalationSummary": ", sans escalade.",
+      "edit": "Modifier",
+      "disable": "Désactiver",
+      "enable": "Activer",
+      "delete": "Supprimer",
+      "footerNote": "Ces règles définissent la politique de relance et sont enregistrées durablement. Aucun planificateur ne tourne pour l’instant dans le serveur applicatif : les rappels ne sont pas encore déclenchés à heure fixe. Les alertes du tableau de bord sont calculées en direct à partir des retards et blocages réels."
+    },
+    "knowledge": {
+      "loading": "Chargement des agents…",
+      "loadError": "Impossible de charger la configuration des agents.",
+      "title": "Base de connaissances des agents",
+      "subtitle": "Ce que chaque agent est autorisé à lire, et l’état réel de la fonctionnalité.",
+      "stats": {
+        "defined": "Agents définis",
+        "operational": "Agents opérationnels",
+        "published": "Documents publiés"
+      },
+      "operational": "Opérationnel",
+      "outOfScope": "Hors de vos droits",
+      "reads": "Lit",
+      "resources": {
+        "position": "Postes",
+        "assignment": "Affectations",
+        "organizationUnit": "Structures",
+        "document": "Bibliothèque documentaire",
+        "onboardingInstance": "Parcours d’intégration",
+        "onboardingTask": "Étapes de parcours",
+        "training": "Catalogue de formation",
+        "competency": "Référentiel de compétences",
+        "jobDescription": "Fiches de poste"
+      },
+      "sources": {
+        "title": "Sources de chaque agent",
+        "detail": "Les sources ne sont pas des fichiers indexés mais des ressources de la plateforme, lues avec les permissions et le périmètre de la personne qui pose la question. Un agent ne peut donc jamais faire apparaître une ligne que son interlocuteur n’aurait pas pu ouvrir lui-même."
+      },
+      "test": {
+        "title": "Tester une question",
+        "detail": "Les cinq agents répondent. Chacun cherche d’abord dans les données de la plateforme, avec les droits de la personne qui pose la question — ici, les vôtres. Le résultat reflète donc le comportement réel de l’agent pour votre compte.",
+        "emptyTitle": "Aucun agent interrogeable",
+        "emptyDetail": "Votre compte ne dispose des droits de lecture d’aucune des ressources lues par ces agents.",
+        "emptyChat": "Posez une question pour observer ce que l’agent renvoie, et depuis quelles sources."
+      },
+      "reindex": {
+        "title": "Réindexation",
+        "emptyTitle": "Sans objet",
+        "detail": "Il n’y a pas d’index à reconstruire : la recherche interroge directement la base, à chaque question, avec les permissions de la personne qui demande."
+      },
+      "flagged": {
+        "title": "Réponses signalées",
+        "emptyTitle": "Non disponible",
+        "detail": "Aucun historique de réponses n’est conservé. Une réponse n’existe que le temps de la question qui l’a produite, ce qui rend impossible toute revue a posteriori."
+      },
+      "documents": {
+        "title": "Documents accessibles à l’agent 2",
+        "detail": "Les documents publiés que l’agent documentaire consulte. Ce sont exactement ceux de la bibliothèque, sans copie ni index séparé, avec la même règle d’audience.",
+        "empty": "Aucun document publié dans la bibliothèque.",
+        "table": {
+          "document": "Document",
+          "reference": "Référence",
+          "file": "Fichier"
+        },
+        "noFile": "Aucun fichier joint",
+        "manage": "Gérer la bibliothèque documentaire"
+      }
+    },
+    "dashboard": {
+      "eyebrow": "Ressources humaines",
+      "title": "Tableau de bord",
+      "subtitle": "Recrutements, intégrations en cours, satisfaction et alertes du périmètre RH.",
+      "loading": "Chargement du tableau de bord RH…",
+      "loadError": "Impossible de charger le tableau de bord RH.",
+      "requestAccount": "Demander un compte",
+      "assignmentQueue": "File d’affectation",
+      "openQueue": "Ouvrir la file",
+      "tiles": {
+        "hired": "Recrutements (30 j)",
+        "inProgress": "Intégrations en cours",
+        "completed": "Intégrations terminées",
+        "overdue": "Étapes en retard"
+      },
+      "probation": {
+        "title": "Périodes d’essai à valider",
+        "one": "Un responsable a transmis son évaluation. La décision vous revient.",
+        "other": "Des responsables ont transmis leurs évaluations. Les décisions vous reviennent.",
+        "more": "et {{count}} autre(s)…"
+      },
+      "progress": {
+        "title": "Avancement",
+        "average": "Progression moyenne",
+        "unavailable": "Taux de complétion non mesurable.",
+        "completionRate": "Taux de complétion des parcours : {{percent}}%."
+      },
+      "satisfaction": {
+        "title": "Score de satisfaction",
+        "answered": "{{answered}}/{{issued}} enquêtes renseignées.",
+        "none": "Aucune enquête émise.",
+        "link": "Voir le détail des résultats →"
+      },
+      "alerts": {
+        "title": "Alertes",
+        "empty": "Aucune alerte. Tout est à jour.",
+        "pending": {
+          "title": "{{count}} compte(s) en attente depuis plus de 3 jours",
+          "detail": "Le plus ancien attend depuis {{days}} jours."
+        },
+        "requests": {
+          "title": "{{count}} demande(s) de compte ouverte(s) auprès du SI",
+          "urgent": "Dont au moins une marquée urgente.",
+          "detail": "En attente de création par le SI."
+        },
+        "overdue": {
+          "title": "{{count}} étape(s) d’intégration en retard",
+          "detail": "Des étapes ont dépassé leur date prévue sur les parcours en cours."
+        },
+        "blocked": {
+          "title": "{{count}} étape(s) bloquée(s)",
+          "detail": "Ces étapes ont été signalées comme bloquées par leur responsable."
+        },
+        "surveys": {
+          "title": "{{count}} enquête(s) sans réponse",
+          "detail": "Des enquêtes de satisfaction ont dépassé leur échéance."
+        },
+        "jobs": {
+          "title": "{{count}} poste(s) sans fiche de poste",
+          "detail": "Ces postes existent dans l’organigramme mais n’ont pas de fiche."
+        }
+      },
+      "waiting": {
+        "title": "Comptes en attente d’affectation",
+        "viewAll": "Tout voir",
+        "empty": "Aucun compte en attente d’affectation.",
+        "days_one": "{{count}} j",
+        "days_other": "{{count}} j"
+      }
+    },
+    "probation": {
+      "loading": "Chargement des périodes d’essai…",
+      "title": "Périodes d’essai",
+      "subtitle": "Les évaluations transmises par les responsables, et la décision qui reste à prendre.",
+      "noticeTitle": "La suggestion ne décide pas.",
+      "noticeDetail": "Le pourcentage est calculé à partir des quatre notes du responsable : au-dessus de 60 % la confirmation est suggérée, entre 30 et 60 % la prolongation, en dessous de 30 % la fin de période d’essai. Vous pouvez vous en écarter — dans ce cas, le motif est requis et conservé avec la décision.",
+      "pending": "À trancher",
+      "suggested": "suggéré",
+      "emptyTitle": "Rien à valider",
+      "emptyDetail": "Aucune évaluation n’a été transmise. Une période d’essai apparaît ici dès que le responsable du collaborateur a transmis son évaluation.",
+      "outcomes": {
+        "CONFIRMED": {
+          "label": "Confirmer"
+        },
+        "EXTENDED": {
+          "label": "Prolonger"
+        },
+        "TERMINATED": {
+          "label": "Mettre fin"
+        }
+      }
+    },
+    "pages": {
+      "alerts": {
+        "loading": "Chargement des règles…",
+        "title": "Règles d’alerte",
+        "subtitle": "Qui est relancé, au bout de combien de jours, et vers qui la relance remonte."
+      },
+      "analytics": {
+        "loading": "Chargement des indicateurs…",
+        "title": "Analytique",
+        "subtitle": "Les indicateurs RH : complétion, intégration, confirmation, satisfaction, formation et turnover."
+      },
+      "report": {
+        "loading": "Chargement des données…",
+        "title": "Générateur de rapports",
+        "subtitle": "Composer un rapport à partir des indicateurs calculés par la plateforme, puis l’exporter."
+      },
+      "documents": {
+        "loading": "Chargement de la bibliothèque…",
+        "title": "Bibliothèque documentaire",
+        "subtitle": "Publier les documents de référence et suivre leurs accusés de lecture."
+      },
+      "employees": {
+        "loading": "Chargement du répertoire…",
+        "title": "Collaborateurs",
+        "subtitle": "Le répertoire complet de votre périmètre : recherche, filtres et export."
+      },
+      "unassigned": {
+        "loading": "Chargement de la file d’affectation…",
+        "loadError": "Impossible de charger la file d’affectation.",
+        "title": "Comptes non affectés",
+        "subtitle": "Les comptes créés par le SI qui attendent une affectation, du plus ancien au plus récent.",
+        "requestAccount": "Demander un compte",
+        "stats": {
+          "pending": "En attente",
+          "stale": "Au-delà de {{days}} jours",
+          "longest": "Attente la plus longue"
+        },
+        "dayShort": "j",
+        "queueTitle": "File d’affectation",
+        "queueEmptyTitle": "File vide",
+        "queueEmptyDetail": "Aucun compte créé par le SI n’attend d’affectation.",
+        "table": {
+          "employee": "Collaborateur",
+          "email": "Adresse e-mail",
+          "created": "Compte créé le",
+          "waiting": "Attente"
+        },
+        "days_one": "{{count}} jour",
+        "days_other": "{{count}} jours",
+        "assign": "Affecter",
+        "requestsTitle": "Demandes de compte en cours auprès du SI",
+        "requestsEmpty": "Aucune demande de compte ouverte.",
+        "urgent": "Urgent",
+        "requestedDays_one": "Demandé il y a {{count}} jour",
+        "requestedDays_other": "Demandé il y a {{count}} jours",
+        "plannedHire": "embauche prévue le {{date}}"
+      }
+    }
+  },
+  "manager": {
+    "eyebrow": "Encadrement",
+    "dayPlus_one": "J+{{count}}",
+    "dayPlus_other": "J+{{count}}",
+    "noPosition": "Poste non renseigné",
+    "blockedCount_one": "{{count}} bloquée",
+    "blockedCount_other": "{{count}} bloquées",
+    "overdueCount_one": "{{count}} en retard",
+    "overdueCount_other": "{{count}} en retard",
+    "taskStatus": {
+      "todo": "À faire",
+      "inProgress": "En cours",
+      "blocked": "Bloquée",
+      "done": "Terminée",
+      "validated": "Validée"
+    },
+    "dashboard": {
+      "loading": "Chargement du tableau de bord…",
+      "loadError": "Impossible de charger le tableau de bord manager.",
+      "title": "Tableau de bord",
+      "subtitle": "Suivez les intégrations, validez les étapes et repérez les situations qui nécessitent votre intervention.",
+      "calendar": "Calendrier",
+      "allRecruits": "Tous les recrutements",
+      "activeRecruits": "Recrutements actifs",
+      "averageProgress": "Avancement moyen",
+      "needAttention": "À surveiller",
+      "pendingTasks": "Tâches en attente",
+      "recruitsInProgress": "Intégrations en cours",
+      "noRecruits": "Aucune intégration en cours.",
+      "alerts": "Alertes",
+      "noAlerts": "Aucune alerte.",
+      "detailedProgress": "Avancement détaillé",
+      "dayColumn": "Jour",
+      "stepsColumn": "Étapes",
+      "progressColumn": "Progression",
+      "noRecruitsToShow": "Aucun recrutement à afficher.",
+      "myTasks": "Mes tâches",
+      "taskDue": "{{name}} — échéance le {{date}}",
+      "noPendingTasks": "Aucune tâche en attente."
+    },
+    "evaluations": {
+      "title": "Évaluations",
+      "subtitle": "Les évaluations dues pour vos recrues, tous jalons confondus.",
+      "loadError": "Impossible de charger les évaluations.",
+      "loading": "Chargement des évaluations…",
+      "milestoneColumn": "Jalon",
+      "evaluateAction": "Évaluer",
+      "empty": "Aucune évaluation due pour le moment."
+    },
+    "evaluationDetail": {
+      "notFound": "Cette évaluation n'existe pas.",
+      "loadError": "Impossible de charger l'évaluation.",
+      "conflict": "Cette évaluation a été modifiée entre-temps. Rechargez la page avant de continuer.",
+      "loading": "Chargement de l'évaluation…",
+      "backToEvaluations": "Retour aux évaluations",
+      "milestoneDue": "{{milestone}} — échéance le {{date}}",
+      "alreadySubmitted": "Cette évaluation a déjà été transmise aux ressources humaines.",
+      "criteria": {
+        "skills": "Compétences techniques",
+        "autonomy": "Autonomie",
+        "integration": "Intégration à l’équipe",
+        "behaviour": "Comportement professionnel"
+      },
+      "comment": "Commentaire",
+      "recommendation": "Recommandation",
+      "recommend": {
+        "confirm": "Confirmer dans le poste",
+        "extend": "Prolonger la période d'essai",
+        "terminate": "Mettre fin à la période d'essai"
+      },
+      "saveDraft": "Enregistrer le brouillon",
+      "submitToHr": "Transmettre aux RH"
+    },
+    "calendar": {
+      "loadError": "Impossible de charger le calendrier.",
+      "loading": "Chargement du calendrier…",
+      "title": "Calendrier",
+      "subtitle": "Les échéances d'évaluation à venir pour vos recrues, jour par jour.",
+      "eventTitle": "{{name}} — {{milestone}}",
+      "kind": {
+        "evaluation": "Évaluation",
+        "blocked": "Bloquée",
+        "overdue": "En retard"
+      },
+      "noUpcoming": "Aucune échéance à venir.",
+      "blockedOrOverdue": "Recrues bloquées ou en retard",
+      "nothingBlocked": "Aucune recrue bloquée ou en retard."
+    },
+    "documents": {
+      "loadError": "Impossible de charger les documents.",
+      "loading": "Chargement des documents…",
+      "title": "Documents",
+      "subtitle": "Les politiques et procédures utiles à l'intégration de vos recrues.",
+      "availability": {
+        "available": "Disponible",
+        "pending": "En préparation"
+      },
+      "acknowledgementCount_one": "{{count}} accusé de réception",
+      "acknowledgementCount_other": "{{count}} accusés de réception",
+      "empty": "Aucun document disponible pour le moment."
+    },
+    "archive": {
+      "loadError": "Impossible de charger l'archive.",
+      "loading": "Chargement de l'archive…",
+      "title": "Archive",
+      "subtitle": "Les parcours d'intégration terminés que vous avez suivis.",
+      "startedOn": "Débuté le",
+      "viewRecord": "Voir le dossier",
+      "empty": "Aucun parcours terminé pour le moment."
+    },
+    "settings": {
+      "title": "Paramètres",
+      "subtitle": "Préférences d'affichage et de rappels, propres à cet appareil.",
+      "deviceOnlyNote": "Ces préférences sont enregistrées uniquement sur cet appareil (aucune synchronisation entre postes).",
+      "reminders": {
+        "heading": "Rappels",
+        "windowLabel": "Fenêtre de rappel",
+        "windowHelp": "Nombre de jours avant échéance pour afficher une évaluation en alerte.",
+        "blockedSteps": "Étapes bloquées",
+        "overdueSteps": "Étapes en retard",
+        "evaluationsDue": "Évaluations à échéance"
+      },
+      "display": {
+        "heading": "Affichage du tableau de bord",
+        "comfortable": "Confortable",
+        "compact": "Compact"
+      },
+      "saved": "Enregistré."
+    },
+    "recruitNotFound": "Cette recrue n'a pas été trouvée.",
+    "assignTask": {
+      "title": "Assigner une tâche",
+      "createFailed": "Impossible de créer la tâche.",
+      "subtitle": "Nouvelle tâche pour {{name}}.",
+      "owner": "Responsable",
+      "departments": {
+        "HR": "Ressources humaines",
+        "IT": "Informatique",
+        "HSE": "HSE",
+        "QUALITY": "Qualité",
+        "MANAGER": "Encadrement",
+        "EMPLOYEE": "Collaborateur"
+      },
+      "submit": "Créer la tâche"
+    },
+    "evalStatus": {
+      "due": "À échéance",
+      "draft": "Brouillon",
+      "submitted": "Transmise"
+    },
+    "recruitDetail": {
+      "loading": "Chargement de la recrue…",
+      "backToRecruits": "Retour aux recrues",
+      "prepareInterview": "Préparer l'entretien",
+      "open": "Ouvrir",
+      "noEvaluations": "Aucune évaluation.",
+      "managerTasks": "Tâches manager",
+      "noManagerTasks": "Aucune tâche.",
+      "training": "Formation",
+      "scorePassed": "{{score}}% (réussi)",
+      "score": "{{score}}%",
+      "noTrainingAttempts": "Aucune tentative."
+    },
+    "backTo": "Retour à {{name}}",
+    "organigram": {
+      "loadError": "Impossible de charger l'organigramme.",
+      "loading": "Chargement de l'organigramme…",
+      "title": "Organigramme",
+      "subtitle": "Votre équipe et sa chaîne hiérarchique, avec la progression d'intégration de chaque recrue.",
+      "empty": "Aucun poste n'est rattaché à votre compte pour le moment.",
+      "onboardingBadge": "{{percent}}% intégré"
+    },
+    "jobDescriptions": {
+      "loadError": "Impossible de charger les fiches de poste.",
+      "loading": "Chargement des fiches de poste…",
+      "title": "Fiches de poste",
+      "subtitle": "Les fiches de poste des postes de votre équipe.",
+      "empty": "Aucune fiche de poste n'est encore rédigée pour les postes de votre équipe."
+    },
+    "quests": {
+      "loadError": "Impossible de charger les quêtes.",
+      "loading": "Chargement des quêtes…",
+      "title": "Quêtes",
+      "subtitle": "Des tâches ponctuelles que vous confiez à un membre de votre équipe.",
+      "newQuest": "Nouvelle quête",
+      "empty": "Aucune quête assignée pour le moment.",
+      "noReports": "Aucun collaborateur ne vous est directement rattaché.",
+      "assignTo": "Assigner à",
+      "createFailed": "Impossible de créer la quête.",
+      "submit": "Assigner la quête",
+      "status": {
+        "todo": "À faire",
+        "done": "Terminée"
+      }
+    }
+  },
+  "managerRecruits": {
+    "loading": "Chargement des nouvelles recrues…",
+    "loadError": "Impossible de charger les nouvelles recrues.",
+    "title": "Nouvelles recrues",
+    "subtitle": "Suivez les intégrations de votre périmètre et intervenez sur les étapes en retard ou bloquées.",
+    "stepsRatio": "{{done}}/{{total}} étapes",
+    "evaluationsDueCount_one": "{{count}} évaluation à venir",
+    "evaluationsDueCount_other": "{{count}} évaluations à venir",
+    "viewRecord": "Voir le dossier",
+    "empty": "Aucune nouvelle recrue dans votre périmètre."
+  },
+  "managerEvaluations": {
+    "loading": "Chargement des évaluations…",
+    "loadError": "Impossible de charger les évaluations.",
+    "title": "Évaluations à effectuer",
+    "subtitle": "Les évaluations dues pour les nouvelles recrues de votre périmètre.",
+    "milestoneColumn": "Jalon",
+    "evaluateAction": "Évaluer",
+    "empty": "Aucune évaluation à effectuer."
+  },
+  "managerOrganigram": {
+    "loading": "Chargement de l’organigramme…",
+    "loadError": "Impossible de charger l’organigramme.",
+    "title": "Organigramme",
+    "subtitle": "La structure de votre périmètre, avec l’avancement des intégrations en cours.",
+    "empty": "Aucun poste dans votre périmètre.",
+    "onboardingBadge": "Intégration : {{percent}}%"
+  },
+  "managerTeamPage": {
+    "loading": "Chargement de l’équipe…",
+    "loadError": "Impossible de charger votre équipe.",
+    "title": "Mon équipe",
+    "subtitle": "Membres, fiches de poste et postes vacants de votre périmètre.",
+    "members_one": "Membre ({{count}})",
+    "members_other": "Membres ({{count}})",
+    "vacancies_one": "Poste vacant ({{count}})",
+    "vacancies_other": "Postes vacants ({{count}})",
+    "table": {
+      "name": "Nom",
+      "position": "Poste",
+      "occupation": "Occupation"
+    },
+    "jobDescriptions": "Fiches de poste",
+    "noMembers": "Aucun membre.",
+    "noVacancies": "Aucun poste vacant."
+  },
+  "managerReports": {
+    "loading": "Chargement des indicateurs…",
+    "loadError": "Impossible de charger les indicateurs.",
+    "title": "Rapports",
+    "subtitle": "Indicateurs limités à votre périmètre.",
+    "empty": "Aucun indicateur disponible pour votre périmètre.",
+    "onboardingTitle": "Parcours en cours",
+    "hrTitle": "Indicateurs RH",
+    "dayShort": "j",
+    "metrics": {
+      "activeJourneys": "Parcours actifs",
+      "averageProgress": "Progression moyenne",
+      "overdueTasks": "Tâches en retard",
+      "blockedTasks": "Tâches bloquées",
+      "completion": "Taux de complétion",
+      "duration": "Durée moyenne d’intégration",
+      "confirmation": "Taux de confirmation",
+      "satisfaction": "Satisfaction"
+    }
+  },
+  "managerAssistant": {
+    "loading": "Chargement de l’assistant…",
+    "loadError": "Impossible de charger l’assistant.",
+    "title": "Assistant",
+    "subtitle": "Posez une question sur vos recrutements, vos parcours, les documents ou les compétences de votre périmètre.",
+    "noAgentsTitle": "Aucun agent disponible",
+    "noAgentsDetail": "Aucun agent ne peut être utilisé avec les droits de votre compte.",
+    "ownJourneyNotice": "L’agent de parcours répond uniquement sur votre propre parcours.",
+    "remindersTitle": "Évaluations à venir",
+    "noReminders": "Aucune évaluation à venir.",
+    "blockersTitle": "Blocages à traiter",
+    "noBlockers": "Aucun blocage à traiter.",
+    "prepareTitle": "Préparer un entretien",
+    "noDraftingTitle": "Préparation automatique indisponible",
+    "noDraftingDetail": "La plateforme ne génère pas encore de préparation automatique. Ouvrez le dossier d’une recrue pour préparer son entretien.",
+    "suggestions": {
+      "orientation": {
+        "1": "Qui contacter pour ce sujet ?",
+        "2": "Qui est responsable de cette activité ?",
+        "3": "Quel service peut m’aider ?"
+      },
+      "onboarding": {
+        "1": "Quelles sont mes prochaines étapes ?",
+        "2": "Qu’est-ce qui bloque mon parcours ?"
+      },
+      "documents": {
+        "1": "Quels documents puis-je consulter ?",
+        "2": "Où trouver cette procédure ?"
+      },
+      "competencies": {
+        "1": "Quelles compétences sont requises ?",
+        "2": "Quelles compétences dois-je développer ?"
+      }
+    },
+    "placeholders": {
+      "orientation": "Posez une question sur l’organisation…",
+      "onboarding": "Posez une question sur votre parcours…",
+      "documents": "Posez une question sur les documents…",
+      "competencies": "Posez une question sur les compétences…",
+      "fallback": "Posez une question…"
+    }
+  },
+  "admin": {
+    "console": {
+      "eyebrow": "Administration",
+      "title": "Console",
+      "subtitle": "État réel du système : sessions ouvertes, refus d’accès, connecteurs raccordés et volumes stockés.",
+      "auditLink": "Journal d’audit",
+      "provisioningLink": "File de provisionnement",
+      "loading": "Chargement de la console…",
+      "loadError": "Impossible de charger la console d’administration.",
+      "unknownClient": "Client inconnu",
+      "tiles": {
+        "activeSessions": "Sessions actives",
+        "distinctUsersOnline": "Personnes connectées",
+        "failedLogins24h": "Connexions refusées (24 h)",
+        "accessDenied24h": "Accès refusés (24 h)"
+      },
+      "health": {
+        "title": "Santé applicative",
+        "noTraffic": "Aucune tentative d’accès depuis 24 heures : rien à signaler, faute de trafic à mesurer.",
+        "summary_one": "{{sessions}} session ouverte contre {{errors}} refus sur les 24 dernières heures.",
+        "summary_other": "{{sessions}} sessions ouvertes contre {{errors}} refus sur les 24 dernières heures."
+      },
+      "accounts": {
+        "title": "Comptes",
+        "active": "Actifs",
+        "pending": "Créés, non affectés",
+        "suspended": "Suspendus ou désactivés",
+        "openRequests": "Demandes RH ouvertes",
+        "manageLink": "Gérer les comptes →"
+      },
+      "storage": {
+        "title": "Stockage",
+        "documents": "Documents référencés",
+        "files": "Pièces administratives",
+        "auditRows": "Entrées d’audit",
+        "note": "Ces nombres comptent des lignes, pas des octets : aucun connecteur de stockage n’est raccordé, les fichiers sont donc suivis sans être hébergés ici."
+      },
+      "connectors": {
+        "title": "Connecteurs",
+        "configureLink": "Configurer →",
+        "declaredInProduction": "Déclaré en production",
+        "unconfigured_one": "{{count}} connecteur non configuré",
+        "unconfigured_other": "{{count}} connecteurs non configurés",
+        "unconfiguredDetail": "Un connecteur non configuré n’est pas une panne : rien ne l’a jamais été raccordé. Chaque écran concerné indique ce que cela empêche concrètement.",
+        "mismatched_one": "{{count}} connecteur est déclaré en production dans la configuration mais n’a aucune adresse dans l’environnement du serveur. Le mode déclaré ne suffit pas à raccorder un système.",
+        "mismatched_other": "{{count}} connecteurs sont déclarés en production dans la configuration mais n’ont aucune adresse dans l’environnement du serveur. Le mode déclaré ne suffit pas à raccorder un système.",
+        "mode": {
+          "production": "Production",
+          "mock": "Simulé",
+          "unconfigured": "Non configuré"
+        }
+      },
+      "sessions": {
+        "title": "Sessions ouvertes",
+        "empty": "Aucune session ouverte",
+        "emptyDetail": "Personne n’est connecté à la plateforme en ce moment, votre propre session mise à part si elle vient d’expirer côté serveur.",
+        "account": "Compte",
+        "client": "Client",
+        "seenAt": "Vue le",
+        "unknownIp": "IP inconnue",
+        "lastActivity": "Dernière activité enregistrée dans le journal :",
+        "lastActivityNone": "aucune"
+      }
+    },
+    "ai": {
+      "loading": "Chargement de la configuration IA…",
+      "loadError": "Impossible de charger la configuration IA.",
+      "eyebrow": "Administration",
+      "title": "Configuration IA",
+      "subtitle": "Fournisseur, modèle, quota, agents et modèles de prompts — enregistrés durablement, en attente d’un fournisseur à brancher.",
+      "tiles": {
+        "declared": "Agents déclarés",
+        "enabled": "Agents activés",
+        "operational": "Opérationnels sans LLM",
+        "prompts": "Prompts renseignés"
+      },
+      "banner": {
+        "connected": "Fournisseur raccordé : {{provider}}",
+        "connectedWithModel": "Fournisseur raccordé : {{provider}} · {{model}}",
+        "none": "Aucun fournisseur de modèle de langage n’est raccordé.",
+        "connectedNote": "Ce modèle reformule les réponses de l’assistant. Il ne consulte jamais la base : la recherche est faite en amont, avec les droits de la personne qui pose la question, et les sources citées proviennent toujours de cette recherche — jamais du texte produit par le modèle. Si l’appel échoue, l’assistant retombe sur la réponse issue de la seule recherche.",
+        "noneNote": "Les cinq agents répondent malgré tout, par recherche dans les données de la plateforme avec les droits de la personne qui interroge. Renseigner HF_API_KEY dans l’environnement du serveur ajoute la reformulation ; cela n’active pas la fonctionnalité, qui marche déjà."
+      },
+      "providerSaved": "Configuration du fournisseur enregistrée.",
+      "saveFailed": "L’enregistrement a échoué.",
+      "agentDisabled": "Agent désactivé.",
+      "agentEnabled": "Agent activé.",
+      "promptSaved": "Modèle de prompt enregistré.",
+      "form": {
+        "title": "Fournisseur, modèle et quota",
+        "provider": "Fournisseur",
+        "providerHint": "Nom du prestataire retenu.",
+        "providerPlaceholder": "Aucun fournisseur retenu",
+        "endpoint": "Adresse (endpoint)",
+        "model": "Modèle",
+        "monthlyQuota": "Quota mensuel",
+        "monthlyQuotaHint": "En requêtes. Vide = pas de plafond fixé.",
+        "lastModified": "Dernière modification : {{date}}.",
+        "neverSaved": "Aucune configuration enregistrée pour l’instant.",
+        "saving": "Enregistrement…"
+      },
+      "agents": {
+        "title": "Agents",
+        "description": "Un agent lit avec les droits de celui qui l’interroge : il ne peut jamais faire remonter une ligne que la personne ne pourrait pas ouvrir elle-même. Activer un agent enregistre l’intention ; les agents marqués « opérationnel » répondent déjà, par recherche dans les données de la plateforme, sans aucun modèle de langage.",
+        "empty": "Aucun agent déclaré",
+        "emptyDetail": "Le catalogue des agents est vide.",
+        "operationalReformulated": "Opérationnel · reformulé",
+        "operationalNoLlm": "Opérationnel sans LLM",
+        "noAnswerStep": "Sans étape de réponse",
+        "toggleLabel": "Activer {{name}}",
+        "closePrompt": "Fermer",
+        "editPrompt": "Modifier le prompt",
+        "definePrompt": "Définir un prompt",
+        "promptLabel": "Modèle de prompt",
+        "promptPlaceholder": "Consigne donnée à l’agent. La règle qui vaut déjà, sans fournisseur : toute réponse cite sa source, ou reconnaît n’avoir rien trouvé.",
+        "savePrompt": "Enregistrer le prompt"
+      },
+      "footnote": "Les réglages de ce formulaire sont enregistrés mais ne pilotent pas encore l’assistant : celui-ci lit sa configuration dans l’environnement du serveur (HF_API_KEY, HF_MODEL, HF_BASE_URL), pas dans cette table. Les {{count}} agent(s) marqué(s) « opérationnel » répondent par recherche dans les données de la plateforme, avec les droits de la personne qui pose la question{{tail}}",
+      "footnoteTailConnected": ", puis font reformuler cette réponse par le modèle raccordé.",
+      "footnoteTailNone": ", sans aucun appel à un modèle de langage."
+    },
+    "audit": {
+      "loading": "Chargement du journal…",
+      "loadError": "Impossible de charger le journal d’audit.",
+      "eyebrow": "Administration",
+      "title": "Journal d’audit",
+      "subtitle": "Chaque connexion et chaque action enregistrée, avec son auteur, son horodatage et son adresse IP.",
+      "exportButton": "Exporter en CSV ({{count}})",
+      "exportFilePrefix": "journal-audit",
+      "tiles": {
+        "entries": "Entrées affichées",
+        "actors": "Acteurs distincts",
+        "actionTypes": "Types d’action",
+        "refusals": "Refus"
+      },
+      "filters": {
+        "searchLabel": "Acteur ou entité",
+        "searchPlaceholder": "Nom, e-mail, type d’entité…",
+        "actionLabel": "Action",
+        "allActions": "Toutes",
+        "fromLabel": "Du",
+        "toLabel": "Au",
+        "limitLabel": "Lignes",
+        "submit": "Filtrer",
+        "submitting": "Filtrage…",
+        "reset": "Réinitialiser"
+      },
+      "actions": {
+        "auth.login": "Connexion",
+        "auth.login_failed": "Échec de connexion",
+        "auth.logout": "Déconnexion",
+        "auth.session_revoked": "Session révoquée",
+        "auth.password_changed": "Mot de passe modifié",
+        "user.created": "Compte créé",
+        "user.updated": "Compte modifié",
+        "user.status_changed": "Statut de compte modifié",
+        "user.role_assigned": "Rôle attribué",
+        "user.role_revoked": "Rôle retiré",
+        "user.role_assignment_denied": "Attribution de rôle refusée",
+        "user.assigned": "Affectation à un poste",
+        "user.assignment_ended": "Fin d’affectation",
+        "role.permission_changed": "Permissions modifiées",
+        "entity.created": "Création",
+        "entity.updated": "Modification",
+        "entity.deleted": "Suppression",
+        "entity.validated": "Validation",
+        "access.denied": "Accès refusé",
+        "document.downloaded": "Document téléchargé",
+        "report.exported": "Rapport exporté"
+      },
+      "table": {
+        "date": "Date",
+        "actor": "Acteur",
+        "action": "Action",
+        "entity": "Entité",
+        "ip": "Adresse IP"
+      },
+      "empty": "Aucune entrée",
+      "emptyFiltered": "Aucune entrée ne correspond à ces filtres. Élargissez la période ou changez d’action.",
+      "emptyAll": "Le journal est vide : aucune action n’a encore été enregistrée sur cette instance.",
+      "footnote": "Les filtres sont appliqués par le serveur, sur l’ensemble du journal : filtrer une page déjà chargée ne répondrait pas à « montre-moi tous les refus de mars ». Le serveur plafonne une requête à 500 lignes. L’export CSV reprend exactement les {{count}} ligne(s) affichées ci-dessus — ni plus, ni moins — et le fichier est généré dans votre navigateur, sans transiter par un service tiers."
+    },
+    "backups": {
+      "loading": "Chargement des sauvegardes…",
+      "loadError": "Impossible de charger les sauvegardes.",
+      "eyebrow": "Administration",
+      "title": "Sauvegardes",
+      "subtitle": "Planifications de sauvegarde et historique d'exécution.",
+      "newSchedule": "Nouvelle planification",
+      "cancel": "Annuler",
+      "noExecutor": {
+        "title": "Aucun exécuteur de sauvegarde n'est raccordé.",
+        "body": "Les planifications ci-dessous sont enregistrées et journalisées, mais rien dans cette application ne les déclenche : aucune sauvegarde ne part, et aucune restauration n'est possible depuis cet écran. La sauvegarde effective relève aujourd'hui de l'hébergeur de la base."
+      },
+      "form": {
+        "label": "Libellé",
+        "labelPlaceholder": "Sauvegarde quotidienne",
+        "frequency": "Fréquence",
+        "frequencyPlaceholder": "Tous les jours à 02 h 00",
+        "retentionDays": "Rétention (jours)",
+        "creating": "Enregistrement…",
+        "create": "Créer"
+      },
+      "schedules": {
+        "title": "Planifications ({{count}})",
+        "empty": "Aucune planification enregistrée.",
+        "label": "Libellé",
+        "frequency": "Fréquence",
+        "retention": "Rétention",
+        "retentionDays": "{{count}} j",
+        "state": "État",
+        "active": "Active",
+        "inactive": "Inactive",
+        "deactivate": "Désactiver",
+        "activate": "Activer",
+        "delete": "Supprimer",
+        "confirmDelete": "Supprimer la planification « {{label}} » ?",
+        "createFailed": "La création de la planification a échoué.",
+        "updateFailed": "La mise à jour a échoué.",
+        "deleteFailed": "La suppression a échoué."
+      },
+      "history": {
+        "title": "Historique",
+        "empty": "Historique vide",
+        "emptyDetail": "Aucun processus de sauvegarde ne tourne : cet historique est vide parce que rien ne l'alimente.",
+        "schedule": "Planification",
+        "started": "Démarrée",
+        "finished": "Terminée",
+        "size": "Taille",
+        "result": "Résultat",
+        "success": "Succès",
+        "failure": "Échec"
+      }
+    },
+    "gdpr": {
+      "loading": "Chargement du registre…",
+      "loadError": "Impossible de charger le registre RGPD.",
+      "eyebrow": "Administration",
+      "title": "RGPD",
+      "subtitle": "Registre des demandes, et inventaire des données détenues par la plateforme.",
+      "newRequest": "Enregistrer une demande",
+      "cancel": "Annuler",
+      "notAutomated": {
+        "title": "Le traitement n'est pas automatisé.",
+        "body": "Ce registre trace les demandes et leur suite. Clôturer une demande enregistre qu'une personne a fait le travail ailleurs — aucun effacement ni export n'est déclenché depuis cet écran. Plusieurs catégories ci-dessous ne peuvent d'ailleurs pas être simplement supprimées."
+      },
+      "tiles": {
+        "openRequests": "Demandes ouvertes",
+        "totalRequests": "Total des demandes",
+        "categories": "Catégories de données",
+        "accountsConcerned": "Comptes concernés"
+      },
+      "form": {
+        "type": "Type",
+        "subject": "Personne concernée",
+        "subjectNone": "Non rattachée à un compte",
+        "note": "Note",
+        "notePlaceholder": "Origine de la demande, pièces reçues, suite donnée…",
+        "saving": "Enregistrement…",
+        "save": "Enregistrer",
+        "createFailed": "L'enregistrement de la demande a échoué.",
+        "updateFailed": "La mise à jour de la demande a échoué."
+      },
+      "kinds": {
+        "ERASURE": "Effacement",
+        "EXPORT": "Export",
+        "CONSENT": "Consentement"
+      },
+      "statuses": {
+        "OPEN": "Ouverte",
+        "DONE": "Traitée",
+        "REJECTED": "Rejetée"
+      },
+      "register": {
+        "title": "Registre des demandes ({{count}})",
+        "allStatuses": "Tous les états",
+        "empty": "Aucune demande enregistrée.",
+        "type": "Type",
+        "person": "Personne",
+        "receivedOn": "Reçue le",
+        "note": "Note",
+        "status": "État",
+        "personUnattached": "Non rattachée",
+        "close": "Clôturer",
+        "reject": "Rejeter"
+      },
+      "dataHeld": {
+        "title": "Données détenues",
+        "subtitle": "Ce que la plateforme conserve, et ce qu'un effacement impliquerait réellement pour chaque catégorie.",
+        "erasureLabel": "Effacement :",
+        "unavailable": "Inventaire indisponible."
+      }
+    },
+    "integrations": {
+      "loading": "Chargement des connecteurs…",
+      "loadError": "Impossible de charger les connecteurs.",
+      "eyebrow": "Administration",
+      "title": "Intégrations",
+      "subtitle": "Ce à quoi la plateforme est raccordée, ce qu’elle est censée l’être, et l’écart entre les deux.",
+      "refresh": "Actualiser",
+      "tiles": {
+        "production": "Déclarés en production",
+        "mock": "En mode simulé",
+        "mismatched": "Déclarés sans être raccordés"
+      },
+      "mode": {
+        "production": "Production",
+        "mock": "Simulé",
+        "productionMeaning": "Le connecteur doit s’adresser au système réel.",
+        "mockMeaning": "Le connecteur répond avec des données de démonstration, volontairement."
+      },
+      "env": {
+        "production": "Une adresse est configurée dans l’environnement du serveur.",
+        "mock": "La variable d’environnement vaut « mock ».",
+        "unconfigured": "Aucune adresse n’est configurée dans l’environnement du serveur.",
+        "label": "Environnement :"
+      },
+      "confirmProductionSwitch": "Passer « {{label}} » en production ? Aucune adresse n’est configurée dans l’environnement du serveur : le connecteur sera déclaré en production sans être raccordé.",
+      "declaredProductionUnreachable": "« {{label}} » est déclaré en production, mais l’environnement du serveur ne lui donne aucune adresse.",
+      "switchedTo": "« {{label}} » est désormais en {{mode}}.",
+      "toggleFailed": "Le changement de mode a échoué.",
+      "configSaved": "Configuration enregistrée.",
+      "saveFailed": "L’enregistrement a échoué.",
+      "notConfigured": "Non raccordé",
+      "toggleLabel": "Basculer {{label}}",
+      "toggleCaption": "Simulé ↔ Production",
+      "test": "Tester",
+      "configure": "Configurer",
+      "close": "Fermer",
+      "mismatchedWarning_one": "{{count}} connecteur est déclaré en production sans adresse dans l’environnement du serveur.",
+      "mismatchedWarning_other": "{{count}} connecteurs sont déclarés en production sans adresse dans l’environnement du serveur.",
+      "mismatchedWarningBody": "Le mode enregistré ici est une intention. Le raccordement, lui, se fait par variable d’environnement au déploiement : tant qu’elle est vide, rien ne part.",
+      "testOutcome": {
+        "ok": "Vérification effectuée",
+        "failed": "Échec"
+      },
+      "testReasons": {
+        "not_configured": "Rien à joindre",
+        "unreachable": "Injoignable",
+        "resolved": "Nom résolu"
+      },
+      "testFailedFallback": "Le test n’a pas pu être exécuté.",
+      "testNoneRun": "Aucun test effectué.",
+      "noFieldsYet": "Ce connecteur n’a pas encore de paramètres à saisir : seul son mode est réglable ici.",
+      "lastTested": "Dernier test : {{date}} —",
+      "lastTestOk": "vérification concluante",
+      "lastTestFailed": "sans succès",
+      "empty": "Aucun connecteur déclaré",
+      "emptyDetail": "Le catalogue des connecteurs est vide.",
+      "fields": {
+        "smtp": {
+          "host": "Hôte SMTP",
+          "port": "Port",
+          "from": "Expéditeur"
+        },
+        "entra": {
+          "tenantId": "Identifiant du locataire",
+          "tenantIdPlaceholder": "Aucun locataire disponible",
+          "clientId": "Identifiant de l’application"
+        },
+        "hrApi": {
+          "baseUrl": "URL de base du SIRH"
+        },
+        "directory": {
+          "path": "Chemin du partage"
+        },
+        "storage": {
+          "driver": "Pilote de stockage"
+        },
+        "ai": {
+          "endpoint": "Adresse du fournisseur",
+          "model": "Modèle"
+        }
+      },
+      "whatSwitchDoes": {
+        "title": "Ce que le commutateur fait",
+        "body": "Il enregistre durablement le mode voulu pour chaque connecteur, avec une entrée dans le journal d’audit. C’est l’intention déclarée par l’administration."
+      },
+      "whatSwitchDoesNot": {
+        "title": "Ce qu’il ne fait pas",
+        "body": "Il ne raccorde aucun système : l’adresse réelle vient de l’environnement du serveur, fixé au déploiement. Aucun locataire Entra ID, aucun SIRH et aucun relais SMTP ne répond à ce déploiement — le bouton « Tester » le dit explicitement plutôt que d’afficher un vert de complaisance."
+      }
+    },
+    "organization": {
+      "loading": "Chargement des structures…",
+      "loadError": "Impossible de charger les structures.",
+      "eyebrow": "Administration",
+      "title": "Structures",
+      "subtitle": "Le squelette de l’organisation : directions, départements, sites et lignes hiérarchiques que les RH viendront remplir.",
+      "newPosition": "Nouveau poste",
+      "newUnit": "Nouvelle unité",
+      "tiles": {
+        "units": "Unités",
+        "positions": "Postes",
+        "roots": "Racines de l’arbre",
+        "orphanPositions": "Postes sans unité"
+      },
+      "unitTypes": {
+        "DIVISION": "Direction",
+        "DEPARTMENT": "Département",
+        "SERVICE": "Service",
+        "SITE": "Site"
+      },
+      "opFailed": "L’opération a échoué.",
+      "unitCreated": "Unité créée.",
+      "unitCreateFailed": "La création de l’unité a échoué.",
+      "positionCreated": "Poste créé.",
+      "positionCreateFailed": "La création du poste a échoué.",
+      "unitArchived": "Unité archivée.",
+      "confirmArchiveUnit": "Archiver l’unité « {{name}} » ? L’opération est refusée si elle contient encore des unités ou des postes.",
+      "confirmMerge": "Fusionner « {{source}} » dans « {{target}}» ? Toutes les unités rattachées, tous les postes et toutes les portées de droits seront déplacés, puis l’unité source sera archivée.",
+      "mergeDone": "Fusion effectuée : {{units}} unité(s), {{positions}} poste(s) et {{scopes}} portée(s) déplacée(s).",
+      "mergeSuccess": "Fusion effectuée.",
+      "positionAttached": "Poste rattaché.",
+      "positionDetached": "Poste détaché : il devient une racine de l’organigramme.",
+      "confirmArchivePosition": "Archiver le poste « {{title}} » ?",
+      "positionArchived": "Poste archivé.",
+      "unitForm": {
+        "title": "Nouvelle unité",
+        "code": "Code",
+        "name": "Nom",
+        "type": "Type",
+        "parent": "Rattachée à",
+        "parentRoot": "Racine de l’organisation",
+        "description": "Description",
+        "descriptionHint": "Facultative.",
+        "creating": "Création…",
+        "create": "Créer l’unité"
+      },
+      "positionForm": {
+        "title": "Nouveau poste",
+        "code": "Code",
+        "titleLabel": "Intitulé",
+        "unit": "Unité",
+        "unitNone": "Sans unité",
+        "parentPosition": "Rattaché au poste",
+        "parentPositionRoot": "Racine de l’organigramme",
+        "creating": "Création…",
+        "create": "Créer le poste"
+      },
+      "unitTree": {
+        "title": "Arbre des unités",
+        "empty": "Aucune unité",
+        "emptyDetail": "Créez une première unité pour amorcer la structure."
+      },
+      "unitDetail": {
+        "title": "Détail de l’unité",
+        "empty": "Aucune unité sélectionnée",
+        "emptyDetail": "Choisissez une unité dans l’arbre pour la modifier, l’archiver ou la fusionner dans une autre.",
+        "code": "Code",
+        "type": "Type",
+        "parent": "Rattachée à",
+        "parentRoot": "Racine",
+        "parentOutOfScope": "Unité hors périmètre",
+        "attachedPositions": "Postes rattachés ({{count}})",
+        "noPositions": "Aucun poste dans cette unité.",
+        "mergeTitle": "Fusionner dans une autre unité",
+        "mergeDetail": "Toutes les unités rattachées, tous les postes et toutes les portées de droits sont déplacés vers l’unité cible en une seule opération, puis « {{name}} » est archivée. Une fusion vers une unité qui lui est rattachée est refusée : la branche se détacherait de l’organigramme.",
+        "mergeTargetPlaceholder": "Unité cible…",
+        "merge": "Fusionner",
+        "archiveUnit": "Archiver cette unité"
+      },
+      "positionChart": {
+        "title": "Organigramme des postes",
+        "count_one": "{{count}} poste",
+        "count_other": "{{count}} postes",
+        "hint": "Cliquez sur un poste pour le rattacher ailleurs. Un poste sans supérieur apparaît comme racine.",
+        "empty": "Aucun poste dans l’organigramme. Créez-en un pour amorcer la ligne hiérarchique.",
+        "noUnit": "Sans unité"
+      },
+      "positionDetail": {
+        "title": "Rattachement d’un poste",
+        "empty": "Aucun poste sélectionné",
+        "emptyDetail": "Choisissez une carte dans l’organigramme pour changer son rattachement hiérarchique.",
+        "code": "Code",
+        "unit": "Unité",
+        "unitNone": "Sans unité",
+        "holder": "Titulaire",
+        "vacant": "Poste vacant",
+        "reparentLabel": "Rattaché au poste",
+        "reparentHint": "Un rattachement à l’un de ses propres subordonnés est refusé par le serveur.",
+        "reparentNone": "Aucun — racine de l’organigramme",
+        "archive": "Archiver",
+        "moving": "Déplacement…",
+        "move": "Déplacer"
+      },
+      "footnote": "Cet écran définit le squelette : les unités, les postes et les lignes hiérarchiques. Il ne place personne — l’affectation d’un collaborateur à un poste relève des RH, et la dupliquer ici donnerait deux implémentations à la même action. L’archivage d’une unité est refusé tant qu’elle contient des unités ou des postes actifs : le message d’erreur indique ce qui reste à déplacer."
+    },
+    "roles": {
+      "loading": "Chargement des rôles…",
+      "loadError": "Impossible de charger les rôles.",
+      "eyebrow": "Administration",
+      "title": "Rôles et permissions",
+      "subtitle": "La matrice rôle × module × action : ce que chaque profil a le droit de lire, écrire, valider et supprimer.",
+      "newCustomRole": "Nouveau rôle personnalisé",
+      "cancel": "Annuler",
+      "tiles": {
+        "builtin": "Rôles intégrés",
+        "custom": "Rôles personnalisés",
+        "catalogue": "Permissions du catalogue",
+        "grantedCustom": "Permissions accordées (personnalisés)"
+      },
+      "tabs": {
+        "builtin": "Rôles intégrés ({{count}})",
+        "custom": "Rôles personnalisés ({{count}})"
+      },
+      "builtinNote": "Ces quatre profils sont définis dans le code de la plateforme, pas en base : chaque requête vérifie les droits de l’appelant, et interroger une table à ce moment-là placerait un aller-retour vers la base au cœur de chaque contrôle d’accès. Ils sont donc consultables ici mais modifiables uniquement par déploiement. Pour un besoin différent, créez un rôle personnalisé.",
+      "builtinLabels": {
+        "ADMIN": "Administrateur",
+        "HR": "DRH / RH",
+        "MANAGER": "Manager",
+        "EMPLOYEE": "Collaborateur"
+      },
+      "roleUsage": "{{users}} compte(s) · {{permissions}} permission(s)",
+      "customUsage": "{{code}} · {{count}} permission(s)",
+      "form": {
+        "editTitle": "Modifier « {{name}} »",
+        "createTitle": "Nouveau rôle personnalisé",
+        "code": "Code",
+        "codePlaceholder": "AUDITEUR_QUALITE",
+        "codeHintExisting": "Le code d’un rôle existant ne change pas.",
+        "codeHintNew": "Majuscules, sans espace.",
+        "name": "Intitulé",
+        "description": "Description",
+        "permissions": "Permissions ({{count}} sélectionnée(s))",
+        "saving": "Enregistrement…",
+        "save": "Enregistrer le rôle",
+        "saveFailed": "L’enregistrement du rôle a échoué.",
+        "deleteFailed": "La suppression a échoué."
+      },
+      "confirmDelete": "Supprimer le rôle « {{name}} » ?",
+      "customEmpty": "Aucun rôle personnalisé",
+      "customEmptyDetail": "Les quatre profils intégrés couvrent l’usage courant. Créez un rôle personnalisé pour un besoin qu’aucun d’eux ne décrit — un auditeur externe, par exemple, qui lirait sans jamais écrire.",
+      "builtinRoleTag": "Rôle intégré — non modifiable",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "customFootnote": "Un rôle personnalisé est enregistré durablement, avec ses permissions validées contre le catalogue de la plateforme. Il n’est pas encore attribuable à un compte : l’attribution passe par les quatre codes intégrés, seuls reconnus par la couche d’autorisation. Définir le rôle est la partie durable ; le brancher sur l’attribution est une évolution de cette couche, pas de cet écran.",
+      "actionColumns": {
+        "read": "Lire",
+        "update": "Écrire",
+        "validate": "Valider",
+        "delete": "Supprimer"
+      },
+      "resources": {
+        "organization_unit": "Structures",
+        "position": "Postes",
+        "assignment": "Affectations",
+        "job": "Emplois",
+        "job_description": "Fiches de poste",
+        "competency": "Compétences",
+        "assessment": "Évaluations",
+        "onboarding_template": "Modèles d’intégration",
+        "onboarding_instance": "Parcours d’intégration",
+        "onboarding_task": "Étapes d’intégration",
+        "remark": "Remarques",
+        "kaizen_action": "Actions Kaizen",
+        "document": "Documents",
+        "report": "Rapports",
+        "dashboard": "Tableaux de bord",
+        "notification": "Notifications",
+        "survey": "Enquêtes",
+        "training": "Formation",
+        "user": "Comptes",
+        "role": "Rôles",
+        "audit_log": "Journal d’audit",
+        "setting": "Paramètres"
+      },
+      "matrix": {
+        "module": "Module",
+        "notApplicable": "Cette action n’existe pas pour ce module",
+        "granted": "Accordé",
+        "notGranted": "Non accordé"
+      }
+    },
+    "security": {
+      "loading": "Chargement de la configuration…",
+      "loadError": "Impossible de charger la configuration de sécurité.",
+      "eyebrow": "Administration",
+      "title": "Sécurité",
+      "subtitle": "Ce que le service applique réellement, et la politique enregistrée à côté.",
+      "tiles": {
+        "activeSessions": "Sessions ouvertes",
+        "revokedSessions": "Sessions révoquées",
+        "failedLogins24h": "Échecs de connexion (24 h)",
+        "sessionDuration": "Durée de session"
+      },
+      "inEffect": {
+        "title": "En vigueur",
+        "subtitle": "Valeurs lues dans la configuration validée au démarrage. Elles se modifient au déploiement, pas depuis cet écran.",
+        "passwords": "Mots de passe",
+        "passwordsDetail": "Longueur minimale : {{length}} caractères. Hachés avec Argon2id, jamais stockés ni journalisés sous une autre forme.",
+        "argon2Detail": "Argon2id · mémoire {{memory}} Kio · {{iterations}} itération(s) · parallélisme {{parallelism}}",
+        "sessions": "Sessions",
+        "sessionsDetail": "Durée de {{hours}} heures, prolongée au plus une fois par fenêtre de {{minutes}} minutes. Révocation immédiate à la requête suivante.",
+        "encryption": "Chiffrement",
+        "encryptionDetail": "Échanges chiffrés en transit (TLS). Le chiffrement au repos dépend de l'hébergeur et n'est pas vérifiable depuis l'application.",
+        "replayProtection": "Protection contre le rejeu",
+        "replayProtectionDetail": "Chaque mutation exige un jeton CSRF, et les tentatives de connexion sont limitées en fréquence. Les refus d'accès sont journalisés."
+      },
+      "recordedPolicy": {
+        "title": "Politique enregistrée",
+        "subtitle": "Cette politique est enregistrée et journalisée, mais <strong>aucun composant ne la lit encore</strong> : elle exprime une intention, pas une contrainte appliquée. Les valeurs réellement en vigueur restent celles du bloc ci-dessus.",
+        "neverSavedNote": " Aucune politique n’a encore été enregistrée — les valeurs affichées sont les valeurs par défaut.",
+        "minLength": "Longueur minimale du mot de passe",
+        "minLengthHint": "Entre 8 et 128 caractères.",
+        "mfaRequired": "Authentification multifacteur exigée",
+        "mfaRequiredHint": "Non implémentée : prévue via Entra ID plutôt que réimplémentée ici.",
+        "sessionDuration": "Durée de session souhaitée",
+        "sessionDurationHint": "En heures. La durée appliquée reste celle du déploiement.",
+        "ipAllowlist": "Restrictions par adresse IP",
+        "ipAllowlistHint": "Une entrée par ligne. Enregistrée seulement : le filtrage se pose au niveau du réseau ou du reverse proxy, pas dans l'application.",
+        "ipAllowlistPlaceholder": "10.0.0.0/8",
+        "lastModified": "Dernière modification : {{date}}",
+        "neverModified": "Jamais modifiée.",
+        "saved": "Enregistré.",
+        "saveFailed": "L'enregistrement de la politique a échoué."
+      }
+    },
+    "settings": {
+      "loading": "Chargement des paramètres…",
+      "loadError": "Impossible de charger les paramètres.",
+      "eyebrow": "Administration",
+      "title": "Paramètres",
+      "subtitle": "Réglages modifiables sans déploiement. Chaque changement est journalisé.",
+      "updateFailed": "La mise à jour de « {{key}} » a échoué.",
+      "orgTree": {
+        "title": "Visibilité de l'organigramme",
+        "subtitle": "Combien de niveaux un collaborateur voit autour de son propre poste. Les rôles d'encadrement et les RH ne sont pas limités par ces valeurs.",
+        "depthUp": "Niveaux visibles vers le haut",
+        "depthUpHint": "Du poste vers la direction.",
+        "depthDown": "Niveaux visibles vers le bas",
+        "depthDownHint": "Du poste vers les équipes.",
+        "showPeers": "Afficher les collègues",
+        "showPeersHint": "Les postes de même niveau hiérarchique."
+      },
+      "sections": {
+        "brand": "Marque",
+        "locale": "Langues",
+        "email": "Modèles d’e-mail",
+        "emailNote": "Enregistrés seulement : aucun relais SMTP n’est raccordé, donc rien n’est envoyé depuis la plateforme.",
+        "milestones": "Jalons",
+        "flags": "Fonctionnalités"
+      },
+      "defaultValue": "valeur par défaut",
+      "saved": "Enregistré.",
+      "footnote": "Les autres réglages — durées de session, paramètres de hachage, URL de base de données — sont fixés au déploiement et ne sont pas modifiables ici."
+    },
+    "provisioning": {
+      "loading": "Chargement de la file…",
+      "loadError": "Impossible de charger la file de provisionnement.",
+      "eyebrow": "Administration",
+      "title": "File de provisionnement",
+      "subtitle": "Les deux côtés du relais : ce que les RH ont demandé et que le SI n’a pas encore créé, et ce que le SI a créé et que personne n’a encore affecté.",
+      "refresh": "Actualiser",
+      "createAccount": "Créer un compte",
+      "tiles": {
+        "openRequests": "Demandes RH ouvertes",
+        "unplacedAccounts": "Comptes non affectés",
+        "aging": "En attente > {{days}} j",
+        "oldest": "Attente la plus longue"
+      },
+      "requestsSide": {
+        "title": "Demandes en attente de création",
+        "description": "Ouvertes par les RH pour un recrutement à venir. Chacune attend qu’un compte soit créé sur la page Comptes.",
+        "empty": "Aucune demande en attente",
+        "emptyDetail": "Les RH n’ont aucune demande de compte ouverte : rien n’est bloqué de ce côté du relais.",
+        "positionUnspecified": "Poste non précisé",
+        "requestedBy": "Demandé par",
+        "plannedHire": "Embauche prévue",
+        "plannedHireUnspecified": "Non précisée",
+        "openedOn": "Ouverte le",
+        "waiting": "En attente :",
+        "waitingDays_one": "{{count}} jour",
+        "waitingDays_other": "{{count}} jours"
+      },
+      "unplacedSide": {
+        "title": "Comptes créés, non affectés",
+        "description": "Le compte existe et la personne peut se connecter, mais aucun poste ne lui est rattaché : ni organigramme, ni parcours d’intégration, ni responsable.",
+        "empty": "Aucun compte en suspens",
+        "emptyDetail": "Tous les comptes créés sont rattachés à un poste.",
+        "createdOn": "Créé le {{date}}"
+      },
+      "urgency": {
+        "HIGH": "Urgent",
+        "NORMAL": "Normal",
+        "LOW": "Peut attendre"
+      },
+      "footnote": "Cette page observe le relais, elle ne l’exécute pas : la création d’un compte se fait sur <0>Comptes</0>, et l’affectation à un poste relève des RH. Aucune relance automatique n’est envoyée — aucun planificateur ne tourne dans l’application, et aucun relais SMTP n’est raccordé. Les délais ci-dessus sont donc à lire, pas à attendre."
+    },
+    "users": {
+      "loading": "Chargement des comptes…",
+      "loadError": "Impossible de charger les comptes.",
+      "eyebrow": "Administration",
+      "title": "Comptes",
+      "subtitle": "Créer, attribuer, suspendre et réinitialiser les accès des comptes de la plateforme.",
+      "provisioningLink": "File de provisionnement",
+      "bulkImport": "Import en masse",
+      "newAccount": "Nouveau compte",
+      "tiles": {
+        "total": "Comptes",
+        "active": "Actifs",
+        "suspended": "Suspendus",
+        "withoutRole": "Sans rôle"
+      },
+      "roles": {
+        "ADMIN": "Administrateur",
+        "HR": "DRH / RH",
+        "MANAGER": "Manager",
+        "EMPLOYEE": "Collaborateur"
+      },
+      "statuses": {
+        "ACTIVE": "Actif",
+        "SUSPENDED": "Suspendu",
+        "DISABLED": "Désactivé"
+      },
+      "roleAssignFailedFallback": "Le compte a été créé, mais le rôle n’a pas pu être attribué. Utilisez « Attribuer un rôle » ci-dessous.",
+      "accountCreated": "Compte créé.",
+      "createFailed": "La création du compte a échoué.",
+      "importFailed": "L’import a échoué : aucun compte n’a été créé.",
+      "roleGranted": "Rôle attribué.",
+      "selfAssignmentRefused": "Vous ne pouvez pas vous attribuer un rôle à vous-même.",
+      "grantFailed": "L’attribution du rôle a échoué.",
+      "confirmSuspend": "Suspendre le compte de {{name}} ? Ses sessions ouvertes seront fermées immédiatement.",
+      "accountReactivated": "Compte réactivé.",
+      "accountSuspended": "Compte suspendu et sessions fermées.",
+      "statusChangeFailed": "Le changement de statut a échoué.",
+      "confirmResetAccess": "Réinitialiser les accès de {{name}} ? Toutes ses sessions seront révoquées ; son mot de passe reste inchangé.",
+      "resetAccessResult_one": "{{count}} session révoquée. {{name}} devra se reconnecter.",
+      "resetAccessResult_other": "{{count}} sessions révoquées. {{name}} devra se reconnecter.",
+      "resetAccessFailed": "La réinitialisation a échoué.",
+      "createForm": {
+        "title": "Créer un compte",
+        "email": "E-mail professionnel",
+        "displayName": "Nom affiché",
+        "phone": "Téléphone",
+        "phoneHint": "Facultatif.",
+        "password": "Mot de passe provisoire",
+        "passwordHint": "Transmis de la main à la main : sans relais SMTP, la plateforme ne peut pas l’envoyer.",
+        "role": "Rôle plateforme",
+        "roleHint": "Attribué en portée globale ; affinez la portée ci-dessous si besoin.",
+        "roleNone": "Aucun rôle pour l’instant",
+        "cancel": "Annuler",
+        "creating": "Création…",
+        "create": "Créer le compte"
+      },
+      "importForm": {
+        "title": "Import en masse",
+        "description": "Une ligne par compte, séparée par des points-virgules : e-mail ; nom affiché ; téléphone ; rôle. Le téléphone et le rôle sont facultatifs. L’import est atomique : si une seule ligne est refusée, aucun compte n’est créé.",
+        "placeholder": "amina.belkacem@soficlef.dz ; Amina Belkacem ; 0550 00 00 00 ; MANAGER\nkarim.saidi@soficlef.dz ; Karim Saïdi ; ; EMPLOYEE",
+        "sharedPassword": "Mot de passe provisoire commun",
+        "sharedPasswordHint": "Le même pour tout le lot ; chaque personne devra le changer. Aucune notification n’est envoyée.",
+        "recognisedLines_one": "{{count}} ligne reconnue",
+        "recognisedLines_other": "{{count}} lignes reconnues",
+        "toFix_one": " · {{count}} à corriger",
+        "toFix_other": " · {{count}} à corriger",
+        "createdAccounts_one": "{{count}} compte créé.",
+        "createdAccounts_other": "{{count}} comptes créés.",
+        "roleNotGranted": " (rôle {{role}} non attribué : référentiel des rôles indisponible)",
+        "close": "Fermer",
+        "importing": "Import…",
+        "importButton_one": "Importer {{count}} compte",
+        "importButton_other": "Importer {{count}} comptes",
+        "lineErrors": {
+          "invalidEmail": "Ligne {{line}} : e-mail manquant ou invalide.",
+          "missingName": "Ligne {{line}} : nom affiché manquant.",
+          "unknownRole": "Ligne {{line}} : rôle « {{role}} » inconnu."
+        }
+      },
+      "grantForm": {
+        "title": "Attribuer un rôle",
+        "account": "Compte",
+        "accountPlaceholder": "Choisir…",
+        "role": "Rôle",
+        "scope": "Portée",
+        "scopeGlobal": "Portée globale",
+        "cancel": "Annuler",
+        "granting": "Attribution…",
+        "grant": "Attribuer"
+      },
+      "filters": {
+        "searchPlaceholder": "Rechercher un nom ou un e-mail…",
+        "allStatuses": "Tous les statuts",
+        "grantRole": "Attribuer un rôle",
+        "count_one": "{{count}} compte",
+        "count_other": "{{count}} comptes"
+      },
+      "empty": "Aucun compte ne correspond",
+      "emptyDetail": "Ajustez la recherche ou le filtre de statut.",
+      "table": {
+        "account": "Compte",
+        "roles": "Rôles",
+        "status": "Statut",
+        "lastLogin": "Dernière connexion",
+        "actions": "Actions",
+        "noRole": "Aucun rôle",
+        "never": "Jamais",
+        "resetAccess": "Réinitialiser l’accès",
+        "suspend": "Suspendre",
+        "reactivate": "Réactiver"
+      },
+      "entraSync": {
+        "title": "Synchronisation Entra ID",
+        "unavailable": "Indisponible",
+        "detail": "Aucun annuaire Entra ID n’est raccordé à ce déploiement : il n’y a pas de locataire depuis lequel importer des comptes. Un bouton « Synchroniser » ne pourrait ici que ne rien faire, ou inventer des personnes."
+      },
+      "entraLink": {
+        "title": "Rattacher une identité Entra",
+        "unavailable": "Indisponible",
+        "detail": "Même raison. Les mots de passe sont gérés par la plateforme et vérifiés par Argon2 ; l’authentification unique arrivera avec le connecteur, visible sur la page Intégrations."
+      },
+      "footnote": "« Réinitialiser l’accès » révoque toutes les sessions ouvertes du compte et l’oblige à se reconnecter. Aucun nouveau mot de passe n’est généré : sans relais SMTP, la plateforme n’aurait aucun moyen de le transmettre, et l’afficher ici reviendrait à écrire un identifiant vivant dans un navigateur."
+    }
+  },
+  "assistant": {
+    "agents": {
+      "available": "Disponible",
+      "unavailable": "Hors de vos droits"
+    },
+    "empty": {
+      "detail": "Votre compte ne dispose des droits de lecture d’aucune des ressources que ces agents interrogent.",
+      "title": "Aucun agent disponible"
+    },
+    "generic": {
+      "agentsTitle": "Les cinq agents",
+      "intro": "Cinq agents, chacun limité aux ressources qu’il déclare lire. Chaque réponse est construite à partir des données que vous pouvez déjà consulter, et cite ses sources.",
+      "rule": "Règle intangible, quel que soit l’agent : une réponse cite toujours sa source, ou reconnaît qu’elle n’a rien trouvé. Un agent lit avec les droits de la personne qui l’interroge — il ne peut jamais faire remonter une donnée que cette personne ne pourrait pas ouvrir elle-même. Les sources affichées proviennent toujours de la recherche, jamais du texte rédigé par le modèle.",
+      "title": "Assistant"
+    },
+    "loading": "Chargement de l’assistant…",
+    "loadFailed": "Impossible de charger l’assistant."
+  },
+  "me": {
+    "assistant": {
+      "agentsTitle": "Les agents de la plateforme",
+      "noJourney": "Aucun parcours d’intégration rattaché à votre compte.",
+      "placeholders": {
+        "competencies": "Ex. : quelles compétences sont attendues à mon poste ?",
+        "default": "Posez votre question…",
+        "documents": "Ex. : où est la procédure de congés ?",
+        "onboarding": "Ex. : quelles étapes me restent à faire ?",
+        "orientation": "Ex. : qui s’occupe des contrats de travail ?",
+        "training": "Ex. : quels modules dois-je encore valider ?"
+      },
+      "rights": "Un agent ne voit jamais plus que vous : il interroge les mêmes données, avec vos propres droits, et une réponse cite toujours sa source ou reconnaît n’avoir rien trouvé.",
+      "status": {
+        "openSurveys": "Enquêtes à remplir",
+        "overdue": "Étapes en retard",
+        "progress": "Avancement du parcours",
+        "title": "Où j’en suis",
+        "trainingOutstanding": "Modules à valider"
+      },
+      "subtitle": "Une question sur qui fait quoi, sur votre parcours, vos formations, les procédures ou les compétences attendues ? L’assistant cherche dans les données que vous êtes autorisé à consulter, et cite ce qu’il a trouvé.",
+      "suggestions": {
+        "competencies1": "Quelles compétences mon poste demande-t-il ?",
+        "competencies2": "Quels sont mes écarts de compétences ?",
+        "documents1": "Où trouver le règlement intérieur ?",
+        "documents2": "Quelle procédure pour les congés ?",
+        "documents3": "Où est la charte informatique ?",
+        "onboarding1": "Quelles étapes de mon parcours restent à faire ?",
+        "onboarding2": "Qu’est-ce qui est en retard ?",
+        "onboarding3": "Que dois-je faire cette semaine ?",
+        "orientation1": "Qui est responsable de la qualité ?",
+        "orientation2": "À qui m’adresser pour mon badge ?",
+        "orientation3": "Qui gère les ressources humaines ?",
+        "training1": "Quels modules sont obligatoires ?",
+        "training2": "Où en suis-je dans mes formations ?",
+        "training3": "Quel est le seuil de réussite ?"
+      },
+      "title": "Assistant"
+    },
+    "dashboard": {
+      "askQuestion": "Poser une question",
+      "contacts": {
+        "allContacts": "Tous les contacts clés",
+        "hr": "Contact RH",
+        "manager": "Mon manager",
+        "none": "Non renseigné pour l’instant.",
+        "seeTeam": "Voir mon équipe",
+        "extension": "Poste {{extension}}"
+      },
+      "countdown": {
+        "afterBadge": "J+{{count}}",
+        "afterDetail_one": "{{count}} jour depuis votre arrivée.",
+        "afterDetail_other": "{{count}} jours depuis votre arrivée.",
+        "beforeBadge": "J-{{count}}",
+        "beforeDetail_one": "Arrivée dans {{count}} jour.",
+        "beforeDetail_other": "Arrivée dans {{count}} jours.",
+        "dayOneBadge": "Jour J",
+        "dayOneDetail": "C’est aujourd’hui votre premier jour.",
+        "label": "Compte à rebours",
+        "none": "Aucune date d’arrivée enregistrée pour votre compte."
+      },
+      "greeting": "Bonjour, {{name}}",
+      "loadFailed": "Impossible de charger votre tableau de bord.",
+      "loading": "Chargement de votre tableau de bord…",
+      "myJourney": "Mon parcours",
+      "nextTasks": {
+        "emptyDetail": "Aucune étape ne vous attend pour le moment.",
+        "emptyTitle": "Rien en attente",
+        "overdue": "En retard",
+        "title": "Prochaines étapes"
+      },
+      "openSurveys": "Enquêtes à remplir",
+      "phaseLabel": "Phase actuelle",
+      "phases": {
+        "COMPLETED": {
+          "detail": "Toutes les étapes de votre parcours d’intégration sont faites.",
+          "label": "Parcours terminé"
+        },
+        "DAY_ONE": {
+          "detail": "Accueil, badge, poste de travail : la journée d’arrivée.",
+          "label": "Jour J"
+        },
+        "PRE_ONBOARDING": {
+          "detail": "Les étapes administratives à préparer avant votre premier jour.",
+          "label": "Avant l’arrivée"
+        },
+        "PROBATION": {
+          "detail": "Prise de poste, formation et points d’étape avec votre manager.",
+          "label": "Période d’essai"
+        }
+      },
+      "progress": {
+        "done_one": "{{done}} sur {{total}} étape terminée",
+        "done_other": "{{done}} sur {{total}} étapes terminées",
+        "overdue_one": "{{count}} étape en retard",
+        "overdue_other": "{{count}} étapes en retard",
+        "seeFullJourney": "Voir le parcours complet"
+      },
+      "subtitleUnassigned": "Poste en cours d’affectation — {{detail}}",
+      "subtitleWithPosition": "{{position}} — {{detail}}",
+      "trainingOutstanding": "Modules à valider"
+    },
+    "documents": {
+      "acknowledgeButton": "J’ai lu et j’accepte",
+      "acknowledged": "Lu et accepté",
+      "acknowledgedAt": "Confirmé le {{date}}",
+      "acknowledgeFailed": "L’enregistrement de votre confirmation a échoué.",
+      "acknowledgeOk": "« {{title}} » : lecture confirmée.",
+      "close": "Fermer",
+      "emptyDetail": "La bibliothèque documentaire est vide pour le moment.",
+      "emptyTitle": "Aucun document publié",
+      "families": {
+        "it": {
+          "detail": "L’usage des équipements, des comptes et des données de l’entreprise.",
+          "label": "Charte informatique"
+        },
+        "others": {
+          "detail": "Les documents publiés qui ne relèvent d’aucune des familles ci-dessus.",
+          "label": "Autres documents"
+        },
+        "procedures": {
+          "detail": "Congés, notes de frais, procédures du système de management de la qualité.",
+          "label": "Procédures RH et qualité"
+        },
+        "rules": {
+          "detail": "Les règles applicables à tous les collaborateurs.",
+          "label": "Règlement intérieur"
+        },
+        "welcome": {
+          "detail": "Ce qu’il faut savoir en arrivant : l’entreprise, ses sites, ses usages.",
+          "label": "Livret d’accueil"
+        }
+      },
+      "figures": {
+        "acknowledged": "Lectures confirmées",
+        "pendingOnYou": "En attente de vous",
+        "published": "Documents publiés"
+      },
+      "iframeFallback": "Si le document ne s’affiche pas ici (format non pris en charge par le navigateur), utilisez « Ouvrir dans un onglet ».",
+      "loadFailed": "Impossible de charger la bibliothèque documentaire.",
+      "loading": "Chargement des documents…",
+      "noFile": "Aucun fichier n’est encore attaché à ce document. Il ne peut donc pas être lu ni confirmé.",
+      "openInTab": "Ouvrir dans un onglet",
+      "pending": "Pas encore disponible",
+      "read": "Lire",
+      "subtitle": "Les documents de référence à lire en arrivant. Confirmer votre lecture enregistre la date et l’heure ; les RH suivent ce point depuis leur bibliothèque.",
+      "title": "Mes documents",
+      "toRead": "À lire"
+    },
+    "eyebrow": "Mon espace",
+    "files": {
+      "emptyDetail": "Aucune pièce administrative ne vous est demandée pour l’instant. Les RH ajoutent ici ce dont elles ont besoin.",
+      "emptyTitle": "Rien à fournir",
+      "figures": {
+        "accepted": "Validées",
+        "pendingOnYou": "En attente de vous",
+        "requested": "Demandées",
+        "underReview": "En vérification"
+      },
+      "loadError": "Erreur de chargement.",
+      "loadFailed": "Impossible de charger vos justificatifs.",
+      "loading": "Chargement de vos justificatifs…",
+      "note": "Note : {{note}}",
+      "notePlaceholder": "Note pour les RH (facultatif)",
+      "pickFile": "Choisissez un fichier avant de le transmettre.",
+      "reviewedAt": " · vérifiée le {{date}}",
+      "sending": "Envoi…",
+      "status": {
+        "ACCEPTED": {
+          "label": "Validée",
+          "lead": "Vérifiée et acceptée par les RH."
+        },
+        "REJECTED": {
+          "label": "À refaire",
+          "lead": "Les RH ont besoin d’une nouvelle version de cette pièce."
+        },
+        "REQUESTED": {
+          "label": "À fournir",
+          "lead": "Les RH attendent cette pièce."
+        },
+        "SUBMITTED": {
+          "label": "Transmise",
+          "lead": "Reçue. En attente de vérification par les RH — rien à faire de votre côté."
+        }
+      },
+      "submit": "Transmettre",
+      "submitFailed": "Échec de la transmission.",
+      "submitOk": "« {{label}} » transmise aux RH.",
+      "submittedAt": "Transmise le {{date}}",
+      "subtitle": "Les pièces administratives demandées par les RH : pièce d’identité, diplômes, relevé d’identité bancaire, certificat médical.",
+      "title": "Mes justificatifs",
+      "viewFile": "Voir le fichier transmis"
+    },
+    "journey": {
+      "allPhases": "Toutes les phases",
+      "backToDashboard": "Tableau de bord",
+      "blocked": {
+        "askHelp": "Demander de l’aide",
+        "noOwner": "Cette étape est bloquée. Aucun service responsable n’est déclaré sur cette étape : signalez-le à votre manager.",
+        "withOwner": "Cette étape est bloquée. Service responsable : {{department}} — {{detail}}"
+      },
+      "dueDate": "Échéance : {{date}}",
+      "dueSoon": "Échéance proche",
+      "emptyDetail": "Aucun parcours d’intégration n’est encore rattaché à votre compte. Les RH le créent au moment de votre affectation à un poste.",
+      "emptyPhase": "Aucune étape dans cette phase.",
+      "emptyTitle": "Aucun parcours enregistré",
+      "figures": {
+        "blocked": "Bloquées",
+        "completed": "Terminées",
+        "overdue": "En retard",
+        "phases": "Phases"
+      },
+      "loadFailed": "Impossible de charger votre parcours d’intégration.",
+      "loading": "Chargement de votre parcours…",
+      "markDone": "Marquer terminée",
+      "openTask": "Ouvrir l’étape →",
+      "optional": "Facultative",
+      "overdue": "En retard",
+      "statusChanged": "« {{title}} » : {{status}}.",
+      "statusFailed": "La mise à jour de l’étape a échoué.",
+      "subtitle": "La feuille de route de votre intégration, étape par étape.",
+      "title": "Mon parcours d’intégration",
+      "titleShort": "Mon parcours",
+      "unphased": {
+        "detail": "Ces étapes n’ont pas de phase déclarée dans le modèle d’intégration.",
+        "label": "Étapes non rattachées à une phase"
+      },
+      "validatedByManager": "Validée par votre manager"
+    },
+    "organigram": {
+      "badgeYou": "Vous",
+      "emptyDetail": "Aucun poste n’est encore rattaché à votre compte, il n’y a donc pas de point de départ pour dessiner votre organigramme. Les RH l’activent au moment de votre affectation.",
+      "emptyTitle": "Organigramme indisponible",
+      "loadFailed": "Impossible de charger l’organigramme.",
+      "loading": "Chargement de l'organigramme…",
+      "noSearchMatch": "Aucun poste ne correspond à cette recherche.",
+      "scopeNote": "Vous ne voyez qu’une fenêtre autour de votre poste : la profondeur affichée vers le haut et vers le bas est un paramètre de la plateforme, appliqué côté serveur.",
+      "searchPlaceholder": "Rechercher un poste, une personne, une structure…",
+      "sheet": {
+        "close": "Fermer",
+        "department": "Département / structure",
+        "email": "E-mail",
+        "eyebrow": "Fiche de poste · consultation seule",
+        "footnote": "Cette fiche reprend ce que l'organigramme expose sur ce poste. Le détail complet d'un emploi (missions, tâches, compétences requises) relève du référentiel des fiches de poste, accessible aux RH.",
+        "itsYou": "C’est vous",
+        "noReports": "Aucun",
+        "noSuperior": "Aucun poste supérieur visible",
+        "noUnit": "Sans structure",
+        "occupancy": "Occupation",
+        "occupied": "Poste occupé",
+        "phone": "Poste téléphonique",
+        "reports": "Postes rattachés",
+        "reportsTo": "Rattaché à",
+        "vacant": "vacant",
+        "readOnlyBadge": "Fiche de poste · consultation seule",
+        "vacantPosition": "Poste vacant",
+        "noStructure": "Sans structure",
+        "thisIsYou": "C'est vous",
+        "departmentLabel": "Département / structure",
+        "extensionLabel": "Poste téléphonique",
+        "reportsToLabel": "Rattaché à",
+        "noManagerVisible": "Aucun poste supérieur visible",
+        "directReportsLabel": "Postes rattachés",
+        "occupancyLabel": "Occupation"
+      },
+      "subtitle": "Votre position dans l’organisation : votre chaîne hiérarchique vers le haut, vos collègues de même niveau, et les postes rattachés au vôtre.",
+      "tiles": {
+        "myManager": "Mon responsable",
+        "myPosition": "Mon poste",
+        "peers": "Collègues de même niveau",
+        "reports": "Postes rattachés au mien",
+        "unassigned": "Non affecté"
+      },
+      "title": "Organigramme",
+      "visibleCount": "{{visible}} / {{total}} postes visibles",
+      "loadError": "Impossible de charger l'organigramme.",
+      "unavailableTitle": "Organigramme indisponible",
+      "unavailableDetail": "Aucun poste n'est encore rattaché à votre compte, il n'y a donc pas de point de départ pour dessiner votre organigramme. Les RH l'activent au moment de votre affectation.",
+      "myPosition": "Mon poste",
+      "unassigned": "Non affecté",
+      "myManager": "Mon responsable",
+      "peers": "Collègues de même niveau",
+      "directReports": "Postes rattachés au mien",
+      "windowNote": "Vous ne voyez qu'une fenêtre autour de votre poste : la profondeur affichée vers le haut et vers le bas est un paramètre de la plateforme, appliqué côté serveur.",
+      "youBadge": "Vous"
+    },
+    "position": {
+      "competencies": {
+        "columns": {
+          "acquired": "Acquis",
+          "competency": "Compétence",
+          "family": "Famille",
+          "required": "Requis",
+          "status": "Statut"
+        },
+        "empty": "Aucune compétence n’est déclarée pour ce poste.",
+        "figures": {
+          "conforme": "Conformes",
+          "critique": "Critiques",
+          "toDevelop": "À développer"
+        },
+        "help": "Le niveau attendu par le poste, comparé à votre niveau évalué. Les évaluations sont saisies par votre manager.",
+        "noMatrix": "Aucun référentiel de compétences n’est rattaché à ce poste pour l’instant.",
+        "title": "Compétences requises"
+      },
+      "dossier": {
+        "body": "La fiche de poste détaillée — missions, tâches permanentes, responsabilités, exigences de formation et d’expérience — est un document versionné tenu par les ressources humaines. Votre compte n’y donne pas accès en lecture directe ; demandez-la à votre contact RH.",
+        "link": "Mon contact RH →",
+        "title": "Le dossier complet"
+      },
+      "emptyDetail": "Aucun poste n’est encore associé à votre compte. Les RH procèdent à l’affectation, et cette fiche se remplit à ce moment-là.",
+      "emptyTitle": "Aucun poste rattaché",
+      "equipment": {
+        "emptyDetail": "La plateforme ne tient aucun inventaire des équipements attribués : il n'existe pas de table du matériel, et en inventer une liste ici serait faux. Ce qui vous a été remis figure dans les étapes de votre parcours dont le service informatique est responsable.",
+        "emptyTitle": "Pas de registre du matériel",
+        "link": "Voir les étapes de mon parcours →",
+        "title": "Matériel attribué",
+        "heading": "Matériel attribué",
+        "seeJourney": "Voir les étapes de mon parcours →"
+      },
+      "fullOrgChart": "Organigramme complet",
+      "gapStatus": {
+        "a-developper": "À développer",
+        "conforme": "Conforme",
+        "critique": "Critique",
+        "non-evalue": "Non évalué"
+      },
+      "loadFailed": "Impossible de charger votre fiche de poste.",
+      "loading": "Chargement de votre fiche de poste…",
+      "mission": {
+        "empty": "Aucune mission n'est rédigée pour ce poste dans la plateforme. Le dossier complet de la fiche de poste (missions, tâches permanentes, responsabilités) est tenu par les ressources humaines.",
+        "title": "Mission",
+        "heading": "Mission"
+      },
+      "noUnit": "Structure non renseignée",
+      "reportingLine": {
+        "noReports": "Aucun",
+        "noSuperior": "Aucun poste supérieur visible",
+        "reports": "Postes rattachés ({{count}})",
+        "superior": "Supérieur",
+        "title": "Ligne hiérarchique",
+        "vacant": "vacant",
+        "heading": "Ligne hiérarchique",
+        "manager": "Supérieur",
+        "directReports_one": "Poste rattaché ({{count}})",
+        "directReports_other": "Postes rattachés ({{count}})"
+      },
+      "snippet": {
+        "empty": "Votre poste n’apparaît pas encore dans l’organigramme.",
+        "help": "Votre branche : le poste dont vous dépendez, les postes de même niveau, et ceux qui vous sont rattachés.",
+        "title": "Ma place dans l’organisation"
+      },
+      "tiles": {
+        "code": "Code poste",
+        "reportsTo": "Rattaché à",
+        "title": "Intitulé",
+        "unit": "Structure",
+        "positionCode": "Code poste",
+        "structure": "Structure"
+      },
+      "title": "Ma fiche de poste",
+      "loadError": "Impossible de charger votre fiche de poste.",
+      "unassignedTitle": "Aucun poste rattaché",
+      "unassignedDetail": "Aucun poste n'est encore associé à votre compte. Les RH procèdent à l'affectation, et cette fiche se remplit à ce moment-là.",
+      "noStructure": "Structure non renseignée",
+      "noManagerVisible": "Aucun poste supérieur visible",
+      "gap": {
+        "conforme": "Conforme",
+        "toDevelop": "À développer",
+        "critical": "Critique",
+        "notAssessed": "Non évalué"
+      },
+      "skills": {
+        "heading": "Compétences requises",
+        "subtitle": "Le niveau attendu par le poste, comparé à votre niveau évalué. Les évaluations sont saisies par votre manager.",
+        "noMatrix": "Aucun référentiel de compétences n'est rattaché à ce poste pour l'instant.",
+        "conforming": "Conformes",
+        "toDevelop": "À développer",
+        "critical": "Critiques",
+        "noRows": "Aucune compétence n'est déclarée pour ce poste.",
+        "table": {
+          "competency": "Compétence",
+          "family": "Famille",
+          "required": "Requis",
+          "attained": "Acquis"
+        }
+      },
+      "orgSnippet": {
+        "heading": "Ma place dans l'organisation",
+        "subtitle": "Votre branche : le poste dont vous dépendez, les postes de même niveau, et ceux qui vous sont rattachés.",
+        "empty": "Votre poste n'apparaît pas encore dans l'organigramme."
+      },
+      "fullDossier": {
+        "heading": "Le dossier complet",
+        "detail": "La fiche de poste détaillée — missions, tâches permanentes, responsabilités, exigences de formation et d'expérience — est un document versionné tenu par les ressources humaines. Votre compte n'y donne pas accès en lecture directe ; demandez-la à votre contact RH.",
+        "hrContactLink": "Mon contact RH →"
+      }
+    },
+    "surveys": {
+      "answered": "Répondu",
+      "cancel": "Annuler",
+      "commentLabel": "Commentaire (facultatif)",
+      "commentPlaceholder": "Ce qui s’est bien passé, ce qui pourrait être amélioré…",
+      "due": "Échéance : {{date}}",
+      "emptyDetail": "Les points d’étape sont créés en même temps que votre parcours d’intégration.",
+      "emptyTitle": "Aucune enquête programmée",
+      "figures": {
+        "answered": "Répondus",
+        "milestones": "Points d’étape",
+        "open": "Ouverts",
+        "overdue": "En retard",
+        "total": "Points d’étape"
+      },
+      "indicators": {
+        "MANAGER_RELATIONSHIP": {
+          "help": "Échanges, retours, points d’étape.",
+          "label": "Relation avec le manager"
+        },
+        "ROLE_CLARITY": {
+          "help": "Savez-vous ce qu’on attend de vous et comment cela se mesure ?",
+          "label": "Clarté du rôle"
+        },
+        "SUPPORT_LEVEL": {
+          "help": "La disponibilité de ceux qui vous aident à prendre vos marques.",
+          "label": "Accompagnement"
+        },
+        "WELCOME_QUALITY": {
+          "help": "Votre arrivée, le premier jour, la préparation de votre poste.",
+          "label": "Qualité de l’accueil"
+        },
+        "WORKING_CONDITIONS": {
+          "help": "Locaux, matériel, sécurité, organisation.",
+          "label": "Conditions de travail"
+        },
+        "welcomeQuality": {
+          "label": "Qualité de l’accueil",
+          "help": "Votre arrivée, le premier jour, la préparation de votre poste."
+        },
+        "supportLevel": {
+          "label": "Accompagnement",
+          "help": "La disponibilité de ceux qui vous aident à prendre vos marques."
+        },
+        "roleClarity": {
+          "label": "Clarté du rôle",
+          "help": "Savez-vous ce qu’on attend de vous et comment cela se mesure ?"
+        },
+        "managerRelationship": {
+          "label": "Relation avec le manager",
+          "help": "Échanges, retours, points d’étape."
+        },
+        "workingConditions": {
+          "label": "Conditions de travail",
+          "help": "Locaux, matériel, sécurité, organisation."
+        }
+      },
+      "indicatorsFilled": "{{count}} / {{total}} indicateurs renseignés",
+      "loadFailed": "Impossible de charger vos enquêtes.",
+      "loading": "Chargement de vos enquêtes…",
+      "notOpen": "Pas encore ouvert",
+      "notOpenYet": "Cette enquête s’ouvrira à son échéance : elle mesure votre ressenti à ce moment précis du parcours.",
+      "open": "Ouvert",
+      "overdue": "En retard",
+      "pickOne": "Répondez à au moins un indicateur avant d’envoyer.",
+      "respond": "Répondre",
+      "respondedOn": " · répondu le {{date}}",
+      "roundTitle": "Point d’étape J+{{dayOffset}}",
+      "scale": {
+        "1": "Très insatisfait",
+        "2": "Insatisfait",
+        "3": "Neutre",
+        "4": "Satisfait",
+        "5": "Très satisfait",
+        "veryDissatisfied": "Très insatisfait",
+        "dissatisfied": "Insatisfait",
+        "neutral": "Neutre",
+        "satisfied": "Satisfait",
+        "verySatisfied": "Très satisfait"
+      },
+      "score": "{{score}} / 5",
+      "sending": "Envoi…",
+      "submit": "Envoyer ma réponse",
+      "submitFailed": "L’envoi de votre réponse a échoué.",
+      "submitOk": "Merci. Votre réponse à l’enquête J+{{days}} a bien été enregistrée.",
+      "subtitle": "Quatre points d’étape — J+7, J+30, J+60 et J+90 — pour dire comment se passe votre intégration. Vos réponses individuelles ne sont pas affichées nominativement dans les tableaux de bord RH.",
+      "title": "Mes enquêtes de satisfaction",
+      "yourComment": "Votre commentaire",
+      "loadError": "Impossible de charger vos enquêtes.",
+      "dueDate": "Échéance : {{date}}",
+      "answeredOn": "répondu le {{date}}",
+      "answerAction": "Répondre",
+      "scoreOutOfFive": "{{score}} / 5",
+      "notYetOpen": "Cette enquête s’ouvrira à son échéance : elle mesure votre ressenti à ce moment précis du parcours.",
+      "needAtLeastOne": "Répondez à au moins un indicateur avant d’envoyer.",
+      "submitSuccess": "Merci. Votre réponse à l’enquête J+{{dayOffset}} a bien été enregistrée.",
+      "submitAction": "Envoyer ma réponse",
+      "status": {
+        "answered": "Répondu",
+        "overdue": "En retard",
+        "open": "Ouvert",
+        "notYetOpen": "Pas encore ouvert"
+      }
+    },
+    "task": {
+      "acknowledge": {
+        "agreeLabel": "J’ai lu ce texte et je le confirme.",
+        "disclaimer": "Il ne s’agit pas d’une signature électronique qualifiée : la plateforme ne dispose ni d’autorité de certification, ni de clé de signature, ni d’horodatage certifié. Ce qui est conservé est un",
+        "disclaimerEmphasis": " accusé de lecture",
+        "disclaimerEnd": " : votre identifiant de compte, le texte exact auquel vous adhérez, la date et l’heure, et une empreinte SHA-256 de l’ensemble qui permet de détecter une modification ultérieure de ce texte.",
+        "hash": "Empreinte : {{hash}}",
+        "recorded": "Confirmation enregistrée",
+        "recordedAt": "Le {{date}}",
+        "saving": "Enregistrement…",
+        "submit": "Enregistrer ma confirmation",
+        "title": "Confirmation de lecture"
+      },
+      "brief": "Ce qui vous est demandé",
+      "comments": {
+        "empty": "Aucun message pour l’instant.",
+        "help": "Bloqué ou en doute ? Écrivez ici : votre manager et les RH voient ce fil depuis le dossier de votre intégration.",
+        "placeholder": "Ex. : je n’ai pas reçu le formulaire à signer, à qui dois-je m’adresser ?",
+        "postFailed": "L’envoi du message a échoué.",
+        "posted": "Message envoyé.",
+        "send": "Envoyer",
+        "sending": "Envoi…",
+        "title": "Échanges sur cette étape",
+        "yourMessage": "Votre message"
+      },
+      "eyebrow": "Mon parcours",
+      "eyebrowWithPhase": "Mon parcours · {{phase}}",
+      "fields": {
+        "completedAt": "Terminée le",
+        "dueDate": "Échéance",
+        "noDueDate": "Aucune",
+        "noOwner": "Non déclaré sur cette étape",
+        "owner": "Service responsable"
+      },
+      "files": {
+        "chooseOne": "Choisir la pièce…",
+        "empty": "Aucune pièce n’est attendue de votre part.",
+        "help": "Les pièces administratives ne sont pas rattachées à une étape précise dans la plateforme : elles constituent votre dossier RH. Vous pouvez en transmettre une ici, elle apparaîtra dans",
+        "linkLabel": "Mes justificatifs",
+        "pickBoth": "Choisissez la pièce concernée puis un fichier.",
+        "redo": " (à refaire)",
+        "sending": "Envoi…",
+        "submit": "Transmettre la pièce",
+        "submitFailed": "La transmission a échoué.",
+        "submitted": "Pièce transmise aux RH pour vérification.",
+        "title": "Pièces à fournir"
+      },
+      "history": {
+        "empty": "Aucun changement enregistré sur cette étape.",
+        "help": "Reconstitué depuis le journal d’audit : chaque changement de statut, qui l’a fait et quand.",
+        "system": "Système",
+        "title": "Historique"
+      },
+      "loading": "Chargement de l’étape…",
+      "loadFailed": "Impossible de charger cette étape.",
+      "next": "Suivante →",
+      "noteLabel": "Note",
+      "notFound": "Cette étape n’existe pas dans votre parcours.",
+      "previous": "← Précédente",
+      "saveFailed": "L’enregistrement a échoué.",
+      "signatureSaved": "Votre confirmation de lecture a été enregistrée.",
+      "statusChanged": "Étape marquée « {{status}} ».",
+      "statusFailed": "La mise à jour de l’étape a échoué.",
+      "toJourney": "Retour au parcours",
+      "validatedNote": "Cette étape a été validée par votre manager : elle ne peut plus être modifiée depuis votre espace."
+    },
+    "team": {
+      "avatarLabel": "Photo de profil",
+      "avatarSaved": "Photo de profil enregistrée. Elle apparaît sur votre carte de l’organigramme.",
+      "avatarUploadFailed": "L’envoi de la photo a échoué.",
+      "avatarUploading": "Envoi de la photo…",
+      "contacts": {
+        "empty": "Aucun contact n'est publié dans l'annuaire pour l'instant.",
+        "help": "L’annuaire publié de l’entreprise, regroupé par service. Le numéro indiqué est le poste interne.",
+        "title": "Contacts clés",
+        "heading": "Contacts clés",
+        "subtitle": "L'annuaire publié de l'entreprise, regroupé par service. Le numéro indiqué est le poste interne."
+      },
+      "extension": "Poste {{extension}}",
+      "loadFailed": "Impossible de charger votre équipe.",
+      "loading": "Chargement de votre équipe…",
+      "manager": {
+        "empty": "Aucun responsable n’est déclaré sur votre compte. Les RH renseignent ce lien au moment de l’affectation.",
+        "noPosition": "Poste non renseigné",
+        "title": "Mon responsable"
+      },
+      "me": "Moi",
+      "orgChart": "Organigramme",
+      "peers": {
+        "empty": "Aucun collègue de même niveau n'apparaît : soit votre poste n'a pas de poste supérieur déclaré, soit vous êtes seul à ce niveau.",
+        "help": "Les personnes qui occupent un poste rattaché au même poste supérieur que le vôtre.",
+        "title": "Mes collègues",
+        "heading": "Mes collègues",
+        "subtitle": "Les personnes qui occupent un poste rattaché au même poste supérieur que le vôtre."
+      },
+      "services": {
+        "hr": "Ressources humaines",
+        "hse": "Hygiène, sécurité, environnement",
+        "it": "Informatique",
+        "others": "Autres contacts",
+        "quality": "Qualité"
+      },
+      "subtitle": "Votre responsable, les collègues qui partagent votre rattachement, et les services à contacter selon le sujet.",
+      "title": "Mon équipe",
+      "loadError": "Impossible de charger votre équipe.",
+      "positionUnassigned": "Poste non affecté",
+      "positionNotSpecified": "Poste non renseigné",
+      "myManager": "Mon responsable",
+      "noManager": "Aucun responsable n'est déclaré sur votre compte. Les RH renseignent ce lien au moment de l'affectation.",
+      "avatar": {
+        "label": "Photo de profil",
+        "uploading": "Envoi de la photo…",
+        "uploadSuccess": "Photo de profil enregistrée. Elle apparaît sur votre carte de l'organigramme.",
+        "uploadFailed": "L'envoi de la photo a échoué."
+      }
+    },
+    "training": {
+      "catalogue": {
+        "emptyDetail": "Le catalogue de formation est vide pour le moment.",
+        "emptyTitle": "Aucun module publié",
+        "figures": {
+          "journey": "Parcours",
+          "journeyComplete": "Complet",
+          "journeyInProgress": "En cours",
+          "mandatoryPassed": "Obligatoires validés",
+          "offered": "Modules proposés"
+        },
+        "groups": {
+          "mandatory": {
+            "detail": "À valider pour terminer votre parcours d’intégration.",
+            "label": "Modules obligatoires"
+          },
+          "optional": {
+            "detail": "Des modules courts, à suivre quand vous le souhaitez.",
+            "label": "Micro-learning facultatif"
+          }
+        },
+        "loadFailed": "Impossible de charger votre formation.",
+        "loading": "Chargement de votre formation…",
+        "subtitle": "Les modules à suivre pendant votre intégration. Chaque module se termine par un questionnaire ; le module est validé au-dessus du seuil qu’il fixe.",
+        "title": "Ma formation"
+      },
+      "certificates": {
+        "disclaimerEmphasis": "ni signées électroniquement, ni vérifiables",
+        "disclaimerEnd": " par un tiers : la plateforme ne dispose d’aucune autorité de certification. La référence qui fait foi est l’identifiant de tentative indiqué sur chaque attestation, que les RH peuvent retrouver dans la plateforme.",
+        "disclaimerStart": "Les attestations produites ici sont des documents imprimables générés par votre navigateur. Elles ne sont ",
+        "emptyDetail": "Une attestation est délivrée à la première réussite d’un module. Validez un module pour en obtenir une.",
+        "emptyTitle": "Aucune attestation pour l’instant",
+        "figures": {
+          "lastIssued": "Dernière délivrance",
+          "mandatory": "Dont modules obligatoires",
+          "total": "Attestations"
+        },
+        "issuedOn": "Délivrée le {{date}}",
+        "loadFailed": "Impossible de charger vos attestations.",
+        "loading": "Chargement de vos attestations…",
+        "mandatory": "Obligatoire",
+        "passedAt": "Validé à {{score}} %",
+        "print": {
+          "attemptRef": "Référence de la tentative",
+          "heading": "Attestation de formation",
+          "holderLine": "a validé le module de formation suivant :",
+          "issuedBy": "Délivrée par la plateforme d’intégration Soficlef.",
+          "issuedOn": "Date de délivrance",
+          "kind": "Caractère",
+          "mandatory": "Obligatoire",
+          "module": "Module",
+          "note": "Ce document est une attestation imprimée depuis la plateforme. Il n’est ni signé électroniquement, ni vérifiable par un tiers : la plateforme ne dispose pas d’autorité de certification. La référence de tentative ci-dessus est l’élément que le service des ressources humaines peut retrouver dans les enregistrements de la plateforme.",
+          "optional": "Facultatif",
+          "score": "Score obtenu",
+          "scoreValue": "{{score}} % — seuil de réussite {{threshold}} %",
+          "title": "Attestation — {{module}}",
+          "txtFileName": "attestation-{{code}}.txt",
+          "txtHeading": "ATTESTATION DE FORMATION",
+          "txtHolder": "Titulaire",
+          "txtIssuedOn": "Date de délivrance",
+          "txtKind": "Caractère",
+          "txtModule": "Module",
+          "txtNote1": "Ce document n’est ni signé électroniquement, ni vérifiable par un tiers.",
+          "txtNote2": "La référence ci-dessus est l’élément retrouvable par le service RH.",
+          "txtPlatform": "Plateforme d’intégration Soficlef",
+          "txtRef": "Référence",
+          "txtScore": "Score obtenu",
+          "txtScoreValue": "{{score}} % (seuil {{threshold}} %)",
+          "docTitle": "Attestation — {{module}}",
+          "hasValidated": "a validé le module de formation suivant :",
+          "character": "Caractère",
+          "scoreLabel": "Score obtenu",
+          "footnote": "Ce document est une attestation imprimée depuis la plateforme. Il n’est ni signé électroniquement, ni vérifiable par un tiers : la plateforme ne dispose pas d’autorité de certification. La référence de tentative ci-dessus est l’élément que le service des ressources humaines peut retrouver dans les enregistrements de la plateforme."
+        },
+        "printButton": "Imprimer / enregistrer",
+        "reference": "Référence : {{id}}",
+        "reviewModule": "Revoir le module",
+        "subtitle": "Les modules que vous avez validés, avec leur date de délivrance.",
+        "textCopy": "Copie texte",
+        "title": "Mes attestations",
+        "toModules": "Retour aux modules",
+        "loadError": "Impossible de charger vos attestations.",
+        "total": "Attestations",
+        "mandatoryCount": "Dont modules obligatoires",
+        "lastIssued": "Dernière délivrance",
+        "disclaimerLede": "Les attestations produites ici sont des documents imprimables générés par votre navigateur. Elles ne sont",
+        "disclaimerBold": "ni signées électroniquement, ni vérifiables",
+        "disclaimerTail": " par un tiers : la plateforme ne dispose d’aucune autorité de certification. La référence qui fait foi est l’identifiant de tentative indiqué sur chaque attestation, que les RH peuvent retrouver dans la plateforme.",
+        "validatedAt": "Validé à {{score}} %",
+        "printAction": "Imprimer / enregistrer",
+        "textCopyAction": "Copie texte",
+        "filenamePrefix": "attestation",
+        "text": {
+          "title": "ATTESTATION DE FORMATION",
+          "platform": "Plateforme d’intégration Soficlef",
+          "holder": "Titulaire",
+          "module": "Module",
+          "character": "Caractère",
+          "score": "Score obtenu",
+          "issuedOn": "Date de délivrance",
+          "reference": "Référence",
+          "disclaimer1": "Ce document n’est ni signé électroniquement, ni vérifiable par un tiers.",
+          "disclaimer2": "La référence ci-dessus est l’élément retrouvable par le service RH."
+        }
+      },
+      "eyebrow": "Ma formation",
+      "module": {
+        "allModules": "Tous les modules",
+        "answeredCount": "{{answered}} / {{total}} question(s) répondue(s)",
+        "answerAll": "Répondez à toutes les questions ({{count}} restante(s)).",
+        "alreadyCertified": "Ce module était déjà validé : l’attestation existante conserve sa date d’origine.",
+        "bestResult": "Votre meilleur résultat sur ce module :",
+        "bestResultThreshold": "(seuil {{threshold}} %).",
+        "certificateSaved": "Attestation enregistrée à votre nom.",
+        "correctCount": "{{correct}} bonne(s) réponse(s) sur {{total}}",
+        "failed": "Seuil non atteint",
+        "grading": "Correction en cours…",
+        "loading": "Chargement du module…",
+        "loadFailed": "Impossible de charger ce module.",
+        "myCertificates": "Mes attestations",
+        "noQuizDetail": "Ce module ne comporte pas encore de questions : il n’y a donc rien à valider et aucune attestation à délivrer.",
+        "noQuizTitle": "Pas de questionnaire",
+        "notFound": "Module introuvable.",
+        "passed": "Module validé",
+        "placeholderDetail": "Ce module est marqué comme provisoire dans le catalogue : son contenu n’a pas encore été rédigé par les RH.",
+        "placeholderTitle": "Contenu provisoire",
+        "rereadContent": "Relire le contenu",
+        "retake": "Repasser le questionnaire",
+        "retry": "Réessayer",
+        "startQuiz": "Passer au questionnaire",
+        "steps": {
+          "lesson": "Contenu",
+          "quiz": "Questionnaire",
+          "result": "Résultat",
+          "content": "Contenu"
+        },
+        "submitFailed": "L'envoi du questionnaire a échoué.",
+        "submitQuiz": "Valider mes réponses",
+        "toModules": "Retour aux modules",
+        "viewCertificate": "Voir mon attestation",
+        "loadError": "Impossible de charger ce module.",
+        "answerAllQuestions_one": "Répondez à toutes les questions ({{count}} restante).",
+        "answerAllQuestions_other": "Répondez à toutes les questions ({{count}} restantes).",
+        "bestResultLede": "Votre meilleur résultat sur ce module :",
+        "percent": "{{value}} %",
+        "thresholdSuffix": "(seuil {{score}} %).",
+        "retakeQuiz": "Repasser le questionnaire",
+        "goToQuiz": "Passer au questionnaire",
+        "passingThreshold": "seuil de réussite {{score}} %",
+        "reviewContent": "Relire le contenu",
+        "submitAnswers": "Valider mes réponses",
+        "moduleValidated": "Module validé",
+        "thresholdMissed": "Seuil non atteint",
+        "alreadyValidated": "Ce module était déjà validé : l’attestation existante conserve sa date d’origine.",
+        "retryAction": "Réessayer",
+        "seeCertificate": "Voir mon attestation",
+        "backToModules": "Retour aux modules"
+      },
+      "moduleCard": {
+        "bestScore": "Meilleur résultat : {{score}} %",
+        "mandatory": "Obligatoire",
+        "notAttempted": "Pas encore tenté",
+        "passedSuffix": " · module validé",
+        "questions_one": "{{count}} question",
+        "questions_other": "{{count}} questions",
+        "retry": "Réessayer",
+        "review": "Revoir le module",
+        "start": "Commencer",
+        "threshold": "Seuil {{score}} %"
+      },
+      "loadError": "Impossible de charger votre formation.",
+      "loading": "Chargement de votre formation…",
+      "title": "Ma formation",
+      "subtitle": "Les modules à suivre pendant votre intégration. Chaque module se termine par un questionnaire ; le module est validé au-dessus du seuil qu’il fixe.",
+      "mandatoryPassed": "Obligatoires validés",
+      "modulesOffered": "Modules proposés",
+      "journey": "Parcours",
+      "complete": "Complet",
+      "inProgress": "En cours",
+      "noModulesTitle": "Aucun module publié",
+      "noModulesDetail": "Le catalogue de formation est vide pour le moment.",
+      "mandatoryBadge": "Obligatoire",
+      "bestScore": "Meilleur résultat : {{score}} %",
+      "notAttempted": "Pas encore tenté",
+      "threshold": "Seuil {{score}} %",
+      "questionCount_one": "{{count}} question",
+      "questionCount_other": "{{count}} questions",
+      "moduleValidated": "module validé",
+      "reviewModule": "Revoir le module",
+      "retry": "Réessayer",
+      "start": "Commencer",
+      "groups": {
+        "mandatory": {
+          "label": "Modules obligatoires",
+          "detail": "À valider pour terminer votre parcours d’intégration."
+        },
+        "optional": {
+          "label": "Micro-learning facultatif",
+          "detail": "Des modules courts, à suivre quand vous le souhaitez."
+        }
+      }
+    },
+    "vocabulary": {
+      "owners": {
+        "EMPLOYEE": {
+          "detail": "cette étape vous revient : rien ne vous attend côté services.",
+          "label": "Vous"
+        },
+        "HR": {
+          "detail": "contrat, dossier administratif, justificatifs.",
+          "label": "Ressources humaines"
+        },
+        "HSE": {
+          "detail": "équipements de protection, consignes de sécurité.",
+          "label": "Hygiène, sécurité et environnement"
+        },
+        "IT": {
+          "detail": "compte, matériel, accès aux applications.",
+          "label": "Informatique"
+        },
+        "MANAGER": {
+          "detail": "objectifs, points d’étape, validation des étapes.",
+          "label": "Votre manager"
+        },
+        "QUALITY": {
+          "detail": "procédures, documents du système de management.",
+          "label": "Qualité"
+        }
+      },
+      "phases": {
+        "DAY_ONE": {
+          "detail": "La journée d’accueil : badge, poste de travail, présentation de l’équipe.",
+          "label": "Jour J"
+        },
+        "PRE_ONBOARDING": {
+          "detail": "Ce qui se prépare avant votre premier jour : dossier administratif, contrat, accès.",
+          "label": "Avant l’arrivée"
+        },
+        "PROBATION": {
+          "detail": "La prise de poste : formations, points d’étape et évaluations.",
+          "label": "Période d’essai"
+        }
+      },
+      "status": {
+        "BLOCKED": "Bloquée",
+        "DONE": "Terminée",
+        "IN_PROGRESS": "En cours",
+        "TODO": "À faire",
+        "VALIDATED": "Validée"
+      }
+    },
+    "welcome": {
+      "contacts": {
+        "hr": "RH : {{name}} — poste {{extension}}",
+        "manager": "Manager : {{name}} ({{email}})",
+        "title": "Contacts"
+      },
+      "dayNumber": "Jour {{count}} de votre intégration.",
+      "greeting": "Bienvenue, {{name}}",
+      "loadFailed": "Impossible de charger votre espace de bienvenue.",
+      "nextTasks": {
+        "due": " — échéance {{date}}",
+        "empty": "Aucune étape en attente.",
+        "title": "Prochaines étapes"
+      },
+      "notStarted": "Votre parcours d’intégration n’a pas encore commencé.",
+      "progress": {
+        "steps": "{{done}}/{{total}} étapes terminées",
+        "title": "Ma progression"
+      }
+    },
+    "quests": {
+      "loadError": "Impossible de charger vos quêtes.",
+      "loading": "Chargement de vos quêtes…",
+      "title": "Mes quêtes",
+      "subtitle": "Les tâches ponctuelles que votre responsable vous a confiées.",
+      "empty": "Aucune quête ne vous a été assignée pour le moment.",
+      "openHeading_one": "{{count}} quête en cours",
+      "openHeading_other": "{{count}} quêtes en cours",
+      "noneOpen": "Aucune quête en cours.",
+      "doneHeading_one": "{{count}} quête terminée",
+      "doneHeading_other": "{{count}} quêtes terminées",
+      "assignedBy": "Confiée par {{name}}",
+      "markDone": "Marquer comme terminée",
+      "reopen": "Marquer comme non terminée"
+    }
+  },
+  "notifications": {
+    "empty": "Aucune notification.",
+    "loadFailed": "Impossible de charger les notifications.",
+    "markAllRead": "Tout marquer comme lu",
+    "markRead": "Marquer lu",
+    "open": "Ouvrir →",
+    "title": "Notifications",
+    "unread_one": "{{count}} non lue",
+    "unread_other": "{{count}} non lues",
+    "allRead": "Tout est lu."
+  },
+  "onboarding": {
+    "checklist": {
+      "columns": {
+        "employee": "Collaborateur",
+        "progress": "Progression",
+        "startDate": "Début",
+        "template": "Modèle"
+      },
+      "empty": "Aucun parcours.",
+      "loadFailed": "Impossible de charger les parcours.",
+      "subtitle": "Les parcours d’intégration visibles dans votre périmètre.",
+      "title": "Checklist onboarding"
+    },
+    "dashboard": {
+      "empty": "Aucun indicateur disponible pour votre profil.",
+      "loadFailed": "Impossible de charger le tableau de bord.",
+      "subtitle": "Les indicateurs visibles dans votre périmètre.",
+      "tiles": {
+        "averageOnboardingDays": "Délai moyen d’intégration",
+        "averagePercent": "Avancement moyen",
+        "completionRate": "Taux de complétion",
+        "confirmationRate": "Taux de confirmation",
+        "criticalGaps": "Écarts critiques",
+        "jobDescriptionCoverage": "Couverture fiches de poste",
+        "journeys": "Parcours en cours",
+        "overdueTasks": "Tâches en retard",
+        "satisfaction": "Satisfaction",
+        "trainingRate": "Taux de formation",
+        "turnover": "Turnover 6 mois",
+        "unitsWithoutHead": "Structures sans responsable"
+      },
+      "title": "Pilotage",
+      "daysSuffix": "{{count}} j"
+    }
+  },
+  "jobDescription": {
+    "status": {
+      "draft": "Brouillon",
+      "inReview": "En relecture",
+      "changesRequested": "Modifications demandées",
+      "validated": "Validée",
+      "archived": "Archivée"
+    },
+    "loadFailed": "Impossible de charger les fiches de poste.",
+    "listTitle": "Fiches de poste",
+    "listSubtitle": "L'ensemble des fiches de poste et leur statut de validation.",
+    "columns": {
+      "code": "Code",
+      "jobTitle": "Intitulé",
+      "version": "Version"
+    },
+    "empty": "Aucune fiche de poste pour le moment."
+  }
+}

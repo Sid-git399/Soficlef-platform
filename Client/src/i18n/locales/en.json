@@ -1,0 +1,3302 @@
+{
+  "common": {
+    "actions": {
+      "add": "Add",
+      "apply": "Apply",
+      "archive": "Archive",
+      "back": "Back",
+      "cancel": "Cancel",
+      "close": "Close",
+      "confirm": "Confirm",
+      "create": "Create",
+      "delete": "Delete",
+      "download": "Download",
+      "duplicate": "Duplicate",
+      "edit": "Edit",
+      "export": "Export",
+      "filter": "Filter",
+      "import": "Import",
+      "logout": "Sign out",
+      "next": "Next",
+      "open": "Open",
+      "previous": "Previous",
+      "publish": "Publish",
+      "refresh": "Refresh",
+      "reset": "Reset",
+      "retry": "Try again",
+      "save": "Save",
+      "search": "Search",
+      "seeAll": "See all",
+      "select": "Select",
+      "send": "Send",
+      "submit": "Submit",
+      "validate": "Validate",
+      "view": "View"
+    },
+    "all": "All",
+    "avatarAlt": "Photo of {{name}}",
+    "labels": {
+      "actions": "Actions",
+      "createdAt": "Created on",
+      "date": "Date",
+      "department": "Department",
+      "description": "Description",
+      "details": "Details",
+      "dueDate": "Due date",
+      "email": "Email",
+      "employee": "Employee",
+      "manager": "Manager",
+      "name": "Name",
+      "notes": "Notes",
+      "position": "Position",
+      "progress": "Progress",
+      "status": "Status",
+      "title": "Title",
+      "total": "Total",
+      "type": "Type",
+      "updatedAt": "Updated on"
+    },
+    "language": {
+      "en": "English",
+      "fr": "French",
+      "switcherLabel": "Language selection",
+      "switchTo": "Switch to {{language}}",
+      "ar": "Arabic"
+    },
+    "no": "No",
+    "notifications": {
+      "empty": "No notifications.",
+      "seeAll": "See all →",
+      "title": "Notifications"
+    },
+    "optional": "Optional",
+    "org": {
+      "vacantPosition": "Vacant position"
+    },
+    "required": "Required",
+    "states": {
+      "empty": "No results",
+      "error": "Something went wrong",
+      "loadFailed": "Could not load the data",
+      "loading": "Loading…",
+      "none": "None",
+      "notSpecified": "Not specified",
+      "saveFailed": "Could not save",
+      "saving": "Saving…",
+      "sending": "Sending…",
+      "unavailable": "Unavailable",
+      "unavailableForNow": "Unavailable at the moment."
+    },
+    "yes": "Yes"
+  },
+  "nav": {
+    "groups": {
+      "administration": "Administration",
+      "direction": "Leadership",
+      "hr": "Human resources",
+      "manager": "Management",
+      "me": "My space",
+      "onboarding": "Onboarding",
+      "references": "Reference materials",
+      "steering": "Steering",
+      "tools": "Tools"
+    },
+    "items": {
+      "adminAi": "AI",
+      "adminAudit": "Audit log",
+      "adminBackups": "Backups",
+      "adminConsole": "Console",
+      "adminGdpr": "GDPR",
+      "adminIntegrations": "Integrations",
+      "adminOrganization": "Structures",
+      "adminProvisioning": "Provisioning queue",
+      "adminRoles": "Roles",
+      "adminSecurity": "Security",
+      "adminSettings": "Settings",
+      "adminUsers": "Accounts",
+      "company": "Company",
+      "competencies": "Competencies",
+      "contacts": "Contacts",
+      "dashboard": "Steering",
+      "documents": "Documents",
+      "hrAiKnowledge": "Knowledge base",
+      "hrAlerts": "Alerts",
+      "hrAnalytics": "Analytics",
+      "hrDashboard": "Dashboard",
+      "hrDocuments": "Documents",
+      "hrEmployees": "Employees",
+      "hrOrganigram": "Org chart",
+      "hrPositions": "Positions",
+      "hrProbation": "Probation periods",
+      "hrReports": "Reports",
+      "hrRequestAccount": "Account requests",
+      "hrSurveyResults": "Survey results",
+      "hrSurveys": "Surveys",
+      "hrTemplates": "Onboarding templates",
+      "hrTraining": "Training",
+      "hrUnassigned": "Unassigned",
+      "hse": "HSE",
+      "jobDescription": "Job descriptions",
+      "kaizen": "Kaizen",
+      "management": "Management",
+      "managerArchive": "Archive",
+      "managerAssistant": "Assistant",
+      "managerCalendar": "Calendar",
+      "managerDashboard": "Dashboard",
+      "managerDocuments": "Documents",
+      "managerEvaluations": "Evaluations",
+      "managerOrganigram": "Org chart",
+      "managerRecruits": "New hires",
+      "managerReports": "Reports",
+      "managerSettings": "Settings",
+      "managerTeam": "My team",
+      "meAssistant": "Assistant",
+      "meCertificates": "My certificates",
+      "meDashboard": "Dashboard",
+      "meDocuments": "My documents",
+      "meFiles": "My supporting documents",
+      "meJourney": "My journey",
+      "meOrganigram": "Org chart",
+      "mePosition": "My job description",
+      "meSurveys": "My surveys",
+      "meTeam": "My team",
+      "meTraining": "My training",
+      "onboardingChecklist": "Onboarding checklist",
+      "organization": "Organisation",
+      "qms": "QMS",
+      "recruitment": "Recruitment",
+      "remarks": "Remarks",
+      "strategy": "Strategy",
+      "surveys": "Surveys",
+      "training": "Training",
+      "welcome": "Welcome",
+      "managerJobDescriptions": "Job descriptions",
+      "managerQuests": "Quests",
+      "meQuests": "My quests"
+    },
+    "public": {
+      "brandHome": "SOFICLEF — home",
+      "closeMenu": "Close menu",
+      "company": "Company",
+      "home": "Home",
+      "login": "Sign in",
+      "mainNav": "Main navigation",
+      "openMenu": "Open menu",
+      "orgChart": "Org chart",
+      "strategy": "Strategy"
+    }
+  },
+  "auth": {
+    "login": {
+      "backToSite": "Back to the site",
+      "emailLabel": "Work email",
+      "emailPlaceholder": "firstname.lastname@soficlef.local",
+      "highlight1": "Your onboarding journey, step by step",
+      "highlight2": "Your documents, training and supporting files",
+      "highlight3": "Your place in the org chart",
+      "hidePassword": "Hide",
+      "invalidCredentials": "Invalid credentials.",
+      "lede": "Access your journey and your documents.",
+      "noAccessNote": "No access yet? Your account is created by IT, then assigned by HR.",
+      "panelTitle": "Your employee space",
+      "passwordLabel": "Password",
+      "showPassword": "Show",
+      "submit": "Sign in",
+      "submitting": "Signing in…",
+      "title": "Sign in",
+      "tooManyAttempts": "Too many attempts. Please wait a few minutes before trying again."
+    },
+    "pending": {
+      "body": "Your account has not been assigned to a position yet. HR will place you shortly.",
+      "title": "Account pending"
+    }
+  },
+  "public": {
+    "assistant": {
+      "askButton": "Ask",
+      "asking": "Searching…",
+      "askFailed": "The search failed. Please try again in a moment.",
+      "defaultEmptyDetail": "Ask a question, or pick one of the suggestions above.",
+      "defaultPlaceholder": "Ask your question…",
+      "degraded": {
+        "error": "The model could not be reached — here are the search results.",
+        "modelLoading": "The model is starting up (about 20s) — here are the search results in the meantime.",
+        "rateLimited": "The model's quota has been reached — here are the search results.",
+        "timeout": "The model did not respond in time — here are the search results."
+      },
+      "noAnswer": "I found nothing matching in the data you are allowed to see. Rather than give an approximate answer, the assistant prefers to assert nothing: rephrase the question, or go straight to the relevant section.",
+      "providerNone": "No language model is connected: the assistant answers by searching the data visible to you, and cites what it finds.",
+      "providerNote": "Answers written by {{model}} ({{provider}}), drawn solely from data you can already access.",
+      "providerNoteFallbackModel": "a language model",
+      "questionLabel": "Your question",
+      "sources": "Sources",
+      "tooManyQuestions": "Too many questions in a short time. Please try again in a moment.",
+      "ungroundedBadge": "General knowledge — outside SOFICLEF data",
+      "ungroundedNote": "No internal information matched this question. This answer comes from the model's general knowledge: check it with HR before relying on it."
+    },
+    "company": {
+      "ctaLede": "Divisions, production units and functional cells — the full org chart.",
+      "ctaTitle": "How we are organised",
+      "eyebrow": "The company",
+      "heroLede": "From manufacturing lock bodies to nationwide distribution, SOFICLEF designs and produces from Boumerdès the components that secure doors, safes and buildings.",
+      "heroTitle": "Thirty years of Algerian <0>industrial locksmithing</0>",
+      "identity": {
+        "certification": "Certification",
+        "eyebrow": "Company profile",
+        "foundedCity": "City of incorporation",
+        "foundedYear": "Year of incorporation",
+        "generalManager": "General management",
+        "headquarters": "Head office",
+        "legalForm": "Legal form",
+        "legalName": "Registered name",
+        "status": "Status",
+        "title": "The facts, unpackaged"
+      },
+      "loadFailed": "Company information is unavailable at the moment.",
+      "milestones": {
+        "eyebrow": "Milestones",
+        "m1994Body": "SOFICLEF is founded as a limited company, built on opening and locking solutions.",
+        "m1994Title": "Founded in Algiers",
+        "m2017Body": "The quality management system is certified ISO 9001:2015 in September.",
+        "m2017Title": "ISO 9001 certification",
+        "mTodayBody": "Authorised Economic Operator status recognises the reliability of the logistics and customs chain.",
+        "mTodayTitle": "Authorised Economic Operator",
+        "title": "A few dates",
+        "today": "Today"
+      },
+      "mission": "Mission",
+      "tradesTitle": "Produce, distribute, deliver",
+      "vision": "Vision"
+    },
+    "footer": {
+      "discover": "Discover",
+      "employeeArea": "Employee space",
+      "headquarters": "Head office",
+      "headquartersAddress": "Si Mustapha\nBoumerdès, Algeria",
+      "quality": "Quality",
+      "qualityDetail": "ISO 9001:2015\nAuthorised Economic Operator",
+      "rights": "© {{year}} SOFICLEF SARL — All rights reserved.",
+      "tagline": "Opening and locking solutions, made in Algeria since 1994."
+    },
+    "home": {
+      "capabilities": {
+        "journeyBody": "From assignment to the end of the probation period, every step has a due date and an owner. Delays show up before the deadline, not after it.",
+        "journeyTitle": "A journey that is followed",
+        "skillsBody": "A matrix per position, compared against the employee's actual level. The gaps feed the training plan rather than a binder.",
+        "skillsTitle": "Skills that are assessed",
+        "structureBody": "Every position reports to a manager, every manager to a division. The org chart is not an annual document: it is the source that assignments and reviews read from.",
+        "structureLink": "View the org chart",
+        "structureTitle": "A structure you can read"
+      },
+      "ctaLede": "Your employee space brings together your journey, your documents, your training and your org chart.",
+      "ctaLink": "Go to my space",
+      "ctaTitle": "Joining SOFICLEF?",
+      "cursorDiscover": "Discover",
+      "cursorView": "View",
+      "eyebrow": "SOFICLEF SARL · since 1994",
+      "heroCtaCompany": "Discover the company",
+      "heroCtaOrg": "Our organisation",
+      "heroLedeFallback": "Solutions combining design, reliability and comfort — engineered, manufactured and distributed from Boumerdès.",
+      "heroTitle": "Protecting life and property,<0> part by part.</0>",
+      "platform": {
+        "eyebrow": "The onboarding platform",
+        "lede": "SOFICLEF supports every employee from assignment through to the end of their probation period. The journey is the same for everyone; what it contains depends on the position.",
+        "title": "Onboarding that is followed through, not just started."
+      },
+      "stats": {
+        "certifiedSince": "Certified since 2017",
+        "foundedIn": "Founded in {{city}}",
+        "trustedOperator": "Authorised Economic Operator",
+        "trustedOperatorAcronym": "AEO",
+        "warehouse": "Logistics warehouse"
+      },
+      "tradesEyebrow": "What we do",
+      "tradesTitle": "Three divisions, one standard of reliability.",
+      "valuesEyebrow": "What we stand for",
+      "valuesTitle": "Our values",
+      "visionEyebrow": "Our vision",
+      "visionFallback": "To become the national leader in innovative opening and locking solutions.",
+      "visionQuote": "“{{vision}}”",
+      "visionRole": "General Manager"
+    },
+    "links": {
+      "theCompany": "The company",
+      "ourStrategy": "Our strategy",
+      "viewOrgChart": "View the org chart"
+    },
+    "marks": {
+      "key": "SOFICLEF key, graphic mark",
+      "lockKey": "Lock and key, SOFICLEF graphic mark",
+      "takeover": "SOFICLEF in a word"
+    },
+    "org": {
+      "chartEyebrow": "Overview",
+      "chartLede": "Click an entity to read its remit. The diagram scrolls horizontally on the widest levels.",
+      "chartTitle": "The structure, from the top to the shop floor",
+      "ctaLede": "Internally, every position on this chart carries a job description, a manager and an onboarding journey.",
+      "ctaTitle": "This structure is lived day to day",
+      "detailEyebrow": "The detail",
+      "detailTitle": "What each entity does",
+      "eyebrow": "Organisation",
+      "heroLede": "Operational divisions, production units and functional cells, each with a defined remit. It is this same structure that assignments and onboarding journeys read from internally.",
+      "heroTitle": "The <0>SOFICLEF</0> org chart",
+      "loadFailed": "The org chart is unavailable at the moment.",
+      "loading": "Loading the org chart…",
+      "notPublished": "The structure has not been published yet.",
+      "types": {
+        "celluleHelp": "The cross-cutting support functions.",
+        "celluleLabel": "Functional cells",
+        "directionHelp": "The top of the structure.",
+        "directionLabel": "Executive management",
+        "structureHelp": "The major operational groupings.",
+        "structureLabel": "Divisions",
+        "uniteProductionHelp": "The workshops, attached to a division.",
+        "uniteProductionLabel": "Production units"
+      }
+    },
+    "strategy": {
+      "ctaLede": "These objectives cascade into the company's divisions, units and cells.",
+      "ctaTitle": "A strategy carried by a structure",
+      "eyebrowFallback": "Strategic plan",
+      "heroTitle": "Where we are going, and <0>how we get there</0>",
+      "loadFailed": "The strategy is unavailable at the moment.",
+      "loading": "Loading the strategy…",
+      "marketsEyebrow": "Our markets",
+      "marketsLede": "For each market served: an approach, a market share target and a revenue target.",
+      "marketsTitle": "One objective per market",
+      "marketShare": "Market share",
+      "projectsEyebrow": "Flagship projects",
+      "projectsTitle": "Work in progress",
+      "revenue": "Revenue"
+    },
+    "takeover": {
+      "body": "Since 1994 we have designed and manufactured in Algeria the locks, handles and safes that protect life and property — from the lock body to nationwide distribution."
+    }
+  },
+  "hr": {
+    "employeeDirectory": {
+      "loading": "Loading the directory...",
+      "loadError": "Unable to load the directory.",
+      "title": "Employees",
+      "subtitle": "The complete directory in your scope: search, filters and export.",
+      "unassigned": "Unassigned",
+      "exportButton": "Export (CSV)",
+      "search": "Search by name, email or position...",
+      "allStructures": "All structures",
+      "allManagers": "All managers",
+      "allStatuses": "All statuses",
+      "reset": "Reset filters",
+      "stats": {
+        "displayed": "Employees shown",
+        "onboarding": "Onboarding",
+        "unassigned": "Unassigned"
+      },
+      "emptyTitle": "No employees",
+      "emptyFiltered": "No employees match these filters.",
+      "emptyScope": "No employees are visible in your scope.",
+      "status": {
+        "pending": "Awaiting assignment",
+        "assigned": "Assigned",
+        "onboarding": "Onboarding",
+        "active": "Active",
+        "archived": "Archived"
+      },
+      "table": {
+        "employee": "Employee",
+        "position": "Position",
+        "structure": "Structure",
+        "manager": "Manager",
+        "status": "Status",
+        "onboarding": "Onboarding"
+      },
+      "export": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "position": "Position",
+        "direction": "Division",
+        "department": "Department",
+        "structure": "Structure",
+        "manager": "Manager",
+        "status": "Status",
+        "hireDate": "Hire date",
+        "onboarding": "Onboarding (%)"
+      }
+    },
+    "accountRequests": {
+      "loading": "Loading account requests...",
+      "loadError": "Unable to load account requests.",
+      "title": "Request an account",
+      "subtitle": "HR does not create accounts: this request opens an IT ticket, then the account returns here for assignment.",
+      "confirmation": "Request sent to IT for {{name}}.",
+      "validationError": "Check the form fields.",
+      "saveError": "The request could not be saved.",
+      "form": {
+        "title": "New request",
+        "candidate": "Candidate name",
+        "position": "Planned position",
+        "hireDate": "Planned hire",
+        "urgency": "Urgency",
+        "note": "Note (optional)",
+        "sending": "Sending...",
+        "submit": "Send request to IT"
+      },
+      "urgency": {
+        "normal": "Normal",
+        "urgent": "Urgent"
+      },
+      "status": {
+        "open": "Open",
+        "created": "Account created",
+        "rejected": "Rejected"
+      },
+      "list": {
+        "title": "Recorded requests",
+        "empty": "No account requests recorded."
+      },
+      "table": {
+        "candidate": "Candidate",
+        "position": "Planned position",
+        "urgency": "Urgency",
+        "status": "Status",
+        "waiting": "Waiting"
+      },
+      "days_one": "{{count}} day",
+      "days_other": "{{count}} days"
+    },
+    "organigram": {
+      "loading": "Loading the organisation chart…",
+      "loadError": "Unable to load the organisation chart.",
+      "title": "Organisation chart",
+      "subtitle": "The complete company structure, from general management to field positions.",
+      "tabs": {
+        "tree": "Organisation chart",
+        "anomalies": "Anomalies ({{count}})"
+      },
+      "search": "Search for a position, code or person…",
+      "allStructures": "All structures",
+      "vacantOnly": "Vacant positions only",
+      "positionCount": "{{visible}} / {{total}} positions",
+      "emptyFiltered": "No position matches these filters.",
+      "noAnomaly": "No anomaly of this type.",
+      "vacant": "Vacant",
+      "table": {
+        "position": "Position",
+        "code": "Code",
+        "structure": "Structure",
+        "holder": "Holder"
+      },
+      "anomalies": {
+        "vacant": {
+          "title": "Vacant positions",
+          "rule": "The position exists in the organisation chart but nobody holds it today."
+        },
+        "headless": {
+          "title": "Branches without a manager",
+          "rule": "Positions report to this position, but it has no holder."
+        },
+        "orphans": {
+          "title": "Orphan nodes",
+          "rule": "The position declares a parent position that does not exist in the organisation chart."
+        },
+        "unattached": {
+          "title": "Positions without a structure",
+          "rule": "The position is not attached to a division or department."
+        }
+      }
+    },
+    "positions": {
+      "loading": "Loading positions…",
+      "loadError": "Unable to load positions.",
+      "saveError": "The position could not be saved.",
+      "archiveConfirm": "Archive the position \"{{title}}\"?",
+      "archiveError": "The position could not be archived.",
+      "title": "Positions",
+      "subtitle": "Each position is an organisation-chart node: title, mission and reporting line.",
+      "newPosition": "New position",
+      "readOnlyNotice": "Your role provides read access to positions. Creating and editing positions belong to administration.",
+      "stats": {
+        "active": "Active positions",
+        "vacant": "Vacant positions",
+        "withoutDescription": "Without job description"
+      },
+      "form": {
+        "editTitle": "Edit position",
+        "newTitle": "New position",
+        "code": "Code",
+        "codeHint": "The code identifies the position and cannot be changed.",
+        "title": "Title",
+        "mission": "Mission",
+        "structure": "Structure",
+        "noStructure": "No structure",
+        "parent": "Reports to (reporting line)",
+        "noParent": "None (root)"
+      },
+      "cancel": "Cancel",
+      "saving": "Saving…",
+      "save": "Save",
+      "search": "Search for a position…",
+      "allStructures": "All structures",
+      "positionCount": "{{visible}} / {{total}}",
+      "empty": "No position matches these criteria.",
+      "table": {
+        "code": "Code",
+        "title": "Title",
+        "structure": "Structure",
+        "parent": "Reports to",
+        "occupation": "Occupation",
+        "description": "Job description"
+      },
+      "vacant": "Vacant",
+      "occupied": "Occupied",
+      "viewDescription": "View",
+      "missingDescription": "Missing"
+    },
+    "templates": {
+      "loading": "Loading templates…",
+      "loadError": "Unable to load onboarding templates.",
+      "createError": "The template could not be created.",
+      "title": "Onboarding templates",
+      "subtitle": "The library of standard journeys by position profile.",
+      "cancel": "Cancel",
+      "newTemplate": "New template",
+      "readOnlyNotice": "Your role provides read access to the template library. Creating and editing templates belong to administration (permissions",
+      "stats": {
+        "templates": "Available templates",
+        "steps": "Steps described",
+        "generated": "Journeys generated"
+      },
+      "form": {
+        "title": "New template",
+        "code": "Template code",
+        "codeHint": "Lowercase letters, numbers and hyphens.",
+        "titleLabel": "Title",
+        "position": "Position profile",
+        "generic": "Generic template (all profiles)",
+        "creating": "Creating…",
+        "create": "Create template"
+      },
+      "emptyTitle": "No templates",
+      "emptyDetail": "The journey library is empty. A template describes the sequence of steps a profile follows on arrival.",
+      "profile": "Profile",
+      "genericProfile": "Generic template — all profiles",
+      "stepsCount_one": "{{count}} step",
+      "stepsCount_other": "{{count}} steps",
+      "generatedCount_one": "{{count}} journey generated",
+      "generatedCount_other": "{{count}} journeys generated"
+    },
+    "templateBuilder": {
+      "loading": "Loading the template…",
+      "notFound": "Template not found.",
+      "saveError": "The sequence could not be saved.",
+      "back": "← Back to library",
+      "profileSubtitle": "Profile: {{profile}} — {{steps}} step(s), {{journeys}} journey/journeys generated.",
+      "genericSubtitle": "Generic template — {{steps}} step(s), {{journeys}} journey/journeys generated.",
+      "addStep": "Add a step",
+      "saving": "Saving…",
+      "saveSequence": "Save sequence",
+      "readOnlyNotice": "Your role provides read access to journey templates. Editing the sequence belongs to administration (permission",
+      "saved": "Sequence saved.",
+      "unsaved": "Unsaved changes.",
+      "emptyTitle": "Empty sequence",
+      "emptyEditable": "This template does not describe any steps yet. Add the first one above.",
+      "emptyReadOnly": "This template does not describe any steps yet.",
+      "moveUp": "Move step {{number}} up",
+      "moveDown": "Move step {{number}} down",
+      "fields": {
+        "stepTitle": "Step title",
+        "offset": "Offset (days)",
+        "department": "Responsible department",
+        "description": "Description",
+        "phase": "Phase",
+        "mandatory": "Mandatory step"
+      },
+      "departments": {
+        "HR": "HR",
+        "IT": "IT",
+        "HSE": "HSE",
+        "QUALITY": "Quality",
+        "MANAGER": "Manager",
+        "EMPLOYEE": "Employee"
+      },
+      "phases": {
+        "PRE_ONBOARDING": "Before arrival",
+        "DAY_ONE": "Day one",
+        "PROBATION": "Trial period"
+      },
+      "remove": "Remove",
+      "existingJourneys": "{{count}} journeys have been generated from this template. Editing the sequence does not alter journeys already in progress; deleting a step already completed by someone is rejected by the server so an existing validation is not erased."
+    },
+    "documentLibrary": {
+      "loadError": "Unable to load the document library.",
+      "createError": "The document could not be created.",
+      "uploaded": "\"{{name}}\" was uploaded and the document is published.",
+      "uploadError": "The upload failed.",
+      "updateError": "The update failed.",
+      "publishError": "Publishing failed.",
+      "cancel": "Cancel",
+      "newDocument": "New document",
+      "storageUnavailable": "No storage space is configured on this server: document records can be created and described, but file uploads are unavailable until Cloudinary credentials are configured.",
+      "stats": {
+        "documents": "Documents",
+        "published": "Published",
+        "acknowledgements": "Acknowledgements"
+      },
+      "form": {
+        "title": "New document",
+        "reference": "Reference",
+        "documentTitle": "Title",
+        "description": "Description",
+        "order": "Order",
+        "creating": "Creating…",
+        "create": "Create record",
+        "hint": "The record is created as pending; upload the file from the list afterwards to publish it."
+      },
+      "search": "Search for a document…",
+      "emptySearch": "No document matches this search.",
+      "table": {
+        "document": "Document",
+        "file": "File",
+        "status": "Status",
+        "acknowledgements": "Acknowledgements"
+      },
+      "status": {
+        "published": "Published",
+        "pending": "Pending"
+      },
+      "open": "Open",
+      "noFile": "No file",
+      "noDepartments": "no department targeted",
+      "allPersonnel": "all personnel",
+      "uploading": "Uploading…",
+      "replaceFile": "Replace file",
+      "upload": "Upload",
+      "unpublish": "Unpublish",
+      "publish": "Publish…",
+      "versionNote": "The data model does not keep version history: uploading a new file replaces the previous one. Each replacement is recorded in the audit log with the replaced file name.",
+      "publishAction": "Publish",
+      "dialog": {
+        "ariaLabel": "Publish document",
+        "title": "Publish \"{{title}}\"",
+        "subtitle": "The document will become visible in the relevant people’s workspace.",
+        "audience": "Recipients",
+        "allHint": "Anyone who can view the library.",
+        "departments": "Selected departments",
+        "departmentsHint": "Only people assigned to the selected departments will see the document.",
+        "noDepartments": "No department is recorded in the directory: employee records have no division or department. Add them before targeting a publication.",
+        "selectedDepartments": "Visible to accounts assigned to: {{departments}}.",
+        "chooseDepartment": "Choose at least one department.",
+        "allSummary": "Visible to all personnel."
+      }
+    },
+    "training": {
+      "loading": "Loading the training catalogue…",
+      "loadError": "Unable to load the training catalogue.",
+      "createError": "The module could not be created.",
+      "title": "Training catalogue",
+      "subtitle": "Onboarding modules, their mandatory status and validation quizzes.",
+      "cancel": "Cancel",
+      "newModule": "New module",
+      "readOnlyNotice": "Your role provides read access to the catalogue. Creating a module belongs to administration.",
+      "stats": {
+        "modules": "Modules",
+        "mandatory": "Mandatory",
+        "withoutQuiz": "Without quiz",
+        "coverage": "Coverage"
+      },
+      "coverage": "{{trained}}/{{people}} employees up to date",
+      "form": {
+        "title": "New module",
+        "code": "Code",
+        "titleLabel": "Title",
+        "summary": "Summary",
+        "content": "Module content",
+        "mandatory": "Mandatory module",
+        "threshold": "Passing score (%)",
+        "order": "Order",
+        "creating": "Creating…",
+        "create": "Create module"
+      },
+      "emptyTitle": "Empty catalogue",
+      "emptyDetail": "No training module is published.",
+      "mandatory": "Mandatory",
+      "noQuiz": "No quiz",
+      "quizSummary_one": "{{count}} question — threshold {{score}}%",
+      "quizSummary_other": "{{count}} questions — threshold {{score}}%",
+      "quiz": "Quiz"
+    },
+    "surveys": {
+      "loading": "Loading surveys…",
+      "loadError": "Unable to load survey configuration.",
+      "title": "Satisfaction surveys",
+      "subtitle": "Milestones, questionnaire and reminder rules for onboarding follow-up.",
+      "reminderRules": "Reminder rules",
+      "viewResults": "View results",
+      "stats": {
+        "issued": "Surveys issued",
+        "answered": "Completed",
+        "overdue": "Overdue",
+        "responseRate": "Response rate"
+      },
+      "responses": "{{answered}}/{{issued}} responses",
+      "score": "Satisfaction score",
+      "milestones": {
+        "title": "Survey milestones",
+        "detail": "The four milestones are generated automatically at assignment from the hire date. They are defined in the domain (D+7, D+30, D+60, D+90) and apply to every journey; changing them would be a model change, not a setting.",
+        "firstWeek": "First week — welcome, equipment and first bearings.",
+        "firstMonth": "First month — role clarity and support.",
+        "secondMonth": "Two months — autonomy and team integration.",
+        "trialEnd": "End of trial period — overall review."
+      },
+      "questionnaire": {
+        "title": "Questionnaire",
+        "detail": "The five indicators scored from 1 to 5 in every survey. They are database enum values: adding one requires a migration, so the list cannot be edited here."
+      },
+      "indicators": {
+        "welcomeQuality": "Welcome quality",
+        "supportLevel": "Support received",
+        "roleClarity": "Role clarity",
+        "managerRelationship": "Manager relationship",
+        "workingConditions": "Working conditions"
+      },
+      "table": {
+        "indicator": "Indicator",
+        "average": "Average (/5)",
+        "score": "Score",
+        "responses": "Responses"
+      },
+      "rules": {
+        "title": "Reminder rules",
+        "detail": "Rules that trigger a reminder for an unanswered survey. They are configured on the alerts page.",
+        "emptyTitle": "No survey reminder rules",
+        "emptyDetail": "Nothing automatically reminds people about unanswered surveys today. Create an “unanswered survey” rule from the Alerts page."
+      },
+      "active": "Active",
+      "inactive": "Inactive",
+      "ruleSummary": "Reminder after {{threshold}} day(s), notification to {{department}}",
+      "escalation": ", escalation after {{days}} day(s).",
+      "noEscalation": ", no escalation."
+    },
+    "surveyResults": {
+      "loading": "Loading results…",
+      "loadError": "Unable to load survey results.",
+      "back": "← Back to surveys",
+      "title": "Survey results",
+      "subtitle": "Scores by indicator and milestone, plus individual responses filterable by structure, manager and period.",
+      "allStructures": "All structures",
+      "allManagers": "All managers",
+      "reset": "Reset",
+      "responseCount_one": "{{count}} response displayed",
+      "responseCount_other": "{{count}} responses displayed",
+      "metrics": {
+        "overall": "Overall score",
+        "responseRate": "Response rate",
+        "issued": "Surveys issued",
+        "answered": "Completed"
+      },
+      "byIndicator": "Scores by indicator",
+      "byMilestone": "Scores by milestone",
+      "individual": "Individual responses",
+      "notMeasurable": "Not measurable",
+      "responsePair": "{{answered}}/{{issued}} responses",
+      "emptyTitle": "No responses",
+      "emptyFiltered": "No completed survey matches these filters.",
+      "emptyScope": "No survey has been completed in your scope yet.",
+      "hide": "Hide",
+      "detail": "Details",
+      "periods": {
+        "30": "Last 30 days",
+        "90": "Last 90 days",
+        "180": "Last 6 months",
+        "all": "All time"
+      },
+      "table": {
+        "employee": "Employee",
+        "milestone": "Milestone",
+        "structure": "Structure",
+        "manager": "Manager",
+        "score": "Score",
+        "answeredAt": "Answered on"
+      }
+    },
+    "analytics": {
+      "loadError": "Unable to load indicators.",
+      "reportLink": "Report builder",
+      "emptyTitle": "No indicators",
+      "emptyDetail": "No indicators are available for your scope.",
+      "moduleTitle": "Module 10 indicators",
+      "dayShort": "d",
+      "metrics": {
+        "completion": "Completion rate",
+        "duration": "Average duration",
+        "confirmation": "Confirmation rate",
+        "noCohort": "No six-month cohort",
+        "cohort": "Across {{count}} journeys older than six months",
+        "satisfaction": "Satisfaction",
+        "training": "Training up to date"
+      },
+      "moduleNote": "A dash means “not measurable”, not “zero”: the platform distinguishes missing data from a zero result. These six indicators cover your full scope; the filters below apply to the detailed view.",
+      "filteredTitle": "Filtered view and comparison",
+      "allStructures": "All structures",
+      "allManagers": "All managers",
+      "period": "Period: {{period}}",
+      "periods": {
+        "30": "30 days",
+        "90": "90 days",
+        "180": "6 months",
+        "365": "12 months"
+      },
+      "reset": "Reset",
+      "peopleCount_one": "{{count}} employee",
+      "peopleCount_other": "{{count}} employees",
+      "hires": "Recruitment ({{period}})",
+      "stable": "Stable versus the previous {{days}} days ({{count}})",
+      "delta": "{{delta}} versus the previous period ({{count}})",
+      "filteredInProgress": "Onboarding in progress",
+      "filteredCompleted": "Onboarding completed",
+      "averageProgress": "Average progress",
+      "filteredScope": "Within the filtered scope",
+      "journeyHealth": "Journey health",
+      "activeJourneys": "Active journeys",
+      "overdueSteps": "Overdue steps",
+      "blockedSteps": "Blocked steps",
+      "satisfactionByMilestone": "Satisfaction by milestone",
+      "noSurveys": "No survey issued.",
+      "dataQuality": "Data quality",
+      "unitsWithoutHead": "Structures without a manager",
+      "jobsWithoutDescription": "Positions without a description",
+      "descriptionCoverage": "Description coverage",
+      "trainedEmployees": "Trained employees"
+    },
+    "reportBuilder": {
+      "loadError": "Unable to load report data.",
+      "notMeasurable": "not measurable",
+      "days": "days",
+      "back": "← Back to analytics",
+      "export": "Export report (CSV)",
+      "naturalTitle": "Natural-language writing",
+      "unavailable": "Unavailable",
+      "naturalDetail": "Automatic report writing (“Agent 5”) requires a language-model provider, and none is connected to this platform. The data below is calculated by the platform and can be exported as-is.",
+      "sectionsTitle": "Report sections",
+      "preview": "Preview",
+      "rowCount_one": "{{count}} row",
+      "rowCount_other": "{{count}} rows",
+      "selectSection": "Select at least one section to compose a report.",
+      "unknownPosition": "position not provided",
+      "noStructure": "no structure",
+      "noManager": "no manager",
+      "noJourney": "not on a journey",
+      "sections": {
+        "indicators": "HR indicators",
+        "onboarding": "Journeys",
+        "satisfaction": "Satisfaction",
+        "quality": "Data quality",
+        "directory": "Directory"
+      },
+      "sectionLabels": {
+        "indicators": "HR indicators (Module 10)",
+        "onboarding": "Journey health",
+        "satisfaction": "Satisfaction by milestone",
+        "directory": "Employee directory",
+        "quality": "Data quality"
+      },
+      "sectionDetails": {
+        "indicators": "Completion, duration, confirmation, turnover, satisfaction and training.",
+        "onboarding": "Active journeys, overdue and blocked steps, average progress.",
+        "satisfaction": "Score and response rate for D+7, D+30, D+60 and D+90.",
+        "directory": "Name, position, structure, manager, status and progress.",
+        "quality": "Structures without a manager and positions without descriptions."
+      },
+      "rows": {
+        "completion": "Journey completion rate",
+        "duration": "Average onboarding duration",
+        "confirmation": "Confirmation rate",
+        "turnover": "Six-month turnover",
+        "cohort": "Turnover cohort",
+        "satisfaction": "Satisfaction",
+        "training": "Training up to date",
+        "activeJourneys": "Active journeys",
+        "overdue": "Overdue steps",
+        "blocked": "Blocked steps",
+        "progress": "Average progress",
+        "overall": "Overall score",
+        "responseRate": "Response rate",
+        "milestone": "Score D+{{day}}",
+        "units": "Structures without a manager",
+        "jobs": "Positions without a job description",
+        "coverage": "Job-description coverage"
+      },
+      "table": {
+        "section": "Section",
+        "indicator": "Indicator",
+        "value": "Value"
+      }
+    },
+    "alerts": {
+      "loadError": "Unable to load alert rules.",
+      "saveError": "The rule could not be saved.",
+      "updateError": "The update failed.",
+      "deleteConfirm": "Delete the rule \"{{label}}\"?",
+      "deleteError": "The rule could not be deleted.",
+      "cancel": "Cancel",
+      "newRule": "New rule",
+      "stats": {
+        "total": "Rules defined",
+        "active": "Active",
+        "escalating": "With escalation"
+      },
+      "form": {
+        "editTitle": "Edit rule",
+        "newTitle": "New rule",
+        "label": "Label",
+        "labelPlaceholder": "Reminder for unprocessed IT steps",
+        "trigger": "Trigger",
+        "department": "Notify department",
+        "threshold": "Remind after (days)",
+        "escalation": "Escalate after (days)",
+        "noEscalation": "No escalation",
+        "escalationHint": "Leave blank if the rule never escalates.",
+        "active": "Active rule"
+      },
+      "triggers": {
+        "taskOverdue": "Onboarding step overdue",
+        "surveyUnanswered": "Survey unanswered",
+        "evaluationDue": "Evaluation due"
+      },
+      "departments": {
+        "HR": "HR",
+        "IT": "IT",
+        "HSE": "HSE",
+        "QUALITY": "Quality",
+        "MANAGER": "Manager",
+        "EMPLOYEE": "Employee"
+      },
+      "saving": "Saving…",
+      "save": "Save rule",
+      "emptyTitle": "No rules defined",
+      "emptyDetail": "No automatic reminders are configured. A rule describes the situation that triggers a reminder, the delay before it, and the department to notify.",
+      "active": "Active",
+      "inactive": "Inactive",
+      "ruleSummary": "Reminder sent to {{department}} after {{days}} day(s)",
+      "escalationSummary": ", then escalation after {{days}} additional day(s).",
+      "noEscalationSummary": ", with no escalation.",
+      "edit": "Edit",
+      "disable": "Disable",
+      "enable": "Enable",
+      "delete": "Delete",
+      "footerNote": "These rules define the reminder policy and are stored durably. No scheduler currently runs in the application server, so reminders are not yet triggered at a fixed time. Dashboard alerts are calculated live from real delays and blocked steps."
+    },
+    "knowledge": {
+      "loading": "Loading agents…",
+      "loadError": "Unable to load agent configuration.",
+      "title": "Agent knowledge base",
+      "subtitle": "What each agent is allowed to read, and the real state of the feature.",
+      "stats": {
+        "defined": "Agents defined",
+        "operational": "Operational agents",
+        "published": "Published documents"
+      },
+      "operational": "Operational",
+      "outOfScope": "Outside your access",
+      "reads": "Reads",
+      "resources": {
+        "position": "Positions",
+        "assignment": "Assignments",
+        "organizationUnit": "Structures",
+        "document": "Document library",
+        "onboardingInstance": "Onboarding journeys",
+        "onboardingTask": "Journey steps",
+        "training": "Training catalogue",
+        "competency": "Competency framework",
+        "jobDescription": "Job descriptions"
+      },
+      "sources": {
+        "title": "Each agent’s sources",
+        "detail": "Sources are not indexed files but platform resources, read with the permissions and scope of the person asking the question. An agent can therefore never reveal a row the person could not open themselves."
+      },
+      "test": {
+        "title": "Test a question",
+        "detail": "All five agents answer. Each first searches platform data using the asker’s permissions — here, yours. The result therefore reflects the agent’s real behaviour for your account.",
+        "emptyTitle": "No queryable agent",
+        "emptyDetail": "Your account has no read access to any resource used by these agents.",
+        "emptyChat": "Ask a question to see what the agent returns and which sources it uses."
+      },
+      "reindex": {
+        "title": "Re-indexing",
+        "emptyTitle": "Not applicable",
+        "detail": "There is no index to rebuild: each search queries the database directly with the requester’s permissions."
+      },
+      "flagged": {
+        "title": "Flagged answers",
+        "emptyTitle": "Unavailable",
+        "detail": "No answer history is retained. An answer exists only for the duration of the question that produced it, making retrospective review impossible."
+      },
+      "documents": {
+        "title": "Documents available to agent 2",
+        "detail": "Published documents consulted by the document agent. These are exactly the library documents, without a separate copy or index, using the same audience rule.",
+        "empty": "No documents are published in the library.",
+        "table": {
+          "document": "Document",
+          "reference": "Reference",
+          "file": "File"
+        },
+        "noFile": "No attached file",
+        "manage": "Manage document library"
+      }
+    },
+    "dashboard": {
+      "eyebrow": "Human resources",
+      "title": "Dashboard",
+      "subtitle": "Recruitment, onboarding progress, satisfaction and alerts across the HR scope.",
+      "loading": "Loading the HR dashboard…",
+      "loadError": "Unable to load the HR dashboard.",
+      "requestAccount": "Request an account",
+      "assignmentQueue": "Assignment queue",
+      "openQueue": "Open queue",
+      "tiles": {
+        "hired": "Recruitment (30 days)",
+        "inProgress": "Onboarding in progress",
+        "completed": "Onboarding completed",
+        "overdue": "Overdue steps"
+      },
+      "probation": {
+        "title": "Trial periods to review",
+        "one": "A manager has submitted an evaluation. The decision is yours.",
+        "other": "Managers have submitted evaluations. The decisions are yours.",
+        "more": "and {{count}} more…"
+      },
+      "progress": {
+        "title": "Progress",
+        "average": "Average progress",
+        "unavailable": "Completion rate cannot be measured.",
+        "completionRate": "Journey completion rate: {{percent}}%."
+      },
+      "satisfaction": {
+        "title": "Satisfaction score",
+        "answered": "{{answered}}/{{issued}} surveys completed.",
+        "none": "No survey issued.",
+        "link": "View result details →"
+      },
+      "alerts": {
+        "title": "Alerts",
+        "empty": "No alerts. Everything is up to date.",
+        "pending": {
+          "title": "{{count}} account(s) waiting for more than 3 days",
+          "detail": "The oldest has been waiting for {{days}} days."
+        },
+        "requests": {
+          "title": "{{count}} account request(s) open with IT",
+          "urgent": "At least one is marked urgent.",
+          "detail": "Waiting for IT to create the account."
+        },
+        "overdue": {
+          "title": "{{count}} onboarding step(s) overdue",
+          "detail": "Some steps passed their planned date on active journeys."
+        },
+        "blocked": {
+          "title": "{{count}} blocked step(s)",
+          "detail": "These steps were reported as blocked by their manager."
+        },
+        "surveys": {
+          "title": "{{count}} unanswered survey(s)",
+          "detail": "Satisfaction surveys have passed their due date."
+        },
+        "jobs": {
+          "title": "{{count}} position(s) without a job description",
+          "detail": "These positions exist in the organisation chart but have no description."
+        }
+      },
+      "waiting": {
+        "title": "Accounts waiting for assignment",
+        "viewAll": "View all",
+        "empty": "No accounts waiting for assignment.",
+        "days_one": "{{count}} day",
+        "days_other": "{{count}} days"
+      }
+    },
+    "probation": {
+      "loading": "Loading trial periods…",
+      "title": "Trial periods",
+      "subtitle": "Evaluations submitted by managers, and the decision still to be made.",
+      "noticeTitle": "The suggestion does not decide.",
+      "noticeDetail": "The percentage is calculated from the manager’s four scores: above 60% suggests confirmation, between 30% and 60% suggests an extension, and below 30% suggests ending the trial period. You may deviate from it; in that case, a reason is required and retained with the decision.",
+      "pending": "To decide",
+      "suggested": "suggested",
+      "emptyTitle": "Nothing to review",
+      "emptyDetail": "No evaluation has been submitted. A trial period appears here once the employee’s manager submits an evaluation.",
+      "outcomes": {
+        "CONFIRMED": {
+          "label": "Confirm"
+        },
+        "EXTENDED": {
+          "label": "Extend"
+        },
+        "TERMINATED": {
+          "label": "End trial"
+        }
+      }
+    },
+    "pages": {
+      "alerts": {
+        "loading": "Loading alert rules…",
+        "title": "Alert rules",
+        "subtitle": "Who is reminded, after how many days, and where the escalation goes."
+      },
+      "analytics": {
+        "loading": "Loading indicators…",
+        "title": "Analytics",
+        "subtitle": "HR indicators: completion, onboarding, confirmation, satisfaction, training and turnover."
+      },
+      "report": {
+        "loading": "Loading data…",
+        "title": "Report builder",
+        "subtitle": "Compose and export a report from the indicators calculated by the platform."
+      },
+      "documents": {
+        "loading": "Loading the library…",
+        "title": "Document library",
+        "subtitle": "Publish reference documents and track acknowledgements."
+      },
+      "employees": {
+        "loading": "Loading the directory…",
+        "title": "Employees",
+        "subtitle": "The complete directory in your scope: search, filters and export."
+      },
+      "unassigned": {
+        "loading": "Loading the assignment queue…",
+        "loadError": "Unable to load the assignment queue.",
+        "title": "Unassigned accounts",
+        "subtitle": "Accounts created by IT waiting for assignment, oldest first.",
+        "requestAccount": "Request an account",
+        "stats": {
+          "pending": "Pending",
+          "stale": "Over {{days}} days",
+          "longest": "Longest wait"
+        },
+        "dayShort": "d",
+        "queueTitle": "Assignment queue",
+        "queueEmptyTitle": "Queue empty",
+        "queueEmptyDetail": "No account created by IT is waiting for assignment.",
+        "table": {
+          "employee": "Employee",
+          "email": "Email address",
+          "created": "Account created",
+          "waiting": "Waiting"
+        },
+        "days_one": "{{count}} day",
+        "days_other": "{{count}} days",
+        "assign": "Assign",
+        "requestsTitle": "Account requests currently with IT",
+        "requestsEmpty": "No open account requests.",
+        "urgent": "Urgent",
+        "requestedDays_one": "Requested {{count}} day ago",
+        "requestedDays_other": "Requested {{count}} days ago",
+        "plannedHire": "planned hire on {{date}}"
+      }
+    }
+  },
+  "manager": {
+    "eyebrow": "Management",
+    "dayPlus_one": "D+{{count}}",
+    "dayPlus_other": "D+{{count}}",
+    "noPosition": "Position not provided",
+    "blockedCount_one": "{{count}} blocked",
+    "blockedCount_other": "{{count}} blocked",
+    "overdueCount_one": "{{count}} overdue",
+    "overdueCount_other": "{{count}} overdue",
+    "taskStatus": {
+      "todo": "To do",
+      "inProgress": "In progress",
+      "blocked": "Blocked",
+      "done": "Done",
+      "validated": "Validated"
+    },
+    "dashboard": {
+      "loading": "Loading the manager dashboard…",
+      "loadError": "Unable to load the manager dashboard.",
+      "title": "Dashboard",
+      "subtitle": "Track onboarding, validate steps and spot situations that need your attention.",
+      "calendar": "Calendar",
+      "allRecruits": "All new hires",
+      "activeRecruits": "Active new hires",
+      "averageProgress": "Average progress",
+      "needAttention": "Needs attention",
+      "pendingTasks": "Pending tasks",
+      "recruitsInProgress": "Onboarding in progress",
+      "noRecruits": "No onboarding journeys in progress.",
+      "alerts": "Alerts",
+      "noAlerts": "No alerts.",
+      "detailedProgress": "Detailed progress",
+      "dayColumn": "Day",
+      "stepsColumn": "Steps",
+      "progressColumn": "Progress",
+      "noRecruitsToShow": "No new hires to show.",
+      "myTasks": "My tasks",
+      "taskDue": "{{name}} — due {{date}}",
+      "noPendingTasks": "No pending tasks."
+    },
+    "evaluations": {
+      "title": "Evaluations",
+      "subtitle": "Evaluations due for your recruits, across every milestone.",
+      "loadError": "Could not load the evaluations.",
+      "loading": "Loading evaluations…",
+      "milestoneColumn": "Milestone",
+      "evaluateAction": "Evaluate",
+      "empty": "No evaluation due at the moment."
+    },
+    "evaluationDetail": {
+      "notFound": "This evaluation does not exist.",
+      "loadError": "Could not load the evaluation.",
+      "conflict": "This evaluation was changed in the meantime. Reload the page before continuing.",
+      "loading": "Loading the evaluation…",
+      "backToEvaluations": "Back to evaluations",
+      "milestoneDue": "{{milestone}} — due {{date}}",
+      "alreadySubmitted": "This evaluation has already been submitted to HR.",
+      "criteria": {
+        "skills": "Technical skills",
+        "autonomy": "Autonomy",
+        "integration": "Integration with the team",
+        "behaviour": "Professional conduct"
+      },
+      "comment": "Comment",
+      "recommendation": "Recommendation",
+      "recommend": {
+        "confirm": "Confirm in the position",
+        "extend": "Extend the probation period",
+        "terminate": "End the probation period"
+      },
+      "saveDraft": "Save draft",
+      "submitToHr": "Submit to HR"
+    },
+    "calendar": {
+      "loadError": "Could not load the calendar.",
+      "loading": "Loading the calendar…",
+      "title": "Calendar",
+      "subtitle": "Upcoming evaluation due dates for your recruits, day by day.",
+      "eventTitle": "{{name}} — {{milestone}}",
+      "kind": {
+        "evaluation": "Evaluation",
+        "blocked": "Blocked",
+        "overdue": "Overdue"
+      },
+      "noUpcoming": "No upcoming due dates.",
+      "blockedOrOverdue": "Blocked or overdue recruits",
+      "nothingBlocked": "No blocked or overdue recruits."
+    },
+    "documents": {
+      "loadError": "Could not load the documents.",
+      "loading": "Loading documents…",
+      "title": "Documents",
+      "subtitle": "Policies and procedures relevant to onboarding your recruits.",
+      "availability": {
+        "available": "Available",
+        "pending": "In preparation"
+      },
+      "acknowledgementCount_one": "{{count}} acknowledgement",
+      "acknowledgementCount_other": "{{count}} acknowledgements",
+      "empty": "No documents available at the moment."
+    },
+    "archive": {
+      "loadError": "Could not load the archive.",
+      "loading": "Loading the archive…",
+      "title": "Archive",
+      "subtitle": "Completed onboarding journeys you have overseen.",
+      "startedOn": "Started on",
+      "viewRecord": "View record",
+      "empty": "No completed journeys at the moment."
+    },
+    "settings": {
+      "title": "Settings",
+      "subtitle": "Display and reminder preferences, specific to this device.",
+      "deviceOnlyNote": "These preferences are saved on this device only (no sync across devices).",
+      "reminders": {
+        "heading": "Reminders",
+        "windowLabel": "Reminder window",
+        "windowHelp": "Number of days before the due date to flag an evaluation as due.",
+        "blockedSteps": "Blocked steps",
+        "overdueSteps": "Overdue steps",
+        "evaluationsDue": "Evaluations due"
+      },
+      "display": {
+        "heading": "Dashboard display",
+        "comfortable": "Comfortable",
+        "compact": "Compact"
+      },
+      "saved": "Saved."
+    },
+    "recruitNotFound": "This recruit could not be found.",
+    "assignTask": {
+      "title": "Assign a task",
+      "createFailed": "Could not create the task.",
+      "subtitle": "New task for {{name}}.",
+      "owner": "Owner",
+      "departments": {
+        "HR": "Human resources",
+        "IT": "IT",
+        "HSE": "HSE",
+        "QUALITY": "Quality",
+        "MANAGER": "Management",
+        "EMPLOYEE": "Employee"
+      },
+      "submit": "Create task"
+    },
+    "evalStatus": {
+      "due": "Due",
+      "draft": "Draft",
+      "submitted": "Submitted"
+    },
+    "recruitDetail": {
+      "loading": "Loading the recruit…",
+      "backToRecruits": "Back to recruits",
+      "prepareInterview": "Prepare the interview",
+      "open": "Open",
+      "noEvaluations": "No evaluations.",
+      "managerTasks": "Manager tasks",
+      "noManagerTasks": "No tasks.",
+      "training": "Training",
+      "scorePassed": "{{score}}% (passed)",
+      "score": "{{score}}%",
+      "noTrainingAttempts": "No attempts."
+    },
+    "backTo": "Back to {{name}}",
+    "organigram": {
+      "loadError": "Could not load the org chart.",
+      "loading": "Loading the org chart…",
+      "title": "Org chart",
+      "subtitle": "Your team and its reporting line, with the onboarding progress of each recruit.",
+      "empty": "No position is attached to your account at the moment.",
+      "onboardingBadge": "{{percent}}% onboarded"
+    },
+    "jobDescriptions": {
+      "loadError": "Could not load the job descriptions.",
+      "loading": "Loading job descriptions…",
+      "title": "Job descriptions",
+      "subtitle": "The job descriptions for your team's positions.",
+      "empty": "No job description has been written yet for your team’s positions."
+    },
+    "quests": {
+      "loadError": "Could not load the quests.",
+      "loading": "Loading quests…",
+      "title": "Quests",
+      "subtitle": "One-off tasks you hand to a member of your team.",
+      "newQuest": "New quest",
+      "empty": "No quest assigned at the moment.",
+      "noReports": "No one reports directly to you.",
+      "assignTo": "Assign to",
+      "createFailed": "Could not create the quest.",
+      "submit": "Assign quest",
+      "status": {
+        "todo": "To do",
+        "done": "Done"
+      }
+    }
+  },
+  "managerRecruits": {
+    "loading": "Loading new hires…",
+    "loadError": "Unable to load new hires.",
+    "title": "New hires",
+    "subtitle": "Track onboarding journeys in your scope and act on overdue or blocked steps.",
+    "stepsRatio": "{{done}}/{{total}} steps",
+    "evaluationsDueCount_one": "{{count}} evaluation due",
+    "evaluationsDueCount_other": "{{count}} evaluations due",
+    "viewRecord": "View record",
+    "empty": "No new hires in your scope."
+  },
+  "managerEvaluations": {
+    "loading": "Loading evaluations…",
+    "loadError": "Unable to load evaluations.",
+    "title": "Evaluations to complete",
+    "subtitle": "Evaluations due for new hires in your scope.",
+    "milestoneColumn": "Milestone",
+    "evaluateAction": "Evaluate",
+    "empty": "No evaluations to complete."
+  },
+  "managerOrganigram": {
+    "loading": "Loading the organisation chart…",
+    "loadError": "Unable to load the organisation chart.",
+    "title": "Organisation chart",
+    "subtitle": "The structure in your scope, with progress for ongoing onboarding journeys.",
+    "empty": "No positions in your scope.",
+    "onboardingBadge": "Onboarding: {{percent}}%"
+  },
+  "managerTeamPage": {
+    "loading": "Loading your team…",
+    "loadError": "Unable to load your team.",
+    "title": "My team",
+    "subtitle": "Members, job descriptions and vacant positions in your scope.",
+    "members_one": "Member ({{count}})",
+    "members_other": "Members ({{count}})",
+    "vacancies_one": "Vacant position ({{count}})",
+    "vacancies_other": "Vacant positions ({{count}})",
+    "table": {
+      "name": "Name",
+      "position": "Position",
+      "occupation": "Occupation"
+    },
+    "jobDescriptions": "Job descriptions",
+    "noMembers": "No members.",
+    "noVacancies": "No vacant positions."
+  },
+  "managerReports": {
+    "loading": "Loading indicators…",
+    "loadError": "Unable to load indicators.",
+    "title": "Reports",
+    "subtitle": "Indicators limited to your scope.",
+    "empty": "No indicators are available for your scope.",
+    "onboardingTitle": "Journeys in progress",
+    "hrTitle": "HR indicators",
+    "dayShort": "d",
+    "metrics": {
+      "activeJourneys": "Active journeys",
+      "averageProgress": "Average progress",
+      "overdueTasks": "Overdue tasks",
+      "blockedTasks": "Blocked tasks",
+      "completion": "Completion rate",
+      "duration": "Average onboarding duration",
+      "confirmation": "Confirmation rate",
+      "satisfaction": "Satisfaction"
+    }
+  },
+  "managerAssistant": {
+    "loading": "Loading the assistant…",
+    "loadError": "Unable to load the assistant.",
+    "title": "Assistant",
+    "subtitle": "Ask about new hires, journeys, documents or competencies within your scope.",
+    "noAgentsTitle": "No agent available",
+    "noAgentsDetail": "No agent can be used with your account permissions.",
+    "ownJourneyNotice": "The journey agent answers only about your own journey.",
+    "remindersTitle": "Upcoming evaluations",
+    "noReminders": "No upcoming evaluations.",
+    "blockersTitle": "Blockers to address",
+    "noBlockers": "No blockers to address.",
+    "prepareTitle": "Prepare an interview",
+    "noDraftingTitle": "Automatic preparation unavailable",
+    "noDraftingDetail": "The platform does not generate automatic interview preparation yet. Open a new hire’s record to prepare the interview.",
+    "suggestions": {
+      "orientation": {
+        "1": "Who should I contact about this?",
+        "2": "Who is responsible for this activity?",
+        "3": "Which department can help me?"
+      },
+      "onboarding": {
+        "1": "What are my next steps?",
+        "2": "What is blocking my journey?"
+      },
+      "documents": {
+        "1": "Which documents can I view?",
+        "2": "Where can I find this procedure?"
+      },
+      "competencies": {
+        "1": "Which competencies are required?",
+        "2": "Which competencies should I develop?"
+      }
+    },
+    "placeholders": {
+      "orientation": "Ask about the organisation…",
+      "onboarding": "Ask about your journey…",
+      "documents": "Ask about documents…",
+      "competencies": "Ask about competencies…",
+      "fallback": "Ask a question…"
+    }
+  },
+  "admin": {
+    "console": {
+      "eyebrow": "Administration",
+      "title": "Console",
+      "subtitle": "The real state of the system: open sessions, denied accesses, connected integrations and stored volumes.",
+      "auditLink": "Audit log",
+      "provisioningLink": "Provisioning queue",
+      "loading": "Loading the console…",
+      "loadError": "Unable to load the administration console.",
+      "unknownClient": "Unknown client",
+      "tiles": {
+        "activeSessions": "Active sessions",
+        "distinctUsersOnline": "People online",
+        "failedLogins24h": "Denied logins (24h)",
+        "accessDenied24h": "Denied accesses (24h)"
+      },
+      "health": {
+        "title": "Application health",
+        "noTraffic": "No access attempts in the last 24 hours: nothing to report, for lack of traffic to measure.",
+        "summary_one": "{{sessions}} open session against {{errors}} denial(s) over the last 24 hours.",
+        "summary_other": "{{sessions}} open sessions against {{errors}} denial(s) over the last 24 hours."
+      },
+      "accounts": {
+        "title": "Accounts",
+        "active": "Active",
+        "pending": "Created, unassigned",
+        "suspended": "Suspended or disabled",
+        "openRequests": "Open HR requests",
+        "manageLink": "Manage accounts →"
+      },
+      "storage": {
+        "title": "Storage",
+        "documents": "Referenced documents",
+        "files": "Administrative files",
+        "auditRows": "Audit entries",
+        "note": "These figures count rows, not bytes: no storage integration is connected, so files are tracked without being hosted here."
+      },
+      "connectors": {
+        "title": "Integrations",
+        "configureLink": "Configure →",
+        "declaredInProduction": "Declared in production",
+        "unconfigured_one": "{{count}} integration not configured",
+        "unconfigured_other": "{{count}} integrations not configured",
+        "unconfiguredDetail": "An unconfigured integration is not a fault: nothing has ever been connected to it. Each affected screen states exactly what that prevents.",
+        "mismatched_one": "{{count}} integration is declared in production in the configuration but has no address in the server's environment. The declared mode does not by itself connect a system.",
+        "mismatched_other": "{{count}} integrations are declared in production in the configuration but have no address in the server's environment. The declared mode does not by itself connect a system.",
+        "mode": {
+          "production": "Production",
+          "mock": "Simulated",
+          "unconfigured": "Not configured"
+        }
+      },
+      "sessions": {
+        "title": "Open sessions",
+        "empty": "No open sessions",
+        "emptyDetail": "Nobody is currently connected to the platform, aside possibly from your own session if it has just expired server-side.",
+        "account": "Account",
+        "client": "Client",
+        "seenAt": "Last seen",
+        "unknownIp": "Unknown IP",
+        "lastActivity": "Last activity recorded in the log:",
+        "lastActivityNone": "none"
+      }
+    },
+    "ai": {
+      "loading": "Loading the AI configuration…",
+      "loadError": "Unable to load the AI configuration.",
+      "eyebrow": "Administration",
+      "title": "AI configuration",
+      "subtitle": "Provider, model, quota, agents and prompt templates — saved durably, awaiting a provider to be connected.",
+      "tiles": {
+        "declared": "Declared agents",
+        "enabled": "Enabled agents",
+        "operational": "Operational without an LLM",
+        "prompts": "Prompts filled in"
+      },
+      "banner": {
+        "connected": "Provider connected: {{provider}}",
+        "connectedWithModel": "Provider connected: {{provider}} · {{model}}",
+        "none": "No language model provider is connected.",
+        "connectedNote": "This model rephrases the assistant's answers. It never queries the database itself: the search is performed upstream, with the permissions of the person asking, and the cited sources always come from that search — never from text produced by the model. If the call fails, the assistant falls back to the search-only answer.",
+        "noneNote": "The five agents still answer, by searching the platform's own data with the permissions of the person asking. Setting HF_API_KEY in the server's environment adds rephrasing; it does not switch on the feature, which already works."
+      },
+      "providerSaved": "Provider configuration saved.",
+      "saveFailed": "Saving failed.",
+      "agentDisabled": "Agent disabled.",
+      "agentEnabled": "Agent enabled.",
+      "promptSaved": "Prompt template saved.",
+      "form": {
+        "title": "Provider, model and quota",
+        "provider": "Provider",
+        "providerHint": "Name of the chosen vendor.",
+        "providerPlaceholder": "No provider chosen",
+        "endpoint": "Address (endpoint)",
+        "model": "Model",
+        "monthlyQuota": "Monthly quota",
+        "monthlyQuotaHint": "In requests. Empty = no cap set.",
+        "lastModified": "Last modified: {{date}}.",
+        "neverSaved": "No configuration saved yet.",
+        "saving": "Saving…"
+      },
+      "agents": {
+        "title": "Agents",
+        "description": "An agent reads with the permissions of whoever queries it: it can never surface a row the person could not open themselves. Enabling an agent records the intent; agents marked \"operational\" already answer, by searching the platform's own data, with no language model at all.",
+        "empty": "No agents declared",
+        "emptyDetail": "The agent catalogue is empty.",
+        "operationalReformulated": "Operational · rephrased",
+        "operationalNoLlm": "Operational without an LLM",
+        "noAnswerStep": "No answering step",
+        "toggleLabel": "Enable {{name}}",
+        "closePrompt": "Close",
+        "editPrompt": "Edit prompt",
+        "definePrompt": "Define a prompt",
+        "promptLabel": "Prompt template",
+        "promptPlaceholder": "Instruction given to the agent. The rule that already applies without a provider: every answer cites its source, or admits it found nothing.",
+        "savePrompt": "Save the prompt"
+      },
+      "footnote": "The settings on this form are saved but do not yet drive the assistant: it reads its configuration from the server's environment (HF_API_KEY, HF_MODEL, HF_BASE_URL), not from this table. The {{count}} agent(s) marked \"operational\" answer by searching the platform's own data, with the permissions of the person asking{{tail}}",
+      "footnoteTailConnected": ", then have that answer rephrased by the connected model.",
+      "footnoteTailNone": ", with no call to a language model."
+    },
+    "audit": {
+      "loading": "Loading the log…",
+      "loadError": "Unable to load the audit log.",
+      "eyebrow": "Administration",
+      "title": "Audit log",
+      "subtitle": "Every connection and every action recorded, with its author, its timestamp and its IP address.",
+      "exportButton": "Export as CSV ({{count}})",
+      "exportFilePrefix": "audit-log",
+      "tiles": {
+        "entries": "Entries shown",
+        "actors": "Distinct actors",
+        "actionTypes": "Action types",
+        "refusals": "Denials"
+      },
+      "filters": {
+        "searchLabel": "Actor or entity",
+        "searchPlaceholder": "Name, e-mail, entity type…",
+        "actionLabel": "Action",
+        "allActions": "All",
+        "fromLabel": "From",
+        "toLabel": "To",
+        "limitLabel": "Rows",
+        "submit": "Filter",
+        "submitting": "Filtering…",
+        "reset": "Reset"
+      },
+      "actions": {
+        "auth.login": "Login",
+        "auth.login_failed": "Failed login",
+        "auth.logout": "Logout",
+        "auth.session_revoked": "Session revoked",
+        "auth.password_changed": "Password changed",
+        "user.created": "Account created",
+        "user.updated": "Account updated",
+        "user.status_changed": "Account status changed",
+        "user.role_assigned": "Role granted",
+        "user.role_revoked": "Role revoked",
+        "user.role_assignment_denied": "Role grant denied",
+        "user.assigned": "Assigned to a position",
+        "user.assignment_ended": "Assignment ended",
+        "role.permission_changed": "Permissions changed",
+        "entity.created": "Created",
+        "entity.updated": "Updated",
+        "entity.deleted": "Deleted",
+        "entity.validated": "Validated",
+        "access.denied": "Access denied",
+        "document.downloaded": "Document downloaded",
+        "report.exported": "Report exported"
+      },
+      "table": {
+        "date": "Date",
+        "actor": "Actor",
+        "action": "Action",
+        "entity": "Entity",
+        "ip": "IP address"
+      },
+      "empty": "No entries",
+      "emptyFiltered": "No entries match these filters. Widen the period or change the action.",
+      "emptyAll": "The log is empty: no action has been recorded on this instance yet.",
+      "footnote": "Filters are applied by the server, across the whole log: filtering an already-loaded page would not answer \"show me every denial in March\". The server caps a request at 500 rows. The CSV export reproduces exactly the {{count}} row(s) shown above — no more, no less — and the file is generated in your browser, without going through a third-party service."
+    },
+    "backups": {
+      "loading": "Loading backups…",
+      "loadError": "Unable to load backups.",
+      "eyebrow": "Administration",
+      "title": "Backups",
+      "subtitle": "Backup schedules and run history.",
+      "newSchedule": "New schedule",
+      "cancel": "Cancel",
+      "noExecutor": {
+        "title": "No backup executor is connected.",
+        "body": "The schedules below are saved and logged, but nothing in this application triggers them: no backup runs, and no restore is possible from this screen. Actual backup today is the database host's responsibility."
+      },
+      "form": {
+        "label": "Label",
+        "labelPlaceholder": "Daily backup",
+        "frequency": "Frequency",
+        "frequencyPlaceholder": "Every day at 02:00",
+        "retentionDays": "Retention (days)",
+        "creating": "Saving…",
+        "create": "Create"
+      },
+      "schedules": {
+        "title": "Schedules ({{count}})",
+        "empty": "No schedules saved.",
+        "label": "Label",
+        "frequency": "Frequency",
+        "retention": "Retention",
+        "retentionDays": "{{count}} d",
+        "state": "State",
+        "active": "Active",
+        "inactive": "Inactive",
+        "deactivate": "Deactivate",
+        "activate": "Activate",
+        "delete": "Delete",
+        "confirmDelete": "Delete the schedule \"{{label}}\"?",
+        "createFailed": "Creating the schedule failed.",
+        "updateFailed": "The update failed.",
+        "deleteFailed": "Deletion failed."
+      },
+      "history": {
+        "title": "History",
+        "empty": "Empty history",
+        "emptyDetail": "No backup process is running: this history is empty because nothing feeds it.",
+        "schedule": "Schedule",
+        "started": "Started",
+        "finished": "Finished",
+        "size": "Size",
+        "result": "Result",
+        "success": "Success",
+        "failure": "Failure"
+      }
+    },
+    "gdpr": {
+      "loading": "Loading the register…",
+      "loadError": "Unable to load the GDPR register.",
+      "eyebrow": "Administration",
+      "title": "GDPR",
+      "subtitle": "Request register, and inventory of data held by the platform.",
+      "newRequest": "Log a request",
+      "cancel": "Cancel",
+      "notAutomated": {
+        "title": "Fulfilment is not automated.",
+        "body": "This register tracks requests and what became of them. Closing a request records that a person did the work elsewhere — no erasure or export is triggered from this screen. Several categories below cannot, in any case, simply be deleted."
+      },
+      "tiles": {
+        "openRequests": "Open requests",
+        "totalRequests": "Total requests",
+        "categories": "Data categories",
+        "accountsConcerned": "Accounts concerned"
+      },
+      "form": {
+        "type": "Type",
+        "subject": "Data subject",
+        "subjectNone": "Not linked to an account",
+        "note": "Note",
+        "notePlaceholder": "Origin of the request, documents received, action taken…",
+        "saving": "Saving…",
+        "save": "Save",
+        "createFailed": "Logging the request failed.",
+        "updateFailed": "Updating the request failed."
+      },
+      "kinds": {
+        "ERASURE": "Erasure",
+        "EXPORT": "Export",
+        "CONSENT": "Consent"
+      },
+      "statuses": {
+        "OPEN": "Open",
+        "DONE": "Handled",
+        "REJECTED": "Rejected"
+      },
+      "register": {
+        "title": "Request register ({{count}})",
+        "allStatuses": "All statuses",
+        "empty": "No requests logged.",
+        "type": "Type",
+        "person": "Person",
+        "receivedOn": "Received on",
+        "note": "Note",
+        "status": "Status",
+        "personUnattached": "Not linked",
+        "close": "Close",
+        "reject": "Reject"
+      },
+      "dataHeld": {
+        "title": "Data held",
+        "subtitle": "What the platform retains, and what erasure would actually mean for each category.",
+        "erasureLabel": "Erasure:",
+        "unavailable": "Inventory unavailable."
+      }
+    },
+    "integrations": {
+      "loading": "Loading integrations…",
+      "loadError": "Unable to load integrations.",
+      "eyebrow": "Administration",
+      "title": "Integrations",
+      "subtitle": "What the platform is connected to, what it is meant to be connected to, and the gap between the two.",
+      "refresh": "Refresh",
+      "tiles": {
+        "production": "Declared in production",
+        "mock": "In simulated mode",
+        "mismatched": "Declared without being connected"
+      },
+      "mode": {
+        "production": "Production",
+        "mock": "Simulated",
+        "productionMeaning": "The integration is meant to talk to the real system.",
+        "mockMeaning": "The integration answers with demo data, deliberately."
+      },
+      "env": {
+        "production": "An address is configured in the server's environment.",
+        "mock": "The environment variable is set to \"mock\".",
+        "unconfigured": "No address is configured in the server's environment.",
+        "label": "Environment:"
+      },
+      "confirmProductionSwitch": "Switch \"{{label}}\" to production? No address is configured in the server's environment: the integration will be declared in production without being connected.",
+      "declaredProductionUnreachable": "\"{{label}}\" is declared in production, but the server's environment gives it no address.",
+      "switchedTo": "\"{{label}}\" is now in {{mode}}.",
+      "toggleFailed": "Switching the mode failed.",
+      "configSaved": "Configuration saved.",
+      "saveFailed": "Saving failed.",
+      "notConfigured": "Not connected",
+      "toggleLabel": "Switch {{label}}",
+      "toggleCaption": "Simulated ↔ Production",
+      "test": "Test",
+      "configure": "Configure",
+      "close": "Close",
+      "mismatchedWarning_one": "{{count}} integration is declared in production with no address in the server's environment.",
+      "mismatchedWarning_other": "{{count}} integrations are declared in production with no address in the server's environment.",
+      "mismatchedWarningBody": "The mode recorded here is an intention. The actual connection is made through an environment variable at deployment: while it is empty, nothing goes anywhere.",
+      "testOutcome": {
+        "ok": "Check performed",
+        "failed": "Failed"
+      },
+      "testReasons": {
+        "not_configured": "Nothing to reach",
+        "unreachable": "Unreachable",
+        "resolved": "Name resolved"
+      },
+      "testFailedFallback": "The test could not be run.",
+      "testNoneRun": "No test performed.",
+      "noFieldsYet": "This integration has no parameters to enter yet: only its mode can be set here.",
+      "lastTested": "Last tested: {{date}} —",
+      "lastTestOk": "check successful",
+      "lastTestFailed": "unsuccessful",
+      "empty": "No integrations declared",
+      "emptyDetail": "The integration catalogue is empty.",
+      "fields": {
+        "smtp": {
+          "host": "SMTP host",
+          "port": "Port",
+          "from": "Sender"
+        },
+        "entra": {
+          "tenantId": "Tenant ID",
+          "tenantIdPlaceholder": "No tenant available",
+          "clientId": "Application ID"
+        },
+        "hrApi": {
+          "baseUrl": "HR system base URL"
+        },
+        "directory": {
+          "path": "Share path"
+        },
+        "storage": {
+          "driver": "Storage driver"
+        },
+        "ai": {
+          "endpoint": "Provider address",
+          "model": "Model"
+        }
+      },
+      "whatSwitchDoes": {
+        "title": "What the switch does",
+        "body": "It durably records the intended mode for each integration, with an entry in the audit log. That is the intent declared by the administration."
+      },
+      "whatSwitchDoesNot": {
+        "title": "What it does not do",
+        "body": "It does not connect any system: the real address comes from the server's environment, fixed at deployment. No Entra ID tenant, no HR system and no SMTP relay answers on this deployment — the \"Test\" button says so explicitly rather than showing a reassuring green tick."
+      }
+    },
+    "organization": {
+      "loading": "Loading org units…",
+      "loadError": "Unable to load org units.",
+      "eyebrow": "Administration",
+      "title": "Org units",
+      "subtitle": "The organisation's skeleton: divisions, departments, sites and reporting lines that HR will fill in.",
+      "newPosition": "New position",
+      "newUnit": "New unit",
+      "tiles": {
+        "units": "Units",
+        "positions": "Positions",
+        "roots": "Tree roots",
+        "orphanPositions": "Positions without a unit"
+      },
+      "unitTypes": {
+        "DIVISION": "Division",
+        "DEPARTMENT": "Department",
+        "SERVICE": "Service",
+        "SITE": "Site"
+      },
+      "opFailed": "The operation failed.",
+      "unitCreated": "Unit created.",
+      "unitCreateFailed": "Creating the unit failed.",
+      "positionCreated": "Position created.",
+      "positionCreateFailed": "Creating the position failed.",
+      "unitArchived": "Unit archived.",
+      "confirmArchiveUnit": "Archive the unit \"{{name}}\"? The operation is refused if it still contains units or positions.",
+      "confirmMerge": "Merge \"{{source}}\" into \"{{target}}\"? All attached units, positions and permission scopes will be moved, then the source unit will be archived.",
+      "mergeDone": "Merge complete: {{units}} unit(s), {{positions}} position(s) and {{scopes}} scope(s) moved.",
+      "mergeSuccess": "Merge complete.",
+      "positionAttached": "Position attached.",
+      "positionDetached": "Position detached: it becomes a root of the org chart.",
+      "confirmArchivePosition": "Archive the position \"{{title}}\"?",
+      "positionArchived": "Position archived.",
+      "unitForm": {
+        "title": "New unit",
+        "code": "Code",
+        "name": "Name",
+        "type": "Type",
+        "parent": "Attached to",
+        "parentRoot": "Root of the organisation",
+        "description": "Description",
+        "descriptionHint": "Optional.",
+        "creating": "Creating…",
+        "create": "Create the unit"
+      },
+      "positionForm": {
+        "title": "New position",
+        "code": "Code",
+        "titleLabel": "Title",
+        "unit": "Unit",
+        "unitNone": "No unit",
+        "parentPosition": "Reports to",
+        "parentPositionRoot": "Root of the org chart",
+        "creating": "Creating…",
+        "create": "Create the position"
+      },
+      "unitTree": {
+        "title": "Unit tree",
+        "empty": "No units",
+        "emptyDetail": "Create a first unit to start the structure."
+      },
+      "unitDetail": {
+        "title": "Unit detail",
+        "empty": "No unit selected",
+        "emptyDetail": "Choose a unit in the tree to edit, archive or merge it into another.",
+        "code": "Code",
+        "type": "Type",
+        "parent": "Attached to",
+        "parentRoot": "Root",
+        "parentOutOfScope": "Unit outside scope",
+        "attachedPositions": "Attached positions ({{count}})",
+        "noPositions": "No positions in this unit.",
+        "mergeTitle": "Merge into another unit",
+        "mergeDetail": "All attached units, positions and permission scopes are moved to the target unit in a single operation, then \"{{name}}\" is archived. A merge into a unit attached to it is refused: the branch would become detached from the org chart.",
+        "mergeTargetPlaceholder": "Target unit…",
+        "merge": "Merge",
+        "archiveUnit": "Archive this unit"
+      },
+      "positionChart": {
+        "title": "Position org chart",
+        "count_one": "{{count}} position",
+        "count_other": "{{count}} positions",
+        "hint": "Click a position to reassign it elsewhere. A position with no superior appears as a root.",
+        "empty": "No positions in the org chart. Create one to start the reporting line.",
+        "noUnit": "No unit"
+      },
+      "positionDetail": {
+        "title": "Reassigning a position",
+        "empty": "No position selected",
+        "emptyDetail": "Choose a card in the org chart to change its reporting line.",
+        "code": "Code",
+        "unit": "Unit",
+        "unitNone": "No unit",
+        "holder": "Holder",
+        "vacant": "Vacant position",
+        "reparentLabel": "Reports to",
+        "reparentHint": "Attaching a position to one of its own subordinates is refused by the server.",
+        "reparentNone": "None — root of the org chart",
+        "archive": "Archive",
+        "moving": "Moving…",
+        "move": "Move"
+      },
+      "footnote": "This screen defines the skeleton: units, positions and reporting lines. It does not place anyone — assigning an employee to a position is HR's responsibility, and duplicating it here would give the same action two implementations. Archiving a unit is refused while it still holds active units or positions: the error message states what remains to be moved."
+    },
+    "roles": {
+      "loading": "Loading roles…",
+      "loadError": "Unable to load roles.",
+      "eyebrow": "Administration",
+      "title": "Roles and permissions",
+      "subtitle": "The role × module × action matrix: what each profile may read, write, validate and delete.",
+      "newCustomRole": "New custom role",
+      "cancel": "Cancel",
+      "tiles": {
+        "builtin": "Built-in roles",
+        "custom": "Custom roles",
+        "catalogue": "Catalogue permissions",
+        "grantedCustom": "Permissions granted (custom)"
+      },
+      "tabs": {
+        "builtin": "Built-in roles ({{count}})",
+        "custom": "Custom roles ({{count}})"
+      },
+      "builtinNote": "These four profiles are defined in the platform's code, not in the database: every request checks the caller's rights, and querying a table at that point would put a database round trip at the heart of every access check. They are therefore viewable here but only editable through deployment. For a different need, create a custom role.",
+      "builtinLabels": {
+        "ADMIN": "Administrator",
+        "HR": "HR / HR Director",
+        "MANAGER": "Manager",
+        "EMPLOYEE": "Employee"
+      },
+      "roleUsage": "{{users}} account(s) · {{permissions}} permission(s)",
+      "customUsage": "{{code}} · {{count}} permission(s)",
+      "form": {
+        "editTitle": "Edit \"{{name}}\"",
+        "createTitle": "New custom role",
+        "code": "Code",
+        "codePlaceholder": "QUALITY_AUDITOR",
+        "codeHintExisting": "An existing role's code cannot be changed.",
+        "codeHintNew": "Upper case, no spaces.",
+        "name": "Name",
+        "description": "Description",
+        "permissions": "Permissions ({{count}} selected)",
+        "saving": "Saving…",
+        "save": "Save the role",
+        "saveFailed": "Saving the role failed.",
+        "deleteFailed": "Deletion failed."
+      },
+      "confirmDelete": "Delete the role \"{{name}}\"?",
+      "customEmpty": "No custom roles",
+      "customEmptyDetail": "The four built-in profiles cover everyday use. Create a custom role for a need none of them describes — an external auditor, for instance, who would read without ever writing.",
+      "builtinRoleTag": "Built-in role — not editable",
+      "edit": "Edit",
+      "delete": "Delete",
+      "customFootnote": "A custom role is saved durably, with its permissions validated against the platform's catalogue. It is not yet assignable to an account: assignment goes through the four built-in codes, the only ones the authorisation layer recognises. Defining the role is the durable part; wiring it to assignment is a change to that layer, not to this screen.",
+      "actionColumns": {
+        "read": "Read",
+        "update": "Write",
+        "validate": "Validate",
+        "delete": "Delete"
+      },
+      "resources": {
+        "organization_unit": "Org units",
+        "position": "Positions",
+        "assignment": "Assignments",
+        "job": "Jobs",
+        "job_description": "Job descriptions",
+        "competency": "Competencies",
+        "assessment": "Assessments",
+        "onboarding_template": "Onboarding templates",
+        "onboarding_instance": "Onboarding journeys",
+        "onboarding_task": "Onboarding tasks",
+        "remark": "Remarks",
+        "kaizen_action": "Kaizen actions",
+        "document": "Documents",
+        "report": "Reports",
+        "dashboard": "Dashboards",
+        "notification": "Notifications",
+        "survey": "Surveys",
+        "training": "Training",
+        "user": "Accounts",
+        "role": "Roles",
+        "audit_log": "Audit log",
+        "setting": "Settings"
+      },
+      "matrix": {
+        "module": "Module",
+        "notApplicable": "This action does not exist for this module",
+        "granted": "Granted",
+        "notGranted": "Not granted"
+      }
+    },
+    "security": {
+      "loading": "Loading configuration…",
+      "loadError": "Unable to load the security configuration.",
+      "eyebrow": "Administration",
+      "title": "Security",
+      "subtitle": "What the service actually enforces, and the recorded policy alongside it.",
+      "tiles": {
+        "activeSessions": "Open sessions",
+        "revokedSessions": "Revoked sessions",
+        "failedLogins24h": "Failed logins (24h)",
+        "sessionDuration": "Session duration"
+      },
+      "inEffect": {
+        "title": "In effect",
+        "subtitle": "Values read from the configuration validated at start-up. They change at deployment, not from this screen.",
+        "passwords": "Passwords",
+        "passwordsDetail": "Minimum length: {{length}} characters. Hashed with Argon2id, never stored or logged in any other form.",
+        "argon2Detail": "Argon2id · memory {{memory}} KiB · {{iterations}} iteration(s) · parallelism {{parallelism}}",
+        "sessions": "Sessions",
+        "sessionsDetail": "{{hours}}-hour duration, extended at most once per {{minutes}}-minute window. Immediate revocation on the next request.",
+        "encryption": "Encryption",
+        "encryptionDetail": "Exchanges encrypted in transit (TLS). Encryption at rest depends on the host and cannot be verified from the application.",
+        "replayProtection": "Replay protection",
+        "replayProtectionDetail": "Every mutation requires a CSRF token, and login attempts are rate-limited. Access denials are logged."
+      },
+      "recordedPolicy": {
+        "title": "Recorded policy",
+        "subtitle": "This policy is saved and logged, but <strong>no component reads it yet</strong>: it expresses an intention, not an enforced constraint. The values actually in effect remain those in the block above.",
+        "neverSavedNote": " No policy has been saved yet — the values shown are the default values.",
+        "minLength": "Minimum password length",
+        "minLengthHint": "Between 8 and 128 characters.",
+        "mfaRequired": "Multi-factor authentication required",
+        "mfaRequiredHint": "Not implemented: planned via Entra ID rather than reimplemented here.",
+        "sessionDuration": "Desired session duration",
+        "sessionDurationHint": "In hours. The duration actually enforced remains that of the deployment.",
+        "ipAllowlist": "IP address restrictions",
+        "ipAllowlistHint": "One entry per line. Recorded only: filtering happens at the network or reverse-proxy level, not in the application.",
+        "ipAllowlistPlaceholder": "10.0.0.0/8",
+        "lastModified": "Last modified: {{date}}",
+        "neverModified": "Never modified.",
+        "saved": "Saved.",
+        "saveFailed": "Saving the policy failed."
+      }
+    },
+    "settings": {
+      "loading": "Loading settings…",
+      "loadError": "Unable to load settings.",
+      "eyebrow": "Administration",
+      "title": "Settings",
+      "subtitle": "Settings that can be changed without a deployment. Every change is logged.",
+      "updateFailed": "Updating \"{{key}}\" failed.",
+      "orgTree": {
+        "title": "Org chart visibility",
+        "subtitle": "How many levels an employee sees around their own position. Management roles and HR are not limited by these values.",
+        "depthUp": "Levels visible upward",
+        "depthUpHint": "From the position towards management.",
+        "depthDown": "Levels visible downward",
+        "depthDownHint": "From the position towards the teams.",
+        "showPeers": "Show peers",
+        "showPeersHint": "Positions at the same hierarchical level."
+      },
+      "sections": {
+        "brand": "Brand",
+        "locale": "Languages",
+        "email": "E-mail templates",
+        "emailNote": "Saved only: no SMTP relay is connected, so nothing is actually sent from the platform.",
+        "milestones": "Milestones",
+        "flags": "Features"
+      },
+      "defaultValue": "default value",
+      "saved": "Saved.",
+      "footnote": "Other settings — session durations, hashing parameters, database URL — are fixed at deployment and cannot be changed here."
+    },
+    "provisioning": {
+      "loading": "Loading the queue…",
+      "loadError": "Unable to load the provisioning queue.",
+      "eyebrow": "Administration",
+      "title": "Provisioning queue",
+      "subtitle": "The two sides of the handoff: what HR has requested that IT has not yet created, and what IT has created that nobody has yet assigned.",
+      "refresh": "Refresh",
+      "createAccount": "Create an account",
+      "tiles": {
+        "openRequests": "Open HR requests",
+        "unplacedAccounts": "Unassigned accounts",
+        "aging": "Waiting > {{days}}d",
+        "oldest": "Longest wait"
+      },
+      "requestsSide": {
+        "title": "Requests awaiting creation",
+        "description": "Opened by HR for an upcoming hire. Each one is waiting for an account to be created on the Accounts page.",
+        "empty": "No requests waiting",
+        "emptyDetail": "HR has no open account requests: nothing is stuck on this side of the handoff.",
+        "positionUnspecified": "Position not specified",
+        "requestedBy": "Requested by",
+        "plannedHire": "Planned hire date",
+        "plannedHireUnspecified": "Not specified",
+        "openedOn": "Opened on",
+        "waiting": "Waiting:",
+        "waitingDays_one": "{{count}} day",
+        "waitingDays_other": "{{count}} days"
+      },
+      "unplacedSide": {
+        "title": "Accounts created, unassigned",
+        "description": "The account exists and the person can log in, but no position is attached to them: no org chart, no onboarding journey, no manager.",
+        "empty": "No accounts pending",
+        "emptyDetail": "Every created account is attached to a position.",
+        "createdOn": "Created on {{date}}"
+      },
+      "urgency": {
+        "HIGH": "Urgent",
+        "NORMAL": "Normal",
+        "LOW": "Can wait"
+      },
+      "footnote": "This page observes the handoff, it does not carry it out: creating an account is done on <0>Accounts</0>, and assigning it to a position is HR's responsibility. No automatic reminder is sent — no scheduler runs in the application, and no SMTP relay is connected. The waiting times above are therefore to be read, not waited on."
+    },
+    "users": {
+      "loading": "Loading accounts…",
+      "loadError": "Unable to load accounts.",
+      "eyebrow": "Administration",
+      "title": "Accounts",
+      "subtitle": "Create, grant, suspend and reset access for the platform's accounts.",
+      "provisioningLink": "Provisioning queue",
+      "bulkImport": "Bulk import",
+      "newAccount": "New account",
+      "tiles": {
+        "total": "Accounts",
+        "active": "Active",
+        "suspended": "Suspended",
+        "withoutRole": "Without a role"
+      },
+      "roles": {
+        "ADMIN": "Administrator",
+        "HR": "HR / HR Director",
+        "MANAGER": "Manager",
+        "EMPLOYEE": "Employee"
+      },
+      "statuses": {
+        "ACTIVE": "Active",
+        "SUSPENDED": "Suspended",
+        "DISABLED": "Disabled"
+      },
+      "roleAssignFailedFallback": "The account was created, but the role could not be granted. Use \"Grant a role\" below.",
+      "accountCreated": "Account created.",
+      "createFailed": "Creating the account failed.",
+      "importFailed": "The import failed: no account was created.",
+      "roleGranted": "Role granted.",
+      "selfAssignmentRefused": "You cannot grant yourself a role.",
+      "grantFailed": "Granting the role failed.",
+      "confirmSuspend": "Suspend {{name}}'s account? Their open sessions will be closed immediately.",
+      "accountReactivated": "Account reactivated.",
+      "accountSuspended": "Account suspended and sessions closed.",
+      "statusChangeFailed": "Changing the status failed.",
+      "confirmResetAccess": "Reset {{name}}'s access? All their sessions will be revoked; their password stays unchanged.",
+      "resetAccessResult_one": "{{count}} session revoked. {{name}} will need to log back in.",
+      "resetAccessResult_other": "{{count}} sessions revoked. {{name}} will need to log back in.",
+      "resetAccessFailed": "The reset failed.",
+      "createForm": {
+        "title": "Create an account",
+        "email": "Work e-mail",
+        "displayName": "Display name",
+        "phone": "Phone",
+        "phoneHint": "Optional.",
+        "password": "Temporary password",
+        "passwordHint": "Handed over in person: without an SMTP relay, the platform cannot send it.",
+        "role": "Platform role",
+        "roleHint": "Granted at global scope; refine the scope below if needed.",
+        "roleNone": "No role for now",
+        "cancel": "Cancel",
+        "creating": "Creating…",
+        "create": "Create the account"
+      },
+      "importForm": {
+        "title": "Bulk import",
+        "description": "One line per account, semicolon-separated: e-mail ; display name ; phone ; role. Phone and role are optional. The import is atomic: if a single line is rejected, no account is created.",
+        "placeholder": "amina.belkacem@soficlef.dz ; Amina Belkacem ; 0550 00 00 00 ; MANAGER\nkarim.saidi@soficlef.dz ; Karim Saïdi ; ; EMPLOYEE",
+        "sharedPassword": "Shared temporary password",
+        "sharedPasswordHint": "The same for the whole batch; everyone will have to change it. No notification is sent.",
+        "recognisedLines_one": "{{count}} line recognised",
+        "recognisedLines_other": "{{count}} lines recognised",
+        "toFix_one": " · {{count}} to fix",
+        "toFix_other": " · {{count}} to fix",
+        "createdAccounts_one": "{{count}} account created.",
+        "createdAccounts_other": "{{count}} accounts created.",
+        "roleNotGranted": " (role {{role}} not granted: role catalogue unavailable)",
+        "close": "Close",
+        "importing": "Importing…",
+        "importButton_one": "Import {{count}} account",
+        "importButton_other": "Import {{count}} accounts",
+        "lineErrors": {
+          "invalidEmail": "Line {{line}}: missing or invalid e-mail.",
+          "missingName": "Line {{line}}: missing display name.",
+          "unknownRole": "Line {{line}}: unknown role \"{{role}}\"."
+        }
+      },
+      "grantForm": {
+        "title": "Grant a role",
+        "account": "Account",
+        "accountPlaceholder": "Choose…",
+        "role": "Role",
+        "scope": "Scope",
+        "scopeGlobal": "Global scope",
+        "cancel": "Cancel",
+        "granting": "Granting…",
+        "grant": "Grant"
+      },
+      "filters": {
+        "searchPlaceholder": "Search by name or e-mail…",
+        "allStatuses": "All statuses",
+        "grantRole": "Grant a role",
+        "count_one": "{{count}} account",
+        "count_other": "{{count}} accounts"
+      },
+      "empty": "No accounts match",
+      "emptyDetail": "Adjust the search or the status filter.",
+      "table": {
+        "account": "Account",
+        "roles": "Roles",
+        "status": "Status",
+        "lastLogin": "Last login",
+        "actions": "Actions",
+        "noRole": "No role",
+        "never": "Never",
+        "resetAccess": "Reset access",
+        "suspend": "Suspend",
+        "reactivate": "Reactivate"
+      },
+      "entraSync": {
+        "title": "Entra ID synchronisation",
+        "unavailable": "Unavailable",
+        "detail": "No Entra ID directory is connected to this deployment: there is no tenant to import accounts from. A \"Synchronise\" button could here only do nothing, or invent people."
+      },
+      "entraLink": {
+        "title": "Link an Entra identity",
+        "unavailable": "Unavailable",
+        "detail": "Same reason. Passwords are managed by the platform and verified with Argon2; single sign-on will arrive with the integration, visible on the Integrations page."
+      },
+      "footnote": "\"Reset access\" revokes all of the account's open sessions and forces a fresh login. No new password is generated: without an SMTP relay, the platform would have no way to send it, and displaying it here would mean writing a live credential into a browser."
+    }
+  },
+  "assistant": {
+    "agents": {
+      "available": "Available",
+      "unavailable": "Outside your permissions"
+    },
+    "empty": {
+      "detail": "Your account has read access to none of the resources these agents query.",
+      "title": "No agent available"
+    },
+    "generic": {
+      "agentsTitle": "The five agents",
+      "intro": "Five agents, each limited to the resources it declares it reads. Every answer is built from data you can already consult, and cites its sources.",
+      "rule": "An unbreakable rule, whichever agent you ask: an answer always cites its source, or admits it found nothing. An agent reads with the permissions of the person asking — it can never surface data that person could not open themselves. The sources shown always come from the retrieval step, never from text written by the model.",
+      "title": "Assistant"
+    },
+    "loading": "Loading the assistant…",
+    "loadFailed": "Could not load the assistant."
+  },
+  "me": {
+    "assistant": {
+      "agentsTitle": "The platform's agents",
+      "noJourney": "No onboarding journey is linked to your account.",
+      "placeholders": {
+        "competencies": "E.g. which competencies are expected in my position?",
+        "default": "Ask your question…",
+        "documents": "E.g. where is the leave procedure?",
+        "onboarding": "E.g. which steps do I still have to complete?",
+        "orientation": "E.g. who handles employment contracts?",
+        "training": "E.g. which modules do I still have to pass?"
+      },
+      "rights": "An agent never sees more than you do: it queries the same data, with your own permissions, and an answer always cites its source or admits it found nothing.",
+      "status": {
+        "openSurveys": "Surveys to complete",
+        "overdue": "Overdue steps",
+        "progress": "Journey progress",
+        "title": "Where I stand",
+        "trainingOutstanding": "Modules to pass"
+      },
+      "subtitle": "A question about who does what, about your journey, your training, the procedures or the competencies expected of you? The assistant searches the data you are allowed to consult, and cites what it found.",
+      "suggestions": {
+        "competencies1": "Which competencies does my position require?",
+        "competencies2": "What are my competency gaps?",
+        "documents1": "Where can I find the internal regulations?",
+        "documents2": "What is the procedure for leave?",
+        "documents3": "Where is the IT charter?",
+        "onboarding1": "Which steps of my journey are still outstanding?",
+        "onboarding2": "What is overdue?",
+        "onboarding3": "What should I do this week?",
+        "orientation1": "Who is responsible for quality?",
+        "orientation2": "Who do I contact about my badge?",
+        "orientation3": "Who manages human resources?",
+        "training1": "Which modules are mandatory?",
+        "training2": "How far along am I with my training?",
+        "training3": "What is the pass mark?"
+      },
+      "title": "Assistant"
+    },
+    "dashboard": {
+      "askQuestion": "Ask a question",
+      "contacts": {
+        "allContacts": "All key contacts",
+        "hr": "HR contact",
+        "manager": "My manager",
+        "none": "Not recorded yet.",
+        "seeTeam": "See my team",
+        "extension": "Ext. {{extension}}"
+      },
+      "countdown": {
+        "afterBadge": "D+{{count}}",
+        "afterDetail_one": "{{count}} day since you started.",
+        "afterDetail_other": "{{count}} days since you started.",
+        "beforeBadge": "D-{{count}}",
+        "beforeDetail_one": "You start in {{count}} day.",
+        "beforeDetail_other": "You start in {{count}} days.",
+        "dayOneBadge": "Day one",
+        "dayOneDetail": "Today is your first day.",
+        "label": "Countdown",
+        "none": "No start date is recorded on your account."
+      },
+      "greeting": "Hello, {{name}}",
+      "loadFailed": "Could not load your dashboard.",
+      "loading": "Loading your dashboard…",
+      "myJourney": "My journey",
+      "nextTasks": {
+        "emptyDetail": "No step is waiting on you right now.",
+        "emptyTitle": "Nothing pending",
+        "overdue": "Overdue",
+        "title": "Next steps"
+      },
+      "openSurveys": "Surveys to complete",
+      "phaseLabel": "Current phase",
+      "phases": {
+        "COMPLETED": {
+          "detail": "Every step of your onboarding journey is done.",
+          "label": "Journey complete"
+        },
+        "DAY_ONE": {
+          "detail": "Welcome, badge, workstation: your first day.",
+          "label": "Day one"
+        },
+        "PRE_ONBOARDING": {
+          "detail": "The administrative steps to prepare before your first day.",
+          "label": "Before you arrive"
+        },
+        "PROBATION": {
+          "detail": "Settling in, training and review points with your manager.",
+          "label": "Probation period"
+        }
+      },
+      "progress": {
+        "done_one": "{{done}} of {{total}} step completed",
+        "done_other": "{{done}} of {{total}} steps completed",
+        "overdue_one": "{{count}} overdue step",
+        "overdue_other": "{{count}} overdue steps",
+        "seeFullJourney": "See the full journey"
+      },
+      "subtitleUnassigned": "Position being assigned — {{detail}}",
+      "subtitleWithPosition": "{{position}} — {{detail}}",
+      "trainingOutstanding": "Modules to pass"
+    },
+    "documents": {
+      "acknowledgeButton": "I have read and accept this",
+      "acknowledged": "Read and accepted",
+      "acknowledgedAt": "Confirmed on {{date}}",
+      "acknowledgeFailed": "Your confirmation could not be recorded.",
+      "acknowledgeOk": "“{{title}}”: reading confirmed.",
+      "close": "Close",
+      "emptyDetail": "The document library is empty for now.",
+      "emptyTitle": "No document published",
+      "families": {
+        "it": {
+          "detail": "How company equipment, accounts and data are to be used.",
+          "label": "IT charter"
+        },
+        "others": {
+          "detail": "Published documents that fall into none of the categories above.",
+          "label": "Other documents"
+        },
+        "procedures": {
+          "detail": "Leave, expense claims, quality management system procedures.",
+          "label": "HR and quality procedures"
+        },
+        "rules": {
+          "detail": "The rules that apply to every employee.",
+          "label": "Internal regulations"
+        },
+        "welcome": {
+          "detail": "What to know on arrival: the company, its sites, how things are done.",
+          "label": "Welcome guide"
+        }
+      },
+      "figures": {
+        "acknowledged": "Readings confirmed",
+        "pendingOnYou": "Waiting on you",
+        "published": "Documents published"
+      },
+      "iframeFallback": "If the document does not display here (a format the browser cannot render), use “Open in a tab”.",
+      "loadFailed": "Could not load the document library.",
+      "loading": "Loading documents…",
+      "noFile": "No file is attached to this document yet, so it cannot be read or acknowledged.",
+      "openInTab": "Open in a tab",
+      "pending": "Not available yet",
+      "read": "Read",
+      "subtitle": "The reference documents to read when you arrive. Confirming that you have read one records the date and time; HR follow this from their library.",
+      "title": "My documents",
+      "toRead": "To read"
+    },
+    "eyebrow": "My space",
+    "files": {
+      "emptyDetail": "No supporting document is required from you at the moment. HR add here whatever they need.",
+      "emptyTitle": "Nothing to provide",
+      "figures": {
+        "accepted": "Accepted",
+        "pendingOnYou": "Waiting on you",
+        "requested": "Requested",
+        "underReview": "Under review"
+      },
+      "loadError": "Loading error.",
+      "loadFailed": "Could not load your supporting documents.",
+      "loading": "Loading your supporting documents…",
+      "note": "Note: {{note}}",
+      "notePlaceholder": "Note for HR (optional)",
+      "pickFile": "Choose a file before sending it.",
+      "reviewedAt": " · reviewed on {{date}}",
+      "sending": "Sending…",
+      "status": {
+        "ACCEPTED": {
+          "label": "Accepted",
+          "lead": "Checked and accepted by HR."
+        },
+        "REJECTED": {
+          "label": "To redo",
+          "lead": "HR need a new version of this document."
+        },
+        "REQUESTED": {
+          "label": "To provide",
+          "lead": "HR are waiting for this document."
+        },
+        "SUBMITTED": {
+          "label": "Sent",
+          "lead": "Received. Awaiting HR review — nothing more to do on your side."
+        }
+      },
+      "submit": "Send",
+      "submitFailed": "The upload failed.",
+      "submitOk": "“{{label}}” sent to HR.",
+      "submittedAt": "Sent on {{date}}",
+      "subtitle": "The supporting documents HR have requested: proof of identity, diplomas, bank details, medical certificate.",
+      "title": "My supporting documents",
+      "viewFile": "View the file you sent"
+    },
+    "journey": {
+      "allPhases": "All phases",
+      "backToDashboard": "Dashboard",
+      "blocked": {
+        "askHelp": "Ask for help",
+        "noOwner": "This step is blocked. No department is recorded as responsible for it: raise it with your manager.",
+        "withOwner": "This step is blocked. Department responsible: {{department}} — {{detail}}"
+      },
+      "dueDate": "Due: {{date}}",
+      "dueSoon": "Due soon",
+      "emptyDetail": "No onboarding journey is linked to your account yet. HR create one when you are assigned to a position.",
+      "emptyPhase": "No step in this phase.",
+      "emptyTitle": "No journey recorded",
+      "figures": {
+        "blocked": "Blocked",
+        "completed": "Completed",
+        "overdue": "Overdue",
+        "phases": "Phases"
+      },
+      "loadFailed": "Could not load your onboarding journey.",
+      "loading": "Loading your journey…",
+      "markDone": "Mark as done",
+      "openTask": "Open the step →",
+      "optional": "Optional",
+      "overdue": "Overdue",
+      "statusChanged": "“{{title}}”: {{status}}.",
+      "statusFailed": "The step could not be updated.",
+      "subtitle": "The roadmap of your onboarding, step by step.",
+      "title": "My onboarding journey",
+      "titleShort": "My journey",
+      "unphased": {
+        "detail": "These steps have no phase declared in the onboarding template.",
+        "label": "Steps not attached to a phase"
+      },
+      "validatedByManager": "Validated by your manager"
+    },
+    "organigram": {
+      "badgeYou": "You",
+      "emptyDetail": "No position is linked to your account yet, so there is no starting point from which to draw your org chart. HR enable it when you are assigned.",
+      "emptyTitle": "Org chart unavailable",
+      "loadFailed": "Could not load the org chart.",
+      "loading": "Loading the org chart…",
+      "noSearchMatch": "No position matches this search.",
+      "scopeNote": "You only see a window around your own position: how far up and down it reaches is a platform setting, applied server-side.",
+      "searchPlaceholder": "Search a position, a person, a division…",
+      "sheet": {
+        "close": "Close",
+        "department": "Department / unit",
+        "email": "Email",
+        "eyebrow": "Job description · view only",
+        "footnote": "This sheet reflects what the org chart exposes about this position. The full detail of a job (duties, tasks, required competencies) belongs to the job description register, accessible to HR.",
+        "itsYou": "This is you",
+        "noReports": "None",
+        "noSuperior": "No superior position visible",
+        "noUnit": "No unit",
+        "occupancy": "Occupancy",
+        "occupied": "Position filled",
+        "phone": "Extension",
+        "reports": "Direct reports",
+        "reportsTo": "Reports to",
+        "vacant": "vacant",
+        "readOnlyBadge": "Job description · view only",
+        "vacantPosition": "Vacant position",
+        "noStructure": "No division",
+        "thisIsYou": "This is you",
+        "departmentLabel": "Department / division",
+        "extensionLabel": "Phone extension",
+        "reportsToLabel": "Reports to",
+        "noManagerVisible": "No higher position visible",
+        "directReportsLabel": "Direct reports",
+        "occupancyLabel": "Occupancy"
+      },
+      "subtitle": "Your place in the organisation: your reporting line upward, your peers at the same level, and the positions attached to yours.",
+      "tiles": {
+        "myManager": "My manager",
+        "myPosition": "My position",
+        "peers": "Colleagues at my level",
+        "reports": "Positions reporting to mine",
+        "unassigned": "Unassigned"
+      },
+      "title": "Org chart",
+      "visibleCount": "{{visible}} / {{total}} positions visible",
+      "loadError": "Could not load the org chart.",
+      "unavailableTitle": "Org chart unavailable",
+      "unavailableDetail": "No position is attached to your account yet, so there is no starting point to draw your org chart. HR activates this when you are assigned.",
+      "myPosition": "My position",
+      "unassigned": "Unassigned",
+      "myManager": "My manager",
+      "peers": "Peers at the same level",
+      "directReports": "Positions attached to mine",
+      "windowNote": "You see only a window around your position: the depth shown above and below is a platform setting, applied server-side.",
+      "youBadge": "You"
+    },
+    "position": {
+      "competencies": {
+        "columns": {
+          "acquired": "Assessed",
+          "competency": "Competency",
+          "family": "Family",
+          "required": "Required",
+          "status": "Status"
+        },
+        "empty": "No competency is declared for this position.",
+        "figures": {
+          "conforme": "Meeting the level",
+          "critique": "Critical",
+          "toDevelop": "To develop"
+        },
+        "help": "The level the position expects, against your assessed level. Assessments are entered by your manager.",
+        "noMatrix": "No competency framework is attached to this position at the moment.",
+        "title": "Required competencies"
+      },
+      "dossier": {
+        "body": "The detailed job description — duties, standing tasks, responsibilities, training and experience requirements — is a versioned document held by human resources. Your account gives no direct read access to it; ask your HR contact for it.",
+        "link": "My HR contact →",
+        "title": "The full dossier"
+      },
+      "emptyDetail": "No position is associated with your account yet. HR handle the assignment, and this sheet fills in at that point.",
+      "emptyTitle": "No position assigned",
+      "equipment": {
+        "emptyDetail": "The platform keeps no inventory of assigned equipment: no equipment table exists, and inventing a list here would be false. What you were issued appears in the journey steps IT is responsible for.",
+        "emptyTitle": "No equipment register",
+        "link": "See the steps of my journey →",
+        "title": "Assigned equipment",
+        "heading": "Assigned equipment",
+        "seeJourney": "See my journey steps →"
+      },
+      "fullOrgChart": "Full org chart",
+      "gapStatus": {
+        "a-developper": "To develop",
+        "conforme": "Meets the level",
+        "critique": "Critical",
+        "non-evalue": "Not assessed"
+      },
+      "loadFailed": "Could not load your job description.",
+      "loading": "Loading your job description…",
+      "mission": {
+        "empty": "No mission is written for this position in the platform. The full job description file (duties, permanent tasks, responsibilities) is kept by human resources.",
+        "title": "Mission",
+        "heading": "Mission"
+      },
+      "noUnit": "No unit recorded",
+      "reportingLine": {
+        "noReports": "None",
+        "noSuperior": "No superior position visible",
+        "reports": "Direct reports ({{count}})",
+        "superior": "Superior",
+        "title": "Reporting line",
+        "vacant": "vacant",
+        "heading": "Reporting line",
+        "manager": "Manager",
+        "directReports_one": "Direct report ({{count}})",
+        "directReports_other": "Direct reports ({{count}})"
+      },
+      "snippet": {
+        "empty": "Your position does not yet appear in the org chart.",
+        "help": "Your branch: the position you report to, positions at the same level, and those reporting to you.",
+        "title": "My place in the organisation"
+      },
+      "tiles": {
+        "code": "Position code",
+        "reportsTo": "Reports to",
+        "title": "Title",
+        "unit": "Unit",
+        "positionCode": "Position code",
+        "structure": "Division"
+      },
+      "title": "My job description",
+      "loadError": "Could not load your job description.",
+      "unassignedTitle": "No position attached",
+      "unassignedDetail": "No position is associated with your account yet. HR carries out the assignment, and this sheet fills in at that point.",
+      "noStructure": "Division not specified",
+      "noManagerVisible": "No higher position visible",
+      "gap": {
+        "conforme": "Conforming",
+        "toDevelop": "To develop",
+        "critical": "Critical",
+        "notAssessed": "Not assessed"
+      },
+      "skills": {
+        "heading": "Required skills",
+        "subtitle": "The level expected by the position, compared with your assessed level. Assessments are entered by your manager.",
+        "noMatrix": "No competency framework is attached to this position yet.",
+        "conforming": "Conforming",
+        "toDevelop": "To develop",
+        "critical": "Critical",
+        "noRows": "No competency is declared for this position.",
+        "table": {
+          "competency": "Competency",
+          "family": "Family",
+          "required": "Required",
+          "attained": "Attained"
+        }
+      },
+      "orgSnippet": {
+        "heading": "My place in the organisation",
+        "subtitle": "Your branch: the position you report to, positions at the same level, and those attached to yours.",
+        "empty": "Your position does not appear in the org chart yet."
+      },
+      "fullDossier": {
+        "heading": "The full dossier",
+        "detail": "The detailed job description — duties, permanent tasks, responsibilities, training and experience requirements — is a versioned document kept by human resources. Your account does not have direct read access to it; ask your HR contact for it.",
+        "hrContactLink": "My HR contact →"
+      }
+    },
+    "surveys": {
+      "answered": "Answered",
+      "cancel": "Cancel",
+      "commentLabel": "Comment (optional)",
+      "commentPlaceholder": "What went well, what could be improved…",
+      "due": "Due: {{date}}",
+      "emptyDetail": "Check-ins are created at the same time as your onboarding journey.",
+      "emptyTitle": "No survey scheduled",
+      "figures": {
+        "answered": "Answered",
+        "milestones": "Review points",
+        "open": "Open",
+        "overdue": "Overdue",
+        "total": "Check-ins"
+      },
+      "indicators": {
+        "MANAGER_RELATIONSHIP": {
+          "help": "Conversations, feedback, review points.",
+          "label": "Relationship with your manager"
+        },
+        "ROLE_CLARITY": {
+          "help": "Do you know what is expected of you and how it is measured?",
+          "label": "Clarity of your role"
+        },
+        "SUPPORT_LEVEL": {
+          "help": "How available the people helping you find your feet have been.",
+          "label": "Support"
+        },
+        "WELCOME_QUALITY": {
+          "help": "Your arrival, your first day, how ready your workstation was.",
+          "label": "Quality of the welcome"
+        },
+        "WORKING_CONDITIONS": {
+          "help": "Premises, equipment, safety, organisation.",
+          "label": "Working conditions"
+        },
+        "welcomeQuality": {
+          "label": "Quality of welcome",
+          "help": "Your arrival, the first day, how your workstation was prepared."
+        },
+        "supportLevel": {
+          "label": "Support",
+          "help": "How available the people helping you settle in have been."
+        },
+        "roleClarity": {
+          "label": "Role clarity",
+          "help": "Do you know what is expected of you and how it is measured?"
+        },
+        "managerRelationship": {
+          "label": "Relationship with your manager",
+          "help": "Conversations, feedback, check-ins."
+        },
+        "workingConditions": {
+          "label": "Working conditions",
+          "help": "Premises, equipment, safety, organisation."
+        }
+      },
+      "indicatorsFilled": "{{count}} / {{total}} indicators filled in",
+      "loadFailed": "Could not load your surveys.",
+      "loading": "Loading your surveys…",
+      "notOpen": "Not open yet",
+      "notOpenYet": "This survey opens on its due date: it measures how you feel at that precise point of the journey.",
+      "open": "Open",
+      "overdue": "Overdue",
+      "pickOne": "Answer at least one indicator before sending.",
+      "respond": "Answer",
+      "respondedOn": " · answered on {{date}}",
+      "roundTitle": "Check-in D+{{dayOffset}}",
+      "scale": {
+        "1": "Very dissatisfied",
+        "2": "Dissatisfied",
+        "3": "Neutral",
+        "4": "Satisfied",
+        "5": "Very satisfied",
+        "veryDissatisfied": "Very dissatisfied",
+        "dissatisfied": "Dissatisfied",
+        "neutral": "Neutral",
+        "satisfied": "Satisfied",
+        "verySatisfied": "Very satisfied"
+      },
+      "score": "{{score}} / 5",
+      "sending": "Sending…",
+      "submit": "Send my answers",
+      "submitFailed": "Sending your answer failed.",
+      "submitOk": "Thank you. Your answers to the D+{{days}} survey have been recorded.",
+      "subtitle": "Four check-ins — D+7, D+30, D+60 and D+90 — to say how your onboarding is going. Your individual answers are not shown by name in HR dashboards.",
+      "title": "My satisfaction surveys",
+      "yourComment": "Your comment",
+      "loadError": "Could not load your surveys.",
+      "dueDate": "Due: {{date}}",
+      "answeredOn": "answered on {{date}}",
+      "answerAction": "Answer",
+      "scoreOutOfFive": "{{score}} / 5",
+      "notYetOpen": "This survey will open on its due date: it measures how you feel at that specific point in the journey.",
+      "needAtLeastOne": "Answer at least one indicator before sending.",
+      "submitSuccess": "Thank you. Your answer to the D+{{dayOffset}} survey has been recorded.",
+      "submitAction": "Send my answer",
+      "status": {
+        "answered": "Answered",
+        "overdue": "Overdue",
+        "open": "Open",
+        "notYetOpen": "Not yet open"
+      }
+    },
+    "task": {
+      "acknowledge": {
+        "agreeLabel": "I have read this text and confirm it.",
+        "disclaimer": "This is not a qualified electronic signature: the platform has no certificate authority, no signing key and no certified timestamping. What is kept is a",
+        "disclaimerEmphasis": " read receipt",
+        "disclaimerEnd": ": your account identifier, the exact text you agreed to, the date and time, and a SHA-256 fingerprint of the whole, which makes any later change to that text detectable.",
+        "hash": "Fingerprint: {{hash}}",
+        "recorded": "Confirmation recorded",
+        "recordedAt": "On {{date}}",
+        "saving": "Saving…",
+        "submit": "Record my confirmation",
+        "title": "Reading confirmation"
+      },
+      "brief": "What is asked of you",
+      "comments": {
+        "empty": "No message yet.",
+        "help": "Stuck or unsure? Write here: your manager and HR see this thread from your onboarding file.",
+        "placeholder": "E.g. I have not received the form to sign, who should I ask?",
+        "postFailed": "The message could not be sent.",
+        "posted": "Message sent.",
+        "send": "Send",
+        "sending": "Sending…",
+        "title": "Discussion on this step",
+        "yourMessage": "Your message"
+      },
+      "eyebrow": "My journey",
+      "eyebrowWithPhase": "My journey · {{phase}}",
+      "fields": {
+        "completedAt": "Completed on",
+        "dueDate": "Due date",
+        "noDueDate": "None",
+        "noOwner": "Not recorded on this step",
+        "owner": "Department responsible"
+      },
+      "files": {
+        "chooseOne": "Choose the document…",
+        "empty": "No document is expected from you.",
+        "help": "Supporting documents are not attached to a specific step in the platform: they make up your HR file. You can send one here, and it will appear in",
+        "linkLabel": "My supporting documents",
+        "pickBoth": "Choose the document concerned, then a file.",
+        "redo": " (to redo)",
+        "sending": "Sending…",
+        "submit": "Send the document",
+        "submitFailed": "The upload failed.",
+        "submitted": "Document sent to HR for review.",
+        "title": "Documents to provide"
+      },
+      "history": {
+        "empty": "No change recorded on this step.",
+        "help": "Reconstructed from the audit log: every status change, who made it and when.",
+        "system": "System",
+        "title": "History"
+      },
+      "loading": "Loading the step…",
+      "loadFailed": "Could not load this step.",
+      "next": "Next →",
+      "noteLabel": "Note",
+      "notFound": "This step does not exist in your journey.",
+      "previous": "← Previous",
+      "saveFailed": "Saving failed.",
+      "signatureSaved": "Your reading confirmation has been recorded.",
+      "statusChanged": "Step marked “{{status}}”.",
+      "statusFailed": "The step could not be updated.",
+      "toJourney": "Back to the journey",
+      "validatedNote": "This step has been validated by your manager: it can no longer be changed from your space."
+    },
+    "team": {
+      "avatarLabel": "Profile photo",
+      "avatarSaved": "Profile photo saved. It appears on your org chart card.",
+      "avatarUploadFailed": "The photo could not be uploaded.",
+      "avatarUploading": "Uploading the photo…",
+      "contacts": {
+        "empty": "No contact is published in the directory yet.",
+        "help": "The company's published directory, grouped by department. The number shown is the internal extension.",
+        "title": "Key contacts",
+        "heading": "Key contacts",
+        "subtitle": "The company's published directory, grouped by service. The number shown is the internal extension."
+      },
+      "extension": "Ext. {{extension}}",
+      "loadFailed": "Could not load your team.",
+      "loading": "Loading your team…",
+      "manager": {
+        "empty": "No manager is recorded on your account. HR fill this link in at the time of assignment.",
+        "noPosition": "Position not recorded",
+        "title": "My manager"
+      },
+      "me": "Me",
+      "orgChart": "Org chart",
+      "peers": {
+        "empty": "No peer at the same level appears: either your position has no declared superior position, or you are alone at this level.",
+        "help": "The people holding a position that reports to the same superior position as yours.",
+        "title": "My colleagues",
+        "heading": "My colleagues",
+        "subtitle": "People who hold a position attached to the same superior position as yours."
+      },
+      "services": {
+        "hr": "Human resources",
+        "hse": "Health, safety, environment",
+        "it": "IT",
+        "others": "Other contacts",
+        "quality": "Quality"
+      },
+      "subtitle": "Your manager, the colleagues who share your reporting line, and the services to contact depending on the topic.",
+      "title": "My team",
+      "loadError": "Could not load your team.",
+      "positionUnassigned": "Position unassigned",
+      "positionNotSpecified": "Position not specified",
+      "myManager": "My manager",
+      "noManager": "No manager is declared on your account. HR fills in this link when you are assigned.",
+      "avatar": {
+        "label": "Profile photo",
+        "uploading": "Uploading photo…",
+        "uploadSuccess": "Profile photo saved. It appears on your org chart card.",
+        "uploadFailed": "The photo upload failed."
+      }
+    },
+    "training": {
+      "catalogue": {
+        "emptyDetail": "The training catalogue is empty for now.",
+        "emptyTitle": "No module published",
+        "figures": {
+          "journey": "Journey",
+          "journeyComplete": "Complete",
+          "journeyInProgress": "In progress",
+          "mandatoryPassed": "Mandatory modules passed",
+          "offered": "Modules offered"
+        },
+        "groups": {
+          "mandatory": {
+            "detail": "To be passed in order to complete your onboarding journey.",
+            "label": "Mandatory modules"
+          },
+          "optional": {
+            "detail": "Short modules, to take whenever you like.",
+            "label": "Optional micro-learning"
+          }
+        },
+        "loadFailed": "Could not load your training.",
+        "loading": "Loading your training…",
+        "subtitle": "The modules to take during your onboarding. Each module ends with a quiz; the module is passed above the mark it sets.",
+        "title": "My training"
+      },
+      "certificates": {
+        "disclaimerEmphasis": "neither electronically signed nor verifiable",
+        "disclaimerEnd": " by a third party: the platform has no certificate authority. The reference that counts is the attempt identifier shown on each certificate, which HR can look up in the platform.",
+        "disclaimerStart": "The certificates produced here are printable documents generated by your browser. They are ",
+        "emptyDetail": "A certificate is issued the first time you pass a module. Complete a module to earn one.",
+        "emptyTitle": "No certificate yet",
+        "figures": {
+          "lastIssued": "Last issued",
+          "mandatory": "Of which mandatory modules",
+          "total": "Certificates"
+        },
+        "issuedOn": "Issued on {{date}}",
+        "loadFailed": "Could not load your certificates.",
+        "loading": "Loading your certificates…",
+        "mandatory": "Mandatory",
+        "passedAt": "Passed at {{score}} %",
+        "print": {
+          "attemptRef": "Attempt reference",
+          "heading": "Training certificate",
+          "holderLine": "has passed the following training module:",
+          "issuedBy": "Issued by the SOFICLEF onboarding platform.",
+          "issuedOn": "Date issued",
+          "kind": "Type",
+          "mandatory": "Mandatory",
+          "module": "Module",
+          "note": "This document is a certificate printed from the platform. It is neither electronically signed nor verifiable by a third party: the platform has no certificate authority. The attempt reference above is what the human resources department can look up in the platform's records.",
+          "optional": "Optional",
+          "score": "Score obtained",
+          "scoreValue": "{{score}}% — passing threshold {{threshold}}%",
+          "title": "Certificate — {{module}}",
+          "txtFileName": "certificate-{{code}}.txt",
+          "txtHeading": "TRAINING CERTIFICATE",
+          "txtHolder": "Holder",
+          "txtIssuedOn": "Date of issue",
+          "txtKind": "Type",
+          "txtModule": "Module",
+          "txtNote1": "This document is neither electronically signed nor verifiable by a third party.",
+          "txtNote2": "The reference above is what the HR department can look up.",
+          "txtPlatform": "Soficlef onboarding platform",
+          "txtRef": "Reference",
+          "txtScore": "Score obtained",
+          "txtScoreValue": "{{score}} % (pass mark {{threshold}} %)",
+          "docTitle": "Certificate — {{module}}",
+          "hasValidated": "has passed the following training module:",
+          "character": "Type",
+          "scoreLabel": "Score achieved",
+          "footnote": "This document is a certificate printed from the platform. It is neither electronically signed nor verifiable by a third party: the platform has no certification authority. The attempt reference above is what HR can look up in the platform's own records."
+        },
+        "printButton": "Print / save",
+        "reference": "Reference: {{id}}",
+        "reviewModule": "Review the module",
+        "subtitle": "The modules you have validated, with their issue date.",
+        "textCopy": "Text copy",
+        "title": "My certificates",
+        "toModules": "Back to the modules",
+        "loadError": "Could not load your certificates.",
+        "total": "Certificates",
+        "mandatoryCount": "Of which mandatory modules",
+        "lastIssued": "Last issued",
+        "disclaimerLede": "The certificates produced here are printable documents generated by your browser. They are",
+        "disclaimerBold": "neither electronically signed nor verifiable",
+        "disclaimerTail": " by a third party: the platform has no certification authority. The reference that matters is the attempt identifier shown on each certificate, which HR can look up in the platform.",
+        "validatedAt": "Passed at {{score}}%",
+        "printAction": "Print / save",
+        "textCopyAction": "Text copy",
+        "filenamePrefix": "certificate",
+        "text": {
+          "title": "TRAINING CERTIFICATE",
+          "platform": "SOFICLEF onboarding platform",
+          "holder": "Holder",
+          "module": "Module",
+          "character": "Type",
+          "score": "Score achieved",
+          "issuedOn": "Date issued",
+          "reference": "Reference",
+          "disclaimer1": "This document is neither electronically signed nor verifiable by a third party.",
+          "disclaimer2": "The reference above is what HR can look up."
+        }
+      },
+      "eyebrow": "My training",
+      "module": {
+        "allModules": "All modules",
+        "answeredCount": "{{answered}} / {{total}} question(s) answered",
+        "answerAll": "Answer every question ({{count}} remaining).",
+        "alreadyCertified": "This module was already passed: the existing certificate keeps its original date.",
+        "bestResult": "Your best result on this module:",
+        "bestResultThreshold": "(pass mark {{threshold}} %).",
+        "certificateSaved": "Certificate saved under your name.",
+        "correctCount": "{{correct}} correct answer(s) out of {{total}}",
+        "failed": "Pass mark not reached",
+        "grading": "Grading…",
+        "loading": "Loading the module…",
+        "loadFailed": "Could not load this module.",
+        "myCertificates": "My certificates",
+        "noQuizDetail": "This module has no questions yet: there is nothing to validate, and no certificate to issue.",
+        "noQuizTitle": "No quiz",
+        "notFound": "Module not found.",
+        "passed": "Module passed",
+        "placeholderDetail": "This module is marked as a placeholder in the catalogue: its content has not been written by HR yet.",
+        "placeholderTitle": "Placeholder content",
+        "rereadContent": "Reread the content",
+        "retake": "Retake the quiz",
+        "retry": "Try again",
+        "startQuiz": "Go to the quiz",
+        "steps": {
+          "lesson": "Content",
+          "quiz": "Quiz",
+          "result": "Result",
+          "content": "Content"
+        },
+        "submitFailed": "Submitting the quiz failed.",
+        "submitQuiz": "Submit my answers",
+        "toModules": "Back to the modules",
+        "viewCertificate": "View my certificate",
+        "loadError": "Could not load this module.",
+        "answerAllQuestions_one": "Answer every question ({{count}} remaining).",
+        "answerAllQuestions_other": "Answer every question ({{count}} remaining).",
+        "bestResultLede": "Your best result on this module:",
+        "percent": "{{value}}%",
+        "thresholdSuffix": "(threshold {{score}}%).",
+        "retakeQuiz": "Retake the quiz",
+        "goToQuiz": "Go to the quiz",
+        "passingThreshold": "passing threshold {{score}}%",
+        "reviewContent": "Review the content",
+        "submitAnswers": "Submit my answers",
+        "moduleValidated": "Module validated",
+        "thresholdMissed": "Threshold not reached",
+        "alreadyValidated": "This module was already validated: the existing certificate keeps its original date.",
+        "retryAction": "Retry",
+        "seeCertificate": "See my certificate",
+        "backToModules": "Back to modules"
+      },
+      "moduleCard": {
+        "bestScore": "Best result: {{score}} %",
+        "mandatory": "Mandatory",
+        "notAttempted": "Not attempted yet",
+        "passedSuffix": " · module passed",
+        "questions_one": "{{count}} question",
+        "questions_other": "{{count}} questions",
+        "retry": "Try again",
+        "review": "Review the module",
+        "start": "Start",
+        "threshold": "Pass mark {{score}} %"
+      },
+      "loadError": "Could not load your training.",
+      "loading": "Loading your training…",
+      "title": "My training",
+      "subtitle": "The modules to complete during your onboarding. Each module ends with a quiz; the module is validated above the threshold it sets.",
+      "mandatoryPassed": "Mandatory modules passed",
+      "modulesOffered": "Modules offered",
+      "journey": "Journey",
+      "complete": "Complete",
+      "inProgress": "In progress",
+      "noModulesTitle": "No module published",
+      "noModulesDetail": "The training catalogue is empty at the moment.",
+      "mandatoryBadge": "Mandatory",
+      "bestScore": "Best result: {{score}}%",
+      "notAttempted": "Not attempted yet",
+      "threshold": "Threshold {{score}}%",
+      "questionCount_one": "{{count}} question",
+      "questionCount_other": "{{count}} questions",
+      "moduleValidated": "module validated",
+      "reviewModule": "Review the module",
+      "retry": "Retry",
+      "start": "Start",
+      "groups": {
+        "mandatory": {
+          "label": "Mandatory modules",
+          "detail": "To complete to finish your onboarding journey."
+        },
+        "optional": {
+          "label": "Optional micro-learning",
+          "detail": "Short modules, to take whenever you like."
+        }
+      }
+    },
+    "vocabulary": {
+      "owners": {
+        "EMPLOYEE": {
+          "detail": "this step is yours: nothing is pending on any department.",
+          "label": "You"
+        },
+        "HR": {
+          "detail": "contract, administrative file, supporting documents.",
+          "label": "Human resources"
+        },
+        "HSE": {
+          "detail": "protective equipment, safety instructions.",
+          "label": "Health, safety and environment"
+        },
+        "IT": {
+          "detail": "account, equipment, application access.",
+          "label": "IT"
+        },
+        "MANAGER": {
+          "detail": "objectives, review points, validation of steps.",
+          "label": "Your manager"
+        },
+        "QUALITY": {
+          "detail": "procedures, management system documents.",
+          "label": "Quality"
+        }
+      },
+      "phases": {
+        "DAY_ONE": {
+          "detail": "Your welcome day: badge, workstation, meeting the team.",
+          "label": "Day one"
+        },
+        "PRE_ONBOARDING": {
+          "detail": "What is prepared before your first day: administrative file, contract, access.",
+          "label": "Before you arrive"
+        },
+        "PROBATION": {
+          "detail": "Settling into the role: training, review points and appraisals.",
+          "label": "Probation period"
+        }
+      },
+      "status": {
+        "BLOCKED": "Blocked",
+        "DONE": "Done",
+        "IN_PROGRESS": "In progress",
+        "TODO": "To do",
+        "VALIDATED": "Validated"
+      }
+    },
+    "welcome": {
+      "contacts": {
+        "hr": "HR: {{name}} — ext. {{extension}}",
+        "manager": "Manager: {{name}} ({{email}})",
+        "title": "Contacts"
+      },
+      "dayNumber": "Day {{count}} of your onboarding.",
+      "greeting": "Welcome, {{name}}",
+      "loadFailed": "Could not load your welcome space.",
+      "nextTasks": {
+        "due": " — due {{date}}",
+        "empty": "No step pending.",
+        "title": "Next steps"
+      },
+      "notStarted": "Your onboarding journey has not started yet.",
+      "progress": {
+        "steps": "{{done}}/{{total}} steps completed",
+        "title": "My progress"
+      }
+    },
+    "quests": {
+      "loadError": "Could not load your quests.",
+      "loading": "Loading your quests…",
+      "title": "My quests",
+      "subtitle": "One-off tasks your manager has assigned you.",
+      "empty": "No quest has been assigned to you yet.",
+      "openHeading_one": "{{count}} quest in progress",
+      "openHeading_other": "{{count}} quests in progress",
+      "noneOpen": "No quest in progress.",
+      "doneHeading_one": "{{count}} quest done",
+      "doneHeading_other": "{{count}} quests done",
+      "assignedBy": "Assigned by {{name}}",
+      "markDone": "Mark as done",
+      "reopen": "Mark as not done"
+    }
+  },
+  "notifications": {
+    "empty": "No notifications.",
+    "loadFailed": "Could not load the notifications.",
+    "markAllRead": "Mark all as read",
+    "markRead": "Mark as read",
+    "open": "Open →",
+    "title": "Notifications",
+    "unread_one": "{{count}} unread",
+    "unread_other": "{{count}} unread",
+    "allRead": "Everything is read."
+  },
+  "onboarding": {
+    "checklist": {
+      "columns": {
+        "employee": "Employee",
+        "progress": "Progress",
+        "startDate": "Start",
+        "template": "Template"
+      },
+      "empty": "No journey.",
+      "loadFailed": "Could not load the journeys.",
+      "subtitle": "The onboarding journeys visible within your perimeter.",
+      "title": "Onboarding checklist"
+    },
+    "dashboard": {
+      "empty": "No indicator is available for your profile.",
+      "loadFailed": "Could not load the dashboard.",
+      "subtitle": "The indicators visible within your perimeter.",
+      "tiles": {
+        "averageOnboardingDays": "Average onboarding time",
+        "averagePercent": "Average progress",
+        "completionRate": "Completion rate",
+        "confirmationRate": "Confirmation rate",
+        "criticalGaps": "Critical gaps",
+        "jobDescriptionCoverage": "Job description coverage",
+        "journeys": "Journeys in progress",
+        "overdueTasks": "Overdue tasks",
+        "satisfaction": "Satisfaction",
+        "trainingRate": "Training rate",
+        "turnover": "6-month turnover",
+        "unitsWithoutHead": "Units without a head"
+      },
+      "title": "Steering",
+      "daysSuffix": "{{count}} d"
+    }
+  },
+  "jobDescription": {
+    "status": {
+      "draft": "Draft",
+      "inReview": "In review",
+      "changesRequested": "Changes requested",
+      "validated": "Validated",
+      "archived": "Archived"
+    },
+    "loadFailed": "Could not load the job descriptions.",
+    "listTitle": "Job descriptions",
+    "listSubtitle": "Every job description and its validation status.",
+    "columns": {
+      "code": "Code",
+      "jobTitle": "Title",
+      "version": "Version"
+    },
+    "empty": "No job description yet."
+  }
+}
