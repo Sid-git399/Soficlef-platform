@@ -1,0 +1,213 @@
+import { useEffect, useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { motion, useReducedMotion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import { localeOf } from '../../../lib/formatDate.js';
+
+import { assignmentsApi } from '../../../api/organization.js';
+import PageHeader from '../../../components/manager/PageHeader.jsx';
+import CountUp from '../../../components/manager/CountUp.jsx';
+import { PageLoading, PageError, EmptyState } from '../../../components/manager/PageStates.jsx';
+import { staggerContainer, staggerItem, rowVariants, initialOrNone } from '../../../lib/motion/variants.js';
+
+const CARD = 'rounded-app border border-border bg-surface shadow-app';
+
+/** Older than this, an account has been waiting long enough to be flagged. */
+const STALE_DAYS = 3;
+
+/**
+ * /app/hr/employees/unassigned (route guide §2.3, CORE).
+ * "SI-created accounts awaiting assignment, sorted by age of request so nobody sits in
+ * limbo."
+ *
+ * The sort is the point of the page, so it is not a user preference: the queue is always
+ * ordered oldest-first, and the age is rendered with the same emphasis as the name rather
+ * than tucked into a corner. `waitingDays` is computed server-side (a duration is a
+ * property of the data at the moment it is read), so this page only presents it.
+ */
+export default function HrUnassignedPage() {
+  const { t, i18n } = useTranslation();
+  const [accounts, setAccounts] = useState([]);
+  const [requests, setRequests] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const reduce = useReducedMotion();
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const [pendingRes, requestsRes] = await Promise.all([
+          assignmentsApi.pendingAccounts(),
+          assignmentsApi.accountRequests(50),
+        ]);
+        setAccounts(pendingRes.data);
+        setRequests(requestsRes.data);
+      } catch {
+        setError(t('hr.pages.unassigned.loadError'));
+      } finally {
+        setLoading(false);
+      }
+    })();
+  }, [t]);
+
+  // Oldest first — the whole reason this queue exists.
+  const queue = useMemo(
+    () => [...accounts].sort((a, b) => b.waitingDays - a.waitingDays),
+    [accounts],
+  );
+
+  const stale = queue.filter((account) => account.waitingDays >= STALE_DAYS);
+  const openRequests = requests.filter((request) => request.status === 'OPEN');
+
+  if (loading) return <PageLoading label={t('hr.pages.unassigned.loading')} />;
+  if (error) return <PageError message={error} />;
+
+  return (
+    <div>
+      <PageHeader
+        eyebrow={t('hr.dashboard.eyebrow')}
+        title={t('hr.pages.unassigned.title')}
+        subtitle={t('hr.pages.unassigned.subtitle')}
+        actions={
+          <Link
+            to="/app/hr/employees/request"
+            className="rounded-app border border-border px-3 py-2 text-sm font-medium text-text transition-colors hover:border-red-brand hover:text-red-brand"
+          >
+            {t('hr.pages.unassigned.requestAccount')}
+          </Link>
+        }
+      />
+
+      <motion.div
+        variants={staggerContainer(0.06)}
+        initial={initialOrNone(reduce)}
+        animate="visible"
+        className="mb-8 grid gap-4 sm:grid-cols-3"
+      >
+        <motion.div variants={staggerItem} className={`${CARD} p-5`}>
+          <p className="mb-2 text-xs font-medium uppercase tracking-[0.08em] text-text-dim">
+            {t('hr.pages.unassigned.stats.pending')}
+          </p>
+          <p className="font-display text-3xl text-red-deep">
+            <CountUp value={queue.length} />
+          </p>
+        </motion.div>
+        <motion.div variants={staggerItem} className={`${CARD} p-5`}>
+          <p className="mb-2 text-xs font-medium uppercase tracking-[0.08em] text-text-dim">
+            {t('hr.pages.unassigned.stats.stale', { days: STALE_DAYS })}
+          </p>
+          <p className={`font-display text-3xl ${stale.length > 0 ? 'text-status-red' : 'text-red-deep'}`}>
+            <CountUp value={stale.length} />
+          </p>
+        </motion.div>
+        <motion.div variants={staggerItem} className={`${CARD} p-5`}>
+          <p className="mb-2 text-xs font-medium uppercase tracking-[0.08em] text-text-dim">
+            {t('hr.pages.unassigned.stats.longest')}
+          </p>
+          <p className="font-display text-3xl text-red-deep">
+            <CountUp value={queue[0]?.waitingDays ?? 0} suffix={` ${t('hr.pages.unassigned.dayShort')}`} />
+          </p>
+        </motion.div>
+      </motion.div>
+
+      <section className="mb-10">
+        <h2 className="mb-4 font-display text-xl text-text">{t('hr.pages.unassigned.queueTitle')}</h2>
+        {queue.length === 0 ? (
+          <EmptyState
+            title={t('hr.pages.unassigned.queueEmptyTitle')}
+            detail={t('hr.pages.unassigned.queueEmptyDetail')}
+            muted
+          />
+        ) : (
+          <div className={`overflow-hidden ${CARD}`}>
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-border bg-surface-2 text-start text-text-muted">
+                  <th className="px-4 py-3 font-medium">{t('hr.pages.unassigned.table.employee')}</th>
+                  <th className="px-4 py-3 font-medium">{t('hr.pages.unassigned.table.email')}</th>
+                  <th className="px-4 py-3 font-medium">{t('hr.pages.unassigned.table.created')}</th>
+                  <th className="px-4 py-3 font-medium">{t('hr.pages.unassigned.table.waiting')}</th>
+                  <th className="px-4 py-3" />
+                </tr>
+              </thead>
+              <motion.tbody
+                variants={staggerContainer(0.04, 0.2)}
+                initial={initialOrNone(reduce)}
+                animate="visible"
+              >
+                {queue.map((account) => (
+                  <motion.tr
+                    key={account.id}
+                    variants={rowVariants}
+                    className="border-b border-border last:border-0 hover:bg-surface-2/60"
+                  >
+                    <td className="px-4 py-3 font-medium text-text">{account.displayName}</td>
+                    <td className="px-4 py-3 text-text-dim">{account.email}</td>
+                    <td className="px-4 py-3 text-text-dim">
+                      {new Date(account.createdAt).toLocaleDateString(localeOf(i18n))}
+                    </td>
+                    <td className="px-4 py-3">
+                      <span
+                        className={`rounded-full px-2 py-0.5 text-xs font-medium ${
+                          account.waitingDays >= STALE_DAYS
+                            ? 'bg-status-red/10 text-status-red'
+                            : 'bg-surface-2 text-text-dim'
+                        }`}
+                      >
+                        {t('hr.pages.unassigned.days', { count: account.waitingDays })}
+                      </span>
+                    </td>
+                    <td className="px-4 py-3 text-end">
+                      <Link
+                        to={`/app/hr/employees/${account.id}/assign`}
+                        className="rounded-app bg-red-brand px-3 py-1.5 text-xs font-medium text-white transition-colors hover:bg-red-light"
+                      >
+                        {t('hr.pages.unassigned.assign')}
+                      </Link>
+                    </td>
+                  </motion.tr>
+                ))}
+              </motion.tbody>
+            </table>
+          </div>
+        )}
+      </section>
+
+      <section>
+        <h2 className="mb-4 font-display text-xl text-text">
+          {t('hr.pages.unassigned.requestsTitle')}
+        </h2>
+        {openRequests.length === 0 ? (
+          <EmptyState detail={t('hr.pages.unassigned.requestsEmpty')} muted />
+        ) : (
+          <motion.div
+            variants={staggerContainer(0.05)}
+            initial={initialOrNone(reduce)}
+            animate="visible"
+            className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            {openRequests.map((request) => (
+              <motion.div key={request.id} variants={staggerItem} className={`${CARD} p-4`}>
+                <div className="flex items-start justify-between gap-2">
+                  <p className="font-medium text-text">{request.candidateNameFr}</p>
+                  {request.urgency === 'URGENT' && (
+                    <span className="shrink-0 rounded-full bg-status-red/10 px-2 py-0.5 text-xs font-medium text-status-red">
+                      {t('hr.pages.unassigned.urgent')}
+                    </span>
+                  )}
+                </div>
+                <p className="text-xs text-text-dim">{request.plannedPositionFr}</p>
+                <p className="mt-2 text-xs text-text-dim">
+                  {t('hr.pages.unassigned.requestedDays', { count: request.waitingDays })}
+                  {request.plannedHireDate
+                    ? ` — ${t('hr.pages.unassigned.plannedHire', { date: new Date(request.plannedHireDate).toLocaleDateString(localeOf(i18n)) })}`
+                    : ''}
+                </p>
+              </motion.div>
+            ))}
+          </motion.div>
+        )}
+      </section>
+    </div>
+  );
+}
