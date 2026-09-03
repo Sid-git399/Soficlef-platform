@@ -1,0 +1,815 @@
+{
+  "admin": {
+    "console": {
+      "eyebrow": "Administration",
+      "title": "Console",
+      "subtitle": "État réel du système : sessions ouvertes, refus d’accès, connecteurs raccordés et volumes stockés.",
+      "auditLink": "Journal d’audit",
+      "provisioningLink": "File de provisionnement",
+      "loading": "Chargement de la console…",
+      "loadError": "Impossible de charger la console d’administration.",
+      "unknownClient": "Client inconnu",
+      "tiles": {
+        "activeSessions": "Sessions actives",
+        "distinctUsersOnline": "Personnes connectées",
+        "failedLogins24h": "Connexions refusées (24 h)",
+        "accessDenied24h": "Accès refusés (24 h)"
+      },
+      "health": {
+        "title": "Santé applicative",
+        "noTraffic": "Aucune tentative d’accès depuis 24 heures : rien à signaler, faute de trafic à mesurer.",
+        "summary_one": "{{sessions}} session ouverte contre {{errors}} refus sur les 24 dernières heures.",
+        "summary_other": "{{sessions}} sessions ouvertes contre {{errors}} refus sur les 24 dernières heures."
+      },
+      "accounts": {
+        "title": "Comptes",
+        "active": "Actifs",
+        "pending": "Créés, non affectés",
+        "suspended": "Suspendus ou désactivés",
+        "openRequests": "Demandes RH ouvertes",
+        "manageLink": "Gérer les comptes →"
+      },
+      "storage": {
+        "title": "Stockage",
+        "documents": "Documents référencés",
+        "files": "Pièces administratives",
+        "auditRows": "Entrées d’audit",
+        "note": "Ces nombres comptent des lignes, pas des octets : aucun connecteur de stockage n’est raccordé, les fichiers sont donc suivis sans être hébergés ici."
+      },
+      "connectors": {
+        "title": "Connecteurs",
+        "configureLink": "Configurer →",
+        "declaredInProduction": "Déclaré en production",
+        "unconfigured_one": "{{count}} connecteur non configuré",
+        "unconfigured_other": "{{count}} connecteurs non configurés",
+        "unconfiguredDetail": "Un connecteur non configuré n’est pas une panne : rien ne l’a jamais été raccordé. Chaque écran concerné indique ce que cela empêche concrètement.",
+        "mismatched_one": "{{count}} connecteur est déclaré en production dans la configuration mais n’a aucune adresse dans l’environnement du serveur. Le mode déclaré ne suffit pas à raccorder un système.",
+        "mismatched_other": "{{count}} connecteurs sont déclarés en production dans la configuration mais n’ont aucune adresse dans l’environnement du serveur. Le mode déclaré ne suffit pas à raccorder un système.",
+        "mode": {
+          "production": "Production",
+          "mock": "Simulé",
+          "unconfigured": "Non configuré"
+        }
+      },
+      "sessions": {
+        "title": "Sessions ouvertes",
+        "empty": "Aucune session ouverte",
+        "emptyDetail": "Personne n’est connecté à la plateforme en ce moment, votre propre session mise à part si elle vient d’expirer côté serveur.",
+        "account": "Compte",
+        "client": "Client",
+        "seenAt": "Vue le",
+        "unknownIp": "IP inconnue",
+        "lastActivity": "Dernière activité enregistrée dans le journal :",
+        "lastActivityNone": "aucune"
+      }
+    },
+    "ai": {
+      "loading": "Chargement de la configuration IA…",
+      "loadError": "Impossible de charger la configuration IA.",
+      "eyebrow": "Administration",
+      "title": "Configuration IA",
+      "subtitle": "Fournisseur, modèle, quota, agents et modèles de prompts — enregistrés durablement, en attente d’un fournisseur à brancher.",
+      "tiles": {
+        "declared": "Agents déclarés",
+        "enabled": "Agents activés",
+        "operational": "Opérationnels sans LLM",
+        "prompts": "Prompts renseignés"
+      },
+      "banner": {
+        "connected": "Fournisseur raccordé : {{provider}}",
+        "connectedWithModel": "Fournisseur raccordé : {{provider}} · {{model}}",
+        "none": "Aucun fournisseur de modèle de langage n’est raccordé.",
+        "connectedNote": "Ce modèle reformule les réponses de l’assistant. Il ne consulte jamais la base : la recherche est faite en amont, avec les droits de la personne qui pose la question, et les sources citées proviennent toujours de cette recherche — jamais du texte produit par le modèle. Si l’appel échoue, l’assistant retombe sur la réponse issue de la seule recherche.",
+        "noneNote": "Les cinq agents répondent malgré tout, par recherche dans les données de la plateforme avec les droits de la personne qui interroge. Renseigner HF_API_KEY dans l’environnement du serveur ajoute la reformulation ; cela n’active pas la fonctionnalité, qui marche déjà."
+      },
+      "providerSaved": "Configuration du fournisseur enregistrée.",
+      "saveFailed": "L’enregistrement a échoué.",
+      "agentDisabled": "Agent désactivé.",
+      "agentEnabled": "Agent activé.",
+      "promptSaved": "Modèle de prompt enregistré.",
+      "form": {
+        "title": "Fournisseur, modèle et quota",
+        "provider": "Fournisseur",
+        "providerHint": "Nom du prestataire retenu.",
+        "providerPlaceholder": "Aucun fournisseur retenu",
+        "endpoint": "Adresse (endpoint)",
+        "model": "Modèle",
+        "monthlyQuota": "Quota mensuel",
+        "monthlyQuotaHint": "En requêtes. Vide = pas de plafond fixé.",
+        "lastModified": "Dernière modification : {{date}}.",
+        "neverSaved": "Aucune configuration enregistrée pour l’instant.",
+        "saving": "Enregistrement…"
+      },
+      "agents": {
+        "title": "Agents",
+        "description": "Un agent lit avec les droits de celui qui l’interroge : il ne peut jamais faire remonter une ligne que la personne ne pourrait pas ouvrir elle-même. Activer un agent enregistre l’intention ; les agents marqués « opérationnel » répondent déjà, par recherche dans les données de la plateforme, sans aucun modèle de langage.",
+        "empty": "Aucun agent déclaré",
+        "emptyDetail": "Le catalogue des agents est vide.",
+        "operationalReformulated": "Opérationnel · reformulé",
+        "operationalNoLlm": "Opérationnel sans LLM",
+        "noAnswerStep": "Sans étape de réponse",
+        "toggleLabel": "Activer {{name}}",
+        "closePrompt": "Fermer",
+        "editPrompt": "Modifier le prompt",
+        "definePrompt": "Définir un prompt",
+        "promptLabel": "Modèle de prompt",
+        "promptPlaceholder": "Consigne donnée à l’agent. La règle qui vaut déjà, sans fournisseur : toute réponse cite sa source, ou reconnaît n’avoir rien trouvé.",
+        "savePrompt": "Enregistrer le prompt"
+      },
+      "footnote": "Les réglages de ce formulaire sont enregistrés mais ne pilotent pas encore l’assistant : celui-ci lit sa configuration dans l’environnement du serveur (HF_API_KEY, HF_MODEL, HF_BASE_URL), pas dans cette table. Les {{count}} agent(s) marqué(s) « opérationnel » répondent par recherche dans les données de la plateforme, avec les droits de la personne qui pose la question{{tail}}",
+      "footnoteTailConnected": ", puis font reformuler cette réponse par le modèle raccordé.",
+      "footnoteTailNone": ", sans aucun appel à un modèle de langage."
+    },
+    "audit": {
+      "loading": "Chargement du journal…",
+      "loadError": "Impossible de charger le journal d’audit.",
+      "eyebrow": "Administration",
+      "title": "Journal d’audit",
+      "subtitle": "Chaque connexion et chaque action enregistrée, avec son auteur, son horodatage et son adresse IP.",
+      "exportButton": "Exporter en CSV ({{count}})",
+      "exportFilePrefix": "journal-audit",
+      "tiles": {
+        "entries": "Entrées affichées",
+        "actors": "Acteurs distincts",
+        "actionTypes": "Types d’action",
+        "refusals": "Refus"
+      },
+      "filters": {
+        "searchLabel": "Acteur ou entité",
+        "searchPlaceholder": "Nom, e-mail, type d’entité…",
+        "actionLabel": "Action",
+        "allActions": "Toutes",
+        "fromLabel": "Du",
+        "toLabel": "Au",
+        "limitLabel": "Lignes",
+        "submit": "Filtrer",
+        "submitting": "Filtrage…",
+        "reset": "Réinitialiser"
+      },
+      "actions": {
+        "auth.login": "Connexion",
+        "auth.login_failed": "Échec de connexion",
+        "auth.logout": "Déconnexion",
+        "auth.session_revoked": "Session révoquée",
+        "auth.password_changed": "Mot de passe modifié",
+        "user.created": "Compte créé",
+        "user.updated": "Compte modifié",
+        "user.status_changed": "Statut de compte modifié",
+        "user.role_assigned": "Rôle attribué",
+        "user.role_revoked": "Rôle retiré",
+        "user.role_assignment_denied": "Attribution de rôle refusée",
+        "user.assigned": "Affectation à un poste",
+        "user.assignment_ended": "Fin d’affectation",
+        "role.permission_changed": "Permissions modifiées",
+        "entity.created": "Création",
+        "entity.updated": "Modification",
+        "entity.deleted": "Suppression",
+        "entity.validated": "Validation",
+        "access.denied": "Accès refusé",
+        "document.downloaded": "Document téléchargé",
+        "report.exported": "Rapport exporté"
+      },
+      "table": {
+        "date": "Date",
+        "actor": "Acteur",
+        "action": "Action",
+        "entity": "Entité",
+        "ip": "Adresse IP"
+      },
+      "empty": "Aucune entrée",
+      "emptyFiltered": "Aucune entrée ne correspond à ces filtres. Élargissez la période ou changez d’action.",
+      "emptyAll": "Le journal est vide : aucune action n’a encore été enregistrée sur cette instance.",
+      "footnote": "Les filtres sont appliqués par le serveur, sur l’ensemble du journal : filtrer une page déjà chargée ne répondrait pas à « montre-moi tous les refus de mars ». Le serveur plafonne une requête à 500 lignes. L’export CSV reprend exactement les {{count}} ligne(s) affichées ci-dessus — ni plus, ni moins — et le fichier est généré dans votre navigateur, sans transiter par un service tiers."
+    },
+    "backups": {
+      "loading": "Chargement des sauvegardes…",
+      "loadError": "Impossible de charger les sauvegardes.",
+      "eyebrow": "Administration",
+      "title": "Sauvegardes",
+      "subtitle": "Planifications de sauvegarde et historique d'exécution.",
+      "newSchedule": "Nouvelle planification",
+      "cancel": "Annuler",
+      "noExecutor": {
+        "title": "Aucun exécuteur de sauvegarde n'est raccordé.",
+        "body": "Les planifications ci-dessous sont enregistrées et journalisées, mais rien dans cette application ne les déclenche : aucune sauvegarde ne part, et aucune restauration n'est possible depuis cet écran. La sauvegarde effective relève aujourd'hui de l'hébergeur de la base."
+      },
+      "form": {
+        "label": "Libellé",
+        "labelPlaceholder": "Sauvegarde quotidienne",
+        "frequency": "Fréquence",
+        "frequencyPlaceholder": "Tous les jours à 02 h 00",
+        "retentionDays": "Rétention (jours)",
+        "creating": "Enregistrement…",
+        "create": "Créer"
+      },
+      "schedules": {
+        "title": "Planifications ({{count}})",
+        "empty": "Aucune planification enregistrée.",
+        "label": "Libellé",
+        "frequency": "Fréquence",
+        "retention": "Rétention",
+        "retentionDays": "{{count}} j",
+        "state": "État",
+        "active": "Active",
+        "inactive": "Inactive",
+        "deactivate": "Désactiver",
+        "activate": "Activer",
+        "delete": "Supprimer",
+        "confirmDelete": "Supprimer la planification « {{label}} » ?",
+        "createFailed": "La création de la planification a échoué.",
+        "updateFailed": "La mise à jour a échoué.",
+        "deleteFailed": "La suppression a échoué."
+      },
+      "history": {
+        "title": "Historique",
+        "empty": "Historique vide",
+        "emptyDetail": "Aucun processus de sauvegarde ne tourne : cet historique est vide parce que rien ne l'alimente.",
+        "schedule": "Planification",
+        "started": "Démarrée",
+        "finished": "Terminée",
+        "size": "Taille",
+        "result": "Résultat",
+        "success": "Succès",
+        "failure": "Échec"
+      }
+    },
+    "gdpr": {
+      "loading": "Chargement du registre…",
+      "loadError": "Impossible de charger le registre RGPD.",
+      "eyebrow": "Administration",
+      "title": "RGPD",
+      "subtitle": "Registre des demandes, et inventaire des données détenues par la plateforme.",
+      "newRequest": "Enregistrer une demande",
+      "cancel": "Annuler",
+      "notAutomated": {
+        "title": "Le traitement n'est pas automatisé.",
+        "body": "Ce registre trace les demandes et leur suite. Clôturer une demande enregistre qu'une personne a fait le travail ailleurs — aucun effacement ni export n'est déclenché depuis cet écran. Plusieurs catégories ci-dessous ne peuvent d'ailleurs pas être simplement supprimées."
+      },
+      "tiles": {
+        "openRequests": "Demandes ouvertes",
+        "totalRequests": "Total des demandes",
+        "categories": "Catégories de données",
+        "accountsConcerned": "Comptes concernés"
+      },
+      "form": {
+        "type": "Type",
+        "subject": "Personne concernée",
+        "subjectNone": "Non rattachée à un compte",
+        "note": "Note",
+        "notePlaceholder": "Origine de la demande, pièces reçues, suite donnée…",
+        "saving": "Enregistrement…",
+        "save": "Enregistrer",
+        "createFailed": "L'enregistrement de la demande a échoué.",
+        "updateFailed": "La mise à jour de la demande a échoué."
+      },
+      "kinds": {
+        "ERASURE": "Effacement",
+        "EXPORT": "Export",
+        "CONSENT": "Consentement"
+      },
+      "statuses": {
+        "OPEN": "Ouverte",
+        "DONE": "Traitée",
+        "REJECTED": "Rejetée"
+      },
+      "register": {
+        "title": "Registre des demandes ({{count}})",
+        "allStatuses": "Tous les états",
+        "empty": "Aucune demande enregistrée.",
+        "type": "Type",
+        "person": "Personne",
+        "receivedOn": "Reçue le",
+        "note": "Note",
+        "status": "État",
+        "personUnattached": "Non rattachée",
+        "close": "Clôturer",
+        "reject": "Rejeter"
+      },
+      "dataHeld": {
+        "title": "Données détenues",
+        "subtitle": "Ce que la plateforme conserve, et ce qu'un effacement impliquerait réellement pour chaque catégorie.",
+        "erasureLabel": "Effacement :",
+        "unavailable": "Inventaire indisponible."
+      }
+    },
+    "integrations": {
+      "loading": "Chargement des connecteurs…",
+      "loadError": "Impossible de charger les connecteurs.",
+      "eyebrow": "Administration",
+      "title": "Intégrations",
+      "subtitle": "Ce à quoi la plateforme est raccordée, ce qu’elle est censée l’être, et l’écart entre les deux.",
+      "refresh": "Actualiser",
+      "tiles": {
+        "production": "Déclarés en production",
+        "mock": "En mode simulé",
+        "mismatched": "Déclarés sans être raccordés"
+      },
+      "mode": {
+        "production": "Production",
+        "mock": "Simulé",
+        "productionMeaning": "Le connecteur doit s’adresser au système réel.",
+        "mockMeaning": "Le connecteur répond avec des données de démonstration, volontairement."
+      },
+      "env": {
+        "production": "Une adresse est configurée dans l’environnement du serveur.",
+        "mock": "La variable d’environnement vaut « mock ».",
+        "unconfigured": "Aucune adresse n’est configurée dans l’environnement du serveur.",
+        "label": "Environnement :"
+      },
+      "confirmProductionSwitch": "Passer « {{label}} » en production ? Aucune adresse n’est configurée dans l’environnement du serveur : le connecteur sera déclaré en production sans être raccordé.",
+      "declaredProductionUnreachable": "« {{label}} » est déclaré en production, mais l’environnement du serveur ne lui donne aucune adresse.",
+      "switchedTo": "« {{label}} » est désormais en {{mode}}.",
+      "toggleFailed": "Le changement de mode a échoué.",
+      "configSaved": "Configuration enregistrée.",
+      "saveFailed": "L’enregistrement a échoué.",
+      "notConfigured": "Non raccordé",
+      "toggleLabel": "Basculer {{label}}",
+      "toggleCaption": "Simulé ↔ Production",
+      "test": "Tester",
+      "configure": "Configurer",
+      "close": "Fermer",
+      "mismatchedWarning_one": "{{count}} connecteur est déclaré en production sans adresse dans l’environnement du serveur.",
+      "mismatchedWarning_other": "{{count}} connecteurs sont déclarés en production sans adresse dans l’environnement du serveur.",
+      "mismatchedWarningBody": "Le mode enregistré ici est une intention. Le raccordement, lui, se fait par variable d’environnement au déploiement : tant qu’elle est vide, rien ne part.",
+      "testOutcome": {
+        "ok": "Vérification effectuée",
+        "failed": "Échec"
+      },
+      "testReasons": {
+        "not_configured": "Rien à joindre",
+        "unreachable": "Injoignable",
+        "resolved": "Nom résolu"
+      },
+      "testFailedFallback": "Le test n’a pas pu être exécuté.",
+      "testNoneRun": "Aucun test effectué.",
+      "noFieldsYet": "Ce connecteur n’a pas encore de paramètres à saisir : seul son mode est réglable ici.",
+      "lastTested": "Dernier test : {{date}} —",
+      "lastTestOk": "vérification concluante",
+      "lastTestFailed": "sans succès",
+      "empty": "Aucun connecteur déclaré",
+      "emptyDetail": "Le catalogue des connecteurs est vide.",
+      "fields": {
+        "smtp": {
+          "host": "Hôte SMTP",
+          "port": "Port",
+          "from": "Expéditeur"
+        },
+        "entra": {
+          "tenantId": "Identifiant du locataire",
+          "tenantIdPlaceholder": "Aucun locataire disponible",
+          "clientId": "Identifiant de l’application"
+        },
+        "hrApi": {
+          "baseUrl": "URL de base du SIRH"
+        },
+        "directory": {
+          "path": "Chemin du partage"
+        },
+        "storage": {
+          "driver": "Pilote de stockage"
+        },
+        "ai": {
+          "endpoint": "Adresse du fournisseur",
+          "model": "Modèle"
+        }
+      },
+      "whatSwitchDoes": {
+        "title": "Ce que le commutateur fait",
+        "body": "Il enregistre durablement le mode voulu pour chaque connecteur, avec une entrée dans le journal d’audit. C’est l’intention déclarée par l’administration."
+      },
+      "whatSwitchDoesNot": {
+        "title": "Ce qu’il ne fait pas",
+        "body": "Il ne raccorde aucun système : l’adresse réelle vient de l’environnement du serveur, fixé au déploiement. Aucun locataire Entra ID, aucun SIRH et aucun relais SMTP ne répond à ce déploiement — le bouton « Tester » le dit explicitement plutôt que d’afficher un vert de complaisance."
+      }
+    },
+    "organization": {
+      "loading": "Chargement des structures…",
+      "loadError": "Impossible de charger les structures.",
+      "eyebrow": "Administration",
+      "title": "Structures",
+      "subtitle": "Le squelette de l’organisation : directions, départements, sites et lignes hiérarchiques que les RH viendront remplir.",
+      "newPosition": "Nouveau poste",
+      "newUnit": "Nouvelle unité",
+      "tiles": {
+        "units": "Unités",
+        "positions": "Postes",
+        "roots": "Racines de l’arbre",
+        "orphanPositions": "Postes sans unité"
+      },
+      "unitTypes": {
+        "DIVISION": "Direction",
+        "DEPARTMENT": "Département",
+        "SERVICE": "Service",
+        "SITE": "Site"
+      },
+      "opFailed": "L’opération a échoué.",
+      "unitCreated": "Unité créée.",
+      "unitCreateFailed": "La création de l’unité a échoué.",
+      "positionCreated": "Poste créé.",
+      "positionCreateFailed": "La création du poste a échoué.",
+      "unitArchived": "Unité archivée.",
+      "confirmArchiveUnit": "Archiver l’unité « {{name}} » ? L’opération est refusée si elle contient encore des unités ou des postes.",
+      "confirmMerge": "Fusionner « {{source}} » dans « {{target}}» ? Toutes les unités rattachées, tous les postes et toutes les portées de droits seront déplacés, puis l’unité source sera archivée.",
+      "mergeDone": "Fusion effectuée : {{units}} unité(s), {{positions}} poste(s) et {{scopes}} portée(s) déplacée(s).",
+      "mergeSuccess": "Fusion effectuée.",
+      "positionAttached": "Poste rattaché.",
+      "positionDetached": "Poste détaché : il devient une racine de l’organigramme.",
+      "confirmArchivePosition": "Archiver le poste « {{title}} » ?",
+      "positionArchived": "Poste archivé.",
+      "unitForm": {
+        "title": "Nouvelle unité",
+        "code": "Code",
+        "name": "Nom",
+        "type": "Type",
+        "parent": "Rattachée à",
+        "parentRoot": "Racine de l’organisation",
+        "description": "Description",
+        "descriptionHint": "Facultative.",
+        "creating": "Création…",
+        "create": "Créer l’unité"
+      },
+      "positionForm": {
+        "title": "Nouveau poste",
+        "code": "Code",
+        "titleLabel": "Intitulé",
+        "unit": "Unité",
+        "unitNone": "Sans unité",
+        "parentPosition": "Rattaché au poste",
+        "parentPositionRoot": "Racine de l’organigramme",
+        "creating": "Création…",
+        "create": "Créer le poste"
+      },
+      "unitTree": {
+        "title": "Arbre des unités",
+        "empty": "Aucune unité",
+        "emptyDetail": "Créez une première unité pour amorcer la structure."
+      },
+      "unitDetail": {
+        "title": "Détail de l’unité",
+        "empty": "Aucune unité sélectionnée",
+        "emptyDetail": "Choisissez une unité dans l’arbre pour la modifier, l’archiver ou la fusionner dans une autre.",
+        "code": "Code",
+        "type": "Type",
+        "parent": "Rattachée à",
+        "parentRoot": "Racine",
+        "parentOutOfScope": "Unité hors périmètre",
+        "attachedPositions": "Postes rattachés ({{count}})",
+        "noPositions": "Aucun poste dans cette unité.",
+        "mergeTitle": "Fusionner dans une autre unité",
+        "mergeDetail": "Toutes les unités rattachées, tous les postes et toutes les portées de droits sont déplacés vers l’unité cible en une seule opération, puis « {{name}} » est archivée. Une fusion vers une unité qui lui est rattachée est refusée : la branche se détacherait de l’organigramme.",
+        "mergeTargetPlaceholder": "Unité cible…",
+        "merge": "Fusionner",
+        "archiveUnit": "Archiver cette unité"
+      },
+      "positionChart": {
+        "title": "Organigramme des postes",
+        "count_one": "{{count}} poste",
+        "count_other": "{{count}} postes",
+        "hint": "Cliquez sur un poste pour le rattacher ailleurs. Un poste sans supérieur apparaît comme racine.",
+        "empty": "Aucun poste dans l’organigramme. Créez-en un pour amorcer la ligne hiérarchique.",
+        "noUnit": "Sans unité"
+      },
+      "positionDetail": {
+        "title": "Rattachement d’un poste",
+        "empty": "Aucun poste sélectionné",
+        "emptyDetail": "Choisissez une carte dans l’organigramme pour changer son rattachement hiérarchique.",
+        "code": "Code",
+        "unit": "Unité",
+        "unitNone": "Sans unité",
+        "holder": "Titulaire",
+        "vacant": "Poste vacant",
+        "reparentLabel": "Rattaché au poste",
+        "reparentHint": "Un rattachement à l’un de ses propres subordonnés est refusé par le serveur.",
+        "reparentNone": "Aucun — racine de l’organigramme",
+        "archive": "Archiver",
+        "moving": "Déplacement…",
+        "move": "Déplacer"
+      },
+      "footnote": "Cet écran définit le squelette : les unités, les postes et les lignes hiérarchiques. Il ne place personne — l’affectation d’un collaborateur à un poste relève des RH, et la dupliquer ici donnerait deux implémentations à la même action. L’archivage d’une unité est refusé tant qu’elle contient des unités ou des postes actifs : le message d’erreur indique ce qui reste à déplacer."
+    },
+    "roles": {
+      "loading": "Chargement des rôles…",
+      "loadError": "Impossible de charger les rôles.",
+      "eyebrow": "Administration",
+      "title": "Rôles et permissions",
+      "subtitle": "La matrice rôle × module × action : ce que chaque profil a le droit de lire, écrire, valider et supprimer.",
+      "newCustomRole": "Nouveau rôle personnalisé",
+      "cancel": "Annuler",
+      "tiles": {
+        "builtin": "Rôles intégrés",
+        "custom": "Rôles personnalisés",
+        "catalogue": "Permissions du catalogue",
+        "grantedCustom": "Permissions accordées (personnalisés)"
+      },
+      "tabs": {
+        "builtin": "Rôles intégrés ({{count}})",
+        "custom": "Rôles personnalisés ({{count}})"
+      },
+      "builtinNote": "Ces quatre profils sont définis dans le code de la plateforme, pas en base : chaque requête vérifie les droits de l’appelant, et interroger une table à ce moment-là placerait un aller-retour vers la base au cœur de chaque contrôle d’accès. Ils sont donc consultables ici mais modifiables uniquement par déploiement. Pour un besoin différent, créez un rôle personnalisé.",
+      "builtinLabels": {
+        "ADMIN": "Administrateur",
+        "HR": "DRH / RH",
+        "MANAGER": "Manager",
+        "EMPLOYEE": "Collaborateur"
+      },
+      "roleUsage": "{{users}} compte(s) · {{permissions}} permission(s)",
+      "customUsage": "{{code}} · {{count}} permission(s)",
+      "form": {
+        "editTitle": "Modifier « {{name}} »",
+        "createTitle": "Nouveau rôle personnalisé",
+        "code": "Code",
+        "codePlaceholder": "AUDITEUR_QUALITE",
+        "codeHintExisting": "Le code d’un rôle existant ne change pas.",
+        "codeHintNew": "Majuscules, sans espace.",
+        "name": "Intitulé",
+        "description": "Description",
+        "permissions": "Permissions ({{count}} sélectionnée(s))",
+        "saving": "Enregistrement…",
+        "save": "Enregistrer le rôle",
+        "saveFailed": "L’enregistrement du rôle a échoué.",
+        "deleteFailed": "La suppression a échoué."
+      },
+      "confirmDelete": "Supprimer le rôle « {{name}} » ?",
+      "customEmpty": "Aucun rôle personnalisé",
+      "customEmptyDetail": "Les quatre profils intégrés couvrent l’usage courant. Créez un rôle personnalisé pour un besoin qu’aucun d’eux ne décrit — un auditeur externe, par exemple, qui lirait sans jamais écrire.",
+      "builtinRoleTag": "Rôle intégré — non modifiable",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "customFootnote": "Un rôle personnalisé est enregistré durablement, avec ses permissions validées contre le catalogue de la plateforme. Il n’est pas encore attribuable à un compte : l’attribution passe par les quatre codes intégrés, seuls reconnus par la couche d’autorisation. Définir le rôle est la partie durable ; le brancher sur l’attribution est une évolution de cette couche, pas de cet écran.",
+      "actionColumns": {
+        "read": "Lire",
+        "update": "Écrire",
+        "validate": "Valider",
+        "delete": "Supprimer"
+      },
+      "resources": {
+        "organization_unit": "Structures",
+        "position": "Postes",
+        "assignment": "Affectations",
+        "job": "Emplois",
+        "job_description": "Fiches de poste",
+        "competency": "Compétences",
+        "assessment": "Évaluations",
+        "onboarding_template": "Modèles d’intégration",
+        "onboarding_instance": "Parcours d’intégration",
+        "onboarding_task": "Étapes d’intégration",
+        "remark": "Remarques",
+        "kaizen_action": "Actions Kaizen",
+        "document": "Documents",
+        "report": "Rapports",
+        "dashboard": "Tableaux de bord",
+        "notification": "Notifications",
+        "survey": "Enquêtes",
+        "training": "Formation",
+        "user": "Comptes",
+        "role": "Rôles",
+        "audit_log": "Journal d’audit",
+        "setting": "Paramètres"
+      },
+      "matrix": {
+        "module": "Module",
+        "notApplicable": "Cette action n’existe pas pour ce module",
+        "granted": "Accordé",
+        "notGranted": "Non accordé"
+      }
+    },
+    "security": {
+      "loading": "Chargement de la configuration…",
+      "loadError": "Impossible de charger la configuration de sécurité.",
+      "eyebrow": "Administration",
+      "title": "Sécurité",
+      "subtitle": "Ce que le service applique réellement, et la politique enregistrée à côté.",
+      "tiles": {
+        "activeSessions": "Sessions ouvertes",
+        "revokedSessions": "Sessions révoquées",
+        "failedLogins24h": "Échecs de connexion (24 h)",
+        "sessionDuration": "Durée de session"
+      },
+      "inEffect": {
+        "title": "En vigueur",
+        "subtitle": "Valeurs lues dans la configuration validée au démarrage. Elles se modifient au déploiement, pas depuis cet écran.",
+        "passwords": "Mots de passe",
+        "passwordsDetail": "Longueur minimale : {{length}} caractères. Hachés avec Argon2id, jamais stockés ni journalisés sous une autre forme.",
+        "argon2Detail": "Argon2id · mémoire {{memory}} Kio · {{iterations}} itération(s) · parallélisme {{parallelism}}",
+        "sessions": "Sessions",
+        "sessionsDetail": "Durée de {{hours}} heures, prolongée au plus une fois par fenêtre de {{minutes}} minutes. Révocation immédiate à la requête suivante.",
+        "encryption": "Chiffrement",
+        "encryptionDetail": "Échanges chiffrés en transit (TLS). Le chiffrement au repos dépend de l'hébergeur et n'est pas vérifiable depuis l'application.",
+        "replayProtection": "Protection contre le rejeu",
+        "replayProtectionDetail": "Chaque mutation exige un jeton CSRF, et les tentatives de connexion sont limitées en fréquence. Les refus d'accès sont journalisés."
+      },
+      "recordedPolicy": {
+        "title": "Politique enregistrée",
+        "subtitle": "Cette politique est enregistrée et journalisée, mais <strong>aucun composant ne la lit encore</strong> : elle exprime une intention, pas une contrainte appliquée. Les valeurs réellement en vigueur restent celles du bloc ci-dessus.",
+        "neverSavedNote": " Aucune politique n’a encore été enregistrée — les valeurs affichées sont les valeurs par défaut.",
+        "minLength": "Longueur minimale du mot de passe",
+        "minLengthHint": "Entre 8 et 128 caractères.",
+        "mfaRequired": "Authentification multifacteur exigée",
+        "mfaRequiredHint": "Non implémentée : prévue via Entra ID plutôt que réimplémentée ici.",
+        "sessionDuration": "Durée de session souhaitée",
+        "sessionDurationHint": "En heures. La durée appliquée reste celle du déploiement.",
+        "ipAllowlist": "Restrictions par adresse IP",
+        "ipAllowlistHint": "Une entrée par ligne. Enregistrée seulement : le filtrage se pose au niveau du réseau ou du reverse proxy, pas dans l'application.",
+        "ipAllowlistPlaceholder": "10.0.0.0/8",
+        "lastModified": "Dernière modification : {{date}}",
+        "neverModified": "Jamais modifiée.",
+        "saved": "Enregistré.",
+        "saveFailed": "L'enregistrement de la politique a échoué."
+      }
+    },
+    "settings": {
+      "loading": "Chargement des paramètres…",
+      "loadError": "Impossible de charger les paramètres.",
+      "eyebrow": "Administration",
+      "title": "Paramètres",
+      "subtitle": "Réglages modifiables sans déploiement. Chaque changement est journalisé.",
+      "updateFailed": "La mise à jour de « {{key}} » a échoué.",
+      "orgTree": {
+        "title": "Visibilité de l'organigramme",
+        "subtitle": "Combien de niveaux un collaborateur voit autour de son propre poste. Les rôles d'encadrement et les RH ne sont pas limités par ces valeurs.",
+        "depthUp": "Niveaux visibles vers le haut",
+        "depthUpHint": "Du poste vers la direction.",
+        "depthDown": "Niveaux visibles vers le bas",
+        "depthDownHint": "Du poste vers les équipes.",
+        "showPeers": "Afficher les collègues",
+        "showPeersHint": "Les postes de même niveau hiérarchique."
+      },
+      "sections": {
+        "brand": "Marque",
+        "locale": "Langues",
+        "email": "Modèles d’e-mail",
+        "emailNote": "Enregistrés seulement : aucun relais SMTP n’est raccordé, donc rien n’est envoyé depuis la plateforme.",
+        "milestones": "Jalons",
+        "flags": "Fonctionnalités"
+      },
+      "defaultValue": "valeur par défaut",
+      "saved": "Enregistré.",
+      "footnote": "Les autres réglages — durées de session, paramètres de hachage, URL de base de données — sont fixés au déploiement et ne sont pas modifiables ici."
+    },
+    "provisioning": {
+      "loading": "Chargement de la file…",
+      "loadError": "Impossible de charger la file de provisionnement.",
+      "eyebrow": "Administration",
+      "title": "File de provisionnement",
+      "subtitle": "Les deux côtés du relais : ce que les RH ont demandé et que le SI n’a pas encore créé, et ce que le SI a créé et que personne n’a encore affecté.",
+      "refresh": "Actualiser",
+      "createAccount": "Créer un compte",
+      "tiles": {
+        "openRequests": "Demandes RH ouvertes",
+        "unplacedAccounts": "Comptes non affectés",
+        "aging": "En attente > {{days}} j",
+        "oldest": "Attente la plus longue"
+      },
+      "requestsSide": {
+        "title": "Demandes en attente de création",
+        "description": "Ouvertes par les RH pour un recrutement à venir. Chacune attend qu’un compte soit créé sur la page Comptes.",
+        "empty": "Aucune demande en attente",
+        "emptyDetail": "Les RH n’ont aucune demande de compte ouverte : rien n’est bloqué de ce côté du relais.",
+        "positionUnspecified": "Poste non précisé",
+        "requestedBy": "Demandé par",
+        "plannedHire": "Embauche prévue",
+        "plannedHireUnspecified": "Non précisée",
+        "openedOn": "Ouverte le",
+        "waiting": "En attente :",
+        "waitingDays_one": "{{count}} jour",
+        "waitingDays_other": "{{count}} jours"
+      },
+      "unplacedSide": {
+        "title": "Comptes créés, non affectés",
+        "description": "Le compte existe et la personne peut se connecter, mais aucun poste ne lui est rattaché : ni organigramme, ni parcours d’intégration, ni responsable.",
+        "empty": "Aucun compte en suspens",
+        "emptyDetail": "Tous les comptes créés sont rattachés à un poste.",
+        "createdOn": "Créé le {{date}}"
+      },
+      "urgency": {
+        "HIGH": "Urgent",
+        "NORMAL": "Normal",
+        "LOW": "Peut attendre"
+      },
+      "footnote": "Cette page observe le relais, elle ne l’exécute pas : la création d’un compte se fait sur <0>Comptes</0>, et l’affectation à un poste relève des RH. Aucune relance automatique n’est envoyée — aucun planificateur ne tourne dans l’application, et aucun relais SMTP n’est raccordé. Les délais ci-dessus sont donc à lire, pas à attendre."
+    },
+    "users": {
+      "loading": "Chargement des comptes…",
+      "loadError": "Impossible de charger les comptes.",
+      "eyebrow": "Administration",
+      "title": "Comptes",
+      "subtitle": "Créer, attribuer, suspendre et réinitialiser les accès des comptes de la plateforme.",
+      "provisioningLink": "File de provisionnement",
+      "bulkImport": "Import en masse",
+      "newAccount": "Nouveau compte",
+      "tiles": {
+        "total": "Comptes",
+        "active": "Actifs",
+        "suspended": "Suspendus",
+        "withoutRole": "Sans rôle"
+      },
+      "roles": {
+        "ADMIN": "Administrateur",
+        "HR": "DRH / RH",
+        "MANAGER": "Manager",
+        "EMPLOYEE": "Collaborateur"
+      },
+      "statuses": {
+        "ACTIVE": "Actif",
+        "SUSPENDED": "Suspendu",
+        "DISABLED": "Désactivé"
+      },
+      "roleAssignFailedFallback": "Le compte a été créé, mais le rôle n’a pas pu être attribué. Utilisez « Attribuer un rôle » ci-dessous.",
+      "accountCreated": "Compte créé.",
+      "createFailed": "La création du compte a échoué.",
+      "importFailed": "L’import a échoué : aucun compte n’a été créé.",
+      "roleGranted": "Rôle attribué.",
+      "selfAssignmentRefused": "Vous ne pouvez pas vous attribuer un rôle à vous-même.",
+      "grantFailed": "L’attribution du rôle a échoué.",
+      "confirmSuspend": "Suspendre le compte de {{name}} ? Ses sessions ouvertes seront fermées immédiatement.",
+      "accountReactivated": "Compte réactivé.",
+      "accountSuspended": "Compte suspendu et sessions fermées.",
+      "statusChangeFailed": "Le changement de statut a échoué.",
+      "confirmResetAccess": "Réinitialiser les accès de {{name}} ? Toutes ses sessions seront révoquées ; son mot de passe reste inchangé.",
+      "resetAccessResult_one": "{{count}} session révoquée. {{name}} devra se reconnecter.",
+      "resetAccessResult_other": "{{count}} sessions révoquées. {{name}} devra se reconnecter.",
+      "resetAccessFailed": "La réinitialisation a échoué.",
+      "createForm": {
+        "title": "Créer un compte",
+        "email": "E-mail professionnel",
+        "displayName": "Nom affiché",
+        "phone": "Téléphone",
+        "phoneHint": "Facultatif.",
+        "password": "Mot de passe provisoire",
+        "passwordHint": "Transmis de la main à la main : sans relais SMTP, la plateforme ne peut pas l’envoyer.",
+        "role": "Rôle plateforme",
+        "roleHint": "Attribué en portée globale ; affinez la portée ci-dessous si besoin.",
+        "roleNone": "Aucun rôle pour l’instant",
+        "cancel": "Annuler",
+        "creating": "Création…",
+        "create": "Créer le compte"
+      },
+      "importForm": {
+        "title": "Import en masse",
+        "description": "Une ligne par compte, séparée par des points-virgules : e-mail ; nom affiché ; téléphone ; rôle. Le téléphone et le rôle sont facultatifs. L’import est atomique : si une seule ligne est refusée, aucun compte n’est créé.",
+        "placeholder": "amina.belkacem@soficlef.dz ; Amina Belkacem ; 0550 00 00 00 ; MANAGER\nkarim.saidi@soficlef.dz ; Karim Saïdi ; ; EMPLOYEE",
+        "sharedPassword": "Mot de passe provisoire commun",
+        "sharedPasswordHint": "Le même pour tout le lot ; chaque personne devra le changer. Aucune notification n’est envoyée.",
+        "recognisedLines_one": "{{count}} ligne reconnue",
+        "recognisedLines_other": "{{count}} lignes reconnues",
+        "toFix_one": " · {{count}} à corriger",
+        "toFix_other": " · {{count}} à corriger",
+        "createdAccounts_one": "{{count}} compte créé.",
+        "createdAccounts_other": "{{count}} comptes créés.",
+        "roleNotGranted": " (rôle {{role}} non attribué : référentiel des rôles indisponible)",
+        "close": "Fermer",
+        "importing": "Import…",
+        "importButton_one": "Importer {{count}} compte",
+        "importButton_other": "Importer {{count}} comptes",
+        "lineErrors": {
+          "invalidEmail": "Ligne {{line}} : e-mail manquant ou invalide.",
+          "missingName": "Ligne {{line}} : nom affiché manquant.",
+          "unknownRole": "Ligne {{line}} : rôle « {{role}} » inconnu."
+        }
+      },
+      "grantForm": {
+        "title": "Attribuer un rôle",
+        "account": "Compte",
+        "accountPlaceholder": "Choisir…",
+        "role": "Rôle",
+        "scope": "Portée",
+        "scopeGlobal": "Portée globale",
+        "cancel": "Annuler",
+        "granting": "Attribution…",
+        "grant": "Attribuer"
+      },
+      "filters": {
+        "searchPlaceholder": "Rechercher un nom ou un e-mail…",
+        "allStatuses": "Tous les statuts",
+        "grantRole": "Attribuer un rôle",
+        "count_one": "{{count}} compte",
+        "count_other": "{{count}} comptes"
+      },
+      "empty": "Aucun compte ne correspond",
+      "emptyDetail": "Ajustez la recherche ou le filtre de statut.",
+      "table": {
+        "account": "Compte",
+        "roles": "Rôles",
+        "status": "Statut",
+        "lastLogin": "Dernière connexion",
+        "actions": "Actions",
+        "noRole": "Aucun rôle",
+        "never": "Jamais",
+        "resetAccess": "Réinitialiser l’accès",
+        "suspend": "Suspendre",
+        "reactivate": "Réactiver"
+      },
+      "entraSync": {
+        "title": "Synchronisation Entra ID",
+        "unavailable": "Indisponible",
+        "detail": "Aucun annuaire Entra ID n’est raccordé à ce déploiement : il n’y a pas de locataire depuis lequel importer des comptes. Un bouton « Synchroniser » ne pourrait ici que ne rien faire, ou inventer des personnes."
+      },
+      "entraLink": {
+        "title": "Rattacher une identité Entra",
+        "unavailable": "Indisponible",
+        "detail": "Même raison. Les mots de passe sont gérés par la plateforme et vérifiés par Argon2 ; l’authentification unique arrivera avec le connecteur, visible sur la page Intégrations."
+      },
+      "footnote": "« Réinitialiser l’accès » révoque toutes les sessions ouvertes du compte et l’oblige à se reconnecter. Aucun nouveau mot de passe n’est généré : sans relais SMTP, la plateforme n’aurait aucun moyen de le transmettre, et l’afficher ici reviendrait à écrire un identifiant vivant dans un navigateur."
+    }
+  }
+}

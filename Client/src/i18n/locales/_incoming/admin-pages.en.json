@@ -1,0 +1,815 @@
+{
+  "admin": {
+    "console": {
+      "eyebrow": "Administration",
+      "title": "Console",
+      "subtitle": "The real state of the system: open sessions, denied accesses, connected integrations and stored volumes.",
+      "auditLink": "Audit log",
+      "provisioningLink": "Provisioning queue",
+      "loading": "Loading the console…",
+      "loadError": "Unable to load the administration console.",
+      "unknownClient": "Unknown client",
+      "tiles": {
+        "activeSessions": "Active sessions",
+        "distinctUsersOnline": "People online",
+        "failedLogins24h": "Denied logins (24h)",
+        "accessDenied24h": "Denied accesses (24h)"
+      },
+      "health": {
+        "title": "Application health",
+        "noTraffic": "No access attempts in the last 24 hours: nothing to report, for lack of traffic to measure.",
+        "summary_one": "{{sessions}} open session against {{errors}} denial(s) over the last 24 hours.",
+        "summary_other": "{{sessions}} open sessions against {{errors}} denial(s) over the last 24 hours."
+      },
+      "accounts": {
+        "title": "Accounts",
+        "active": "Active",
+        "pending": "Created, unassigned",
+        "suspended": "Suspended or disabled",
+        "openRequests": "Open HR requests",
+        "manageLink": "Manage accounts →"
+      },
+      "storage": {
+        "title": "Storage",
+        "documents": "Referenced documents",
+        "files": "Administrative files",
+        "auditRows": "Audit entries",
+        "note": "These figures count rows, not bytes: no storage integration is connected, so files are tracked without being hosted here."
+      },
+      "connectors": {
+        "title": "Integrations",
+        "configureLink": "Configure →",
+        "declaredInProduction": "Declared in production",
+        "unconfigured_one": "{{count}} integration not configured",
+        "unconfigured_other": "{{count}} integrations not configured",
+        "unconfiguredDetail": "An unconfigured integration is not a fault: nothing has ever been connected to it. Each affected screen states exactly what that prevents.",
+        "mismatched_one": "{{count}} integration is declared in production in the configuration but has no address in the server's environment. The declared mode does not by itself connect a system.",
+        "mismatched_other": "{{count}} integrations are declared in production in the configuration but have no address in the server's environment. The declared mode does not by itself connect a system.",
+        "mode": {
+          "production": "Production",
+          "mock": "Simulated",
+          "unconfigured": "Not configured"
+        }
+      },
+      "sessions": {
+        "title": "Open sessions",
+        "empty": "No open sessions",
+        "emptyDetail": "Nobody is currently connected to the platform, aside possibly from your own session if it has just expired server-side.",
+        "account": "Account",
+        "client": "Client",
+        "seenAt": "Last seen",
+        "unknownIp": "Unknown IP",
+        "lastActivity": "Last activity recorded in the log:",
+        "lastActivityNone": "none"
+      }
+    },
+    "ai": {
+      "loading": "Loading the AI configuration…",
+      "loadError": "Unable to load the AI configuration.",
+      "eyebrow": "Administration",
+      "title": "AI configuration",
+      "subtitle": "Provider, model, quota, agents and prompt templates — saved durably, awaiting a provider to be connected.",
+      "tiles": {
+        "declared": "Declared agents",
+        "enabled": "Enabled agents",
+        "operational": "Operational without an LLM",
+        "prompts": "Prompts filled in"
+      },
+      "banner": {
+        "connected": "Provider connected: {{provider}}",
+        "connectedWithModel": "Provider connected: {{provider}} · {{model}}",
+        "none": "No language model provider is connected.",
+        "connectedNote": "This model rephrases the assistant's answers. It never queries the database itself: the search is performed upstream, with the permissions of the person asking, and the cited sources always come from that search — never from text produced by the model. If the call fails, the assistant falls back to the search-only answer.",
+        "noneNote": "The five agents still answer, by searching the platform's own data with the permissions of the person asking. Setting HF_API_KEY in the server's environment adds rephrasing; it does not switch on the feature, which already works."
+      },
+      "providerSaved": "Provider configuration saved.",
+      "saveFailed": "Saving failed.",
+      "agentDisabled": "Agent disabled.",
+      "agentEnabled": "Agent enabled.",
+      "promptSaved": "Prompt template saved.",
+      "form": {
+        "title": "Provider, model and quota",
+        "provider": "Provider",
+        "providerHint": "Name of the chosen vendor.",
+        "providerPlaceholder": "No provider chosen",
+        "endpoint": "Address (endpoint)",
+        "model": "Model",
+        "monthlyQuota": "Monthly quota",
+        "monthlyQuotaHint": "In requests. Empty = no cap set.",
+        "lastModified": "Last modified: {{date}}.",
+        "neverSaved": "No configuration saved yet.",
+        "saving": "Saving…"
+      },
+      "agents": {
+        "title": "Agents",
+        "description": "An agent reads with the permissions of whoever queries it: it can never surface a row the person could not open themselves. Enabling an agent records the intent; agents marked \"operational\" already answer, by searching the platform's own data, with no language model at all.",
+        "empty": "No agents declared",
+        "emptyDetail": "The agent catalogue is empty.",
+        "operationalReformulated": "Operational · rephrased",
+        "operationalNoLlm": "Operational without an LLM",
+        "noAnswerStep": "No answering step",
+        "toggleLabel": "Enable {{name}}",
+        "closePrompt": "Close",
+        "editPrompt": "Edit prompt",
+        "definePrompt": "Define a prompt",
+        "promptLabel": "Prompt template",
+        "promptPlaceholder": "Instruction given to the agent. The rule that already applies without a provider: every answer cites its source, or admits it found nothing.",
+        "savePrompt": "Save the prompt"
+      },
+      "footnote": "The settings on this form are saved but do not yet drive the assistant: it reads its configuration from the server's environment (HF_API_KEY, HF_MODEL, HF_BASE_URL), not from this table. The {{count}} agent(s) marked \"operational\" answer by searching the platform's own data, with the permissions of the person asking{{tail}}",
+      "footnoteTailConnected": ", then have that answer rephrased by the connected model.",
+      "footnoteTailNone": ", with no call to a language model."
+    },
+    "audit": {
+      "loading": "Loading the log…",
+      "loadError": "Unable to load the audit log.",
+      "eyebrow": "Administration",
+      "title": "Audit log",
+      "subtitle": "Every connection and every action recorded, with its author, its timestamp and its IP address.",
+      "exportButton": "Export as CSV ({{count}})",
+      "exportFilePrefix": "audit-log",
+      "tiles": {
+        "entries": "Entries shown",
+        "actors": "Distinct actors",
+        "actionTypes": "Action types",
+        "refusals": "Denials"
+      },
+      "filters": {
+        "searchLabel": "Actor or entity",
+        "searchPlaceholder": "Name, e-mail, entity type…",
+        "actionLabel": "Action",
+        "allActions": "All",
+        "fromLabel": "From",
+        "toLabel": "To",
+        "limitLabel": "Rows",
+        "submit": "Filter",
+        "submitting": "Filtering…",
+        "reset": "Reset"
+      },
+      "actions": {
+        "auth.login": "Login",
+        "auth.login_failed": "Failed login",
+        "auth.logout": "Logout",
+        "auth.session_revoked": "Session revoked",
+        "auth.password_changed": "Password changed",
+        "user.created": "Account created",
+        "user.updated": "Account updated",
+        "user.status_changed": "Account status changed",
+        "user.role_assigned": "Role granted",
+        "user.role_revoked": "Role revoked",
+        "user.role_assignment_denied": "Role grant denied",
+        "user.assigned": "Assigned to a position",
+        "user.assignment_ended": "Assignment ended",
+        "role.permission_changed": "Permissions changed",
+        "entity.created": "Created",
+        "entity.updated": "Updated",
+        "entity.deleted": "Deleted",
+        "entity.validated": "Validated",
+        "access.denied": "Access denied",
+        "document.downloaded": "Document downloaded",
+        "report.exported": "Report exported"
+      },
+      "table": {
+        "date": "Date",
+        "actor": "Actor",
+        "action": "Action",
+        "entity": "Entity",
+        "ip": "IP address"
+      },
+      "empty": "No entries",
+      "emptyFiltered": "No entries match these filters. Widen the period or change the action.",
+      "emptyAll": "The log is empty: no action has been recorded on this instance yet.",
+      "footnote": "Filters are applied by the server, across the whole log: filtering an already-loaded page would not answer \"show me every denial in March\". The server caps a request at 500 rows. The CSV export reproduces exactly the {{count}} row(s) shown above — no more, no less — and the file is generated in your browser, without going through a third-party service."
+    },
+    "backups": {
+      "loading": "Loading backups…",
+      "loadError": "Unable to load backups.",
+      "eyebrow": "Administration",
+      "title": "Backups",
+      "subtitle": "Backup schedules and run history.",
+      "newSchedule": "New schedule",
+      "cancel": "Cancel",
+      "noExecutor": {
+        "title": "No backup executor is connected.",
+        "body": "The schedules below are saved and logged, but nothing in this application triggers them: no backup runs, and no restore is possible from this screen. Actual backup today is the database host's responsibility."
+      },
+      "form": {
+        "label": "Label",
+        "labelPlaceholder": "Daily backup",
+        "frequency": "Frequency",
+        "frequencyPlaceholder": "Every day at 02:00",
+        "retentionDays": "Retention (days)",
+        "creating": "Saving…",
+        "create": "Create"
+      },
+      "schedules": {
+        "title": "Schedules ({{count}})",
+        "empty": "No schedules saved.",
+        "label": "Label",
+        "frequency": "Frequency",
+        "retention": "Retention",
+        "retentionDays": "{{count}} d",
+        "state": "State",
+        "active": "Active",
+        "inactive": "Inactive",
+        "deactivate": "Deactivate",
+        "activate": "Activate",
+        "delete": "Delete",
+        "confirmDelete": "Delete the schedule \"{{label}}\"?",
+        "createFailed": "Creating the schedule failed.",
+        "updateFailed": "The update failed.",
+        "deleteFailed": "Deletion failed."
+      },
+      "history": {
+        "title": "History",
+        "empty": "Empty history",
+        "emptyDetail": "No backup process is running: this history is empty because nothing feeds it.",
+        "schedule": "Schedule",
+        "started": "Started",
+        "finished": "Finished",
+        "size": "Size",
+        "result": "Result",
+        "success": "Success",
+        "failure": "Failure"
+      }
+    },
+    "gdpr": {
+      "loading": "Loading the register…",
+      "loadError": "Unable to load the GDPR register.",
+      "eyebrow": "Administration",
+      "title": "GDPR",
+      "subtitle": "Request register, and inventory of data held by the platform.",
+      "newRequest": "Log a request",
+      "cancel": "Cancel",
+      "notAutomated": {
+        "title": "Fulfilment is not automated.",
+        "body": "This register tracks requests and what became of them. Closing a request records that a person did the work elsewhere — no erasure or export is triggered from this screen. Several categories below cannot, in any case, simply be deleted."
+      },
+      "tiles": {
+        "openRequests": "Open requests",
+        "totalRequests": "Total requests",
+        "categories": "Data categories",
+        "accountsConcerned": "Accounts concerned"
+      },
+      "form": {
+        "type": "Type",
+        "subject": "Data subject",
+        "subjectNone": "Not linked to an account",
+        "note": "Note",
+        "notePlaceholder": "Origin of the request, documents received, action taken…",
+        "saving": "Saving…",
+        "save": "Save",
+        "createFailed": "Logging the request failed.",
+        "updateFailed": "Updating the request failed."
+      },
+      "kinds": {
+        "ERASURE": "Erasure",
+        "EXPORT": "Export",
+        "CONSENT": "Consent"
+      },
+      "statuses": {
+        "OPEN": "Open",
+        "DONE": "Handled",
+        "REJECTED": "Rejected"
+      },
+      "register": {
+        "title": "Request register ({{count}})",
+        "allStatuses": "All statuses",
+        "empty": "No requests logged.",
+        "type": "Type",
+        "person": "Person",
+        "receivedOn": "Received on",
+        "note": "Note",
+        "status": "Status",
+        "personUnattached": "Not linked",
+        "close": "Close",
+        "reject": "Reject"
+      },
+      "dataHeld": {
+        "title": "Data held",
+        "subtitle": "What the platform retains, and what erasure would actually mean for each category.",
+        "erasureLabel": "Erasure:",
+        "unavailable": "Inventory unavailable."
+      }
+    },
+    "integrations": {
+      "loading": "Loading integrations…",
+      "loadError": "Unable to load integrations.",
+      "eyebrow": "Administration",
+      "title": "Integrations",
+      "subtitle": "What the platform is connected to, what it is meant to be connected to, and the gap between the two.",
+      "refresh": "Refresh",
+      "tiles": {
+        "production": "Declared in production",
+        "mock": "In simulated mode",
+        "mismatched": "Declared without being connected"
+      },
+      "mode": {
+        "production": "Production",
+        "mock": "Simulated",
+        "productionMeaning": "The integration is meant to talk to the real system.",
+        "mockMeaning": "The integration answers with demo data, deliberately."
+      },
+      "env": {
+        "production": "An address is configured in the server's environment.",
+        "mock": "The environment variable is set to \"mock\".",
+        "unconfigured": "No address is configured in the server's environment.",
+        "label": "Environment:"
+      },
+      "confirmProductionSwitch": "Switch \"{{label}}\" to production? No address is configured in the server's environment: the integration will be declared in production without being connected.",
+      "declaredProductionUnreachable": "\"{{label}}\" is declared in production, but the server's environment gives it no address.",
+      "switchedTo": "\"{{label}}\" is now in {{mode}}.",
+      "toggleFailed": "Switching the mode failed.",
+      "configSaved": "Configuration saved.",
+      "saveFailed": "Saving failed.",
+      "notConfigured": "Not connected",
+      "toggleLabel": "Switch {{label}}",
+      "toggleCaption": "Simulated ↔ Production",
+      "test": "Test",
+      "configure": "Configure",
+      "close": "Close",
+      "mismatchedWarning_one": "{{count}} integration is declared in production with no address in the server's environment.",
+      "mismatchedWarning_other": "{{count}} integrations are declared in production with no address in the server's environment.",
+      "mismatchedWarningBody": "The mode recorded here is an intention. The actual connection is made through an environment variable at deployment: while it is empty, nothing goes anywhere.",
+      "testOutcome": {
+        "ok": "Check performed",
+        "failed": "Failed"
+      },
+      "testReasons": {
+        "not_configured": "Nothing to reach",
+        "unreachable": "Unreachable",
+        "resolved": "Name resolved"
+      },
+      "testFailedFallback": "The test could not be run.",
+      "testNoneRun": "No test performed.",
+      "noFieldsYet": "This integration has no parameters to enter yet: only its mode can be set here.",
+      "lastTested": "Last tested: {{date}} —",
+      "lastTestOk": "check successful",
+      "lastTestFailed": "unsuccessful",
+      "empty": "No integrations declared",
+      "emptyDetail": "The integration catalogue is empty.",
+      "fields": {
+        "smtp": {
+          "host": "SMTP host",
+          "port": "Port",
+          "from": "Sender"
+        },
+        "entra": {
+          "tenantId": "Tenant ID",
+          "tenantIdPlaceholder": "No tenant available",
+          "clientId": "Application ID"
+        },
+        "hrApi": {
+          "baseUrl": "HR system base URL"
+        },
+        "directory": {
+          "path": "Share path"
+        },
+        "storage": {
+          "driver": "Storage driver"
+        },
+        "ai": {
+          "endpoint": "Provider address",
+          "model": "Model"
+        }
+      },
+      "whatSwitchDoes": {
+        "title": "What the switch does",
+        "body": "It durably records the intended mode for each integration, with an entry in the audit log. That is the intent declared by the administration."
+      },
+      "whatSwitchDoesNot": {
+        "title": "What it does not do",
+        "body": "It does not connect any system: the real address comes from the server's environment, fixed at deployment. No Entra ID tenant, no HR system and no SMTP relay answers on this deployment — the \"Test\" button says so explicitly rather than showing a reassuring green tick."
+      }
+    },
+    "organization": {
+      "loading": "Loading org units…",
+      "loadError": "Unable to load org units.",
+      "eyebrow": "Administration",
+      "title": "Org units",
+      "subtitle": "The organisation's skeleton: divisions, departments, sites and reporting lines that HR will fill in.",
+      "newPosition": "New position",
+      "newUnit": "New unit",
+      "tiles": {
+        "units": "Units",
+        "positions": "Positions",
+        "roots": "Tree roots",
+        "orphanPositions": "Positions without a unit"
+      },
+      "unitTypes": {
+        "DIVISION": "Division",
+        "DEPARTMENT": "Department",
+        "SERVICE": "Service",
+        "SITE": "Site"
+      },
+      "opFailed": "The operation failed.",
+      "unitCreated": "Unit created.",
+      "unitCreateFailed": "Creating the unit failed.",
+      "positionCreated": "Position created.",
+      "positionCreateFailed": "Creating the position failed.",
+      "unitArchived": "Unit archived.",
+      "confirmArchiveUnit": "Archive the unit \"{{name}}\"? The operation is refused if it still contains units or positions.",
+      "confirmMerge": "Merge \"{{source}}\" into \"{{target}}\"? All attached units, positions and permission scopes will be moved, then the source unit will be archived.",
+      "mergeDone": "Merge complete: {{units}} unit(s), {{positions}} position(s) and {{scopes}} scope(s) moved.",
+      "mergeSuccess": "Merge complete.",
+      "positionAttached": "Position attached.",
+      "positionDetached": "Position detached: it becomes a root of the org chart.",
+      "confirmArchivePosition": "Archive the position \"{{title}}\"?",
+      "positionArchived": "Position archived.",
+      "unitForm": {
+        "title": "New unit",
+        "code": "Code",
+        "name": "Name",
+        "type": "Type",
+        "parent": "Attached to",
+        "parentRoot": "Root of the organisation",
+        "description": "Description",
+        "descriptionHint": "Optional.",
+        "creating": "Creating…",
+        "create": "Create the unit"
+      },
+      "positionForm": {
+        "title": "New position",
+        "code": "Code",
+        "titleLabel": "Title",
+        "unit": "Unit",
+        "unitNone": "No unit",
+        "parentPosition": "Reports to",
+        "parentPositionRoot": "Root of the org chart",
+        "creating": "Creating…",
+        "create": "Create the position"
+      },
+      "unitTree": {
+        "title": "Unit tree",
+        "empty": "No units",
+        "emptyDetail": "Create a first unit to start the structure."
+      },
+      "unitDetail": {
+        "title": "Unit detail",
+        "empty": "No unit selected",
+        "emptyDetail": "Choose a unit in the tree to edit, archive or merge it into another.",
+        "code": "Code",
+        "type": "Type",
+        "parent": "Attached to",
+        "parentRoot": "Root",
+        "parentOutOfScope": "Unit outside scope",
+        "attachedPositions": "Attached positions ({{count}})",
+        "noPositions": "No positions in this unit.",
+        "mergeTitle": "Merge into another unit",
+        "mergeDetail": "All attached units, positions and permission scopes are moved to the target unit in a single operation, then \"{{name}}\" is archived. A merge into a unit attached to it is refused: the branch would become detached from the org chart.",
+        "mergeTargetPlaceholder": "Target unit…",
+        "merge": "Merge",
+        "archiveUnit": "Archive this unit"
+      },
+      "positionChart": {
+        "title": "Position org chart",
+        "count_one": "{{count}} position",
+        "count_other": "{{count}} positions",
+        "hint": "Click a position to reassign it elsewhere. A position with no superior appears as a root.",
+        "empty": "No positions in the org chart. Create one to start the reporting line.",
+        "noUnit": "No unit"
+      },
+      "positionDetail": {
+        "title": "Reassigning a position",
+        "empty": "No position selected",
+        "emptyDetail": "Choose a card in the org chart to change its reporting line.",
+        "code": "Code",
+        "unit": "Unit",
+        "unitNone": "No unit",
+        "holder": "Holder",
+        "vacant": "Vacant position",
+        "reparentLabel": "Reports to",
+        "reparentHint": "Attaching a position to one of its own subordinates is refused by the server.",
+        "reparentNone": "None — root of the org chart",
+        "archive": "Archive",
+        "moving": "Moving…",
+        "move": "Move"
+      },
+      "footnote": "This screen defines the skeleton: units, positions and reporting lines. It does not place anyone — assigning an employee to a position is HR's responsibility, and duplicating it here would give the same action two implementations. Archiving a unit is refused while it still holds active units or positions: the error message states what remains to be moved."
+    },
+    "roles": {
+      "loading": "Loading roles…",
+      "loadError": "Unable to load roles.",
+      "eyebrow": "Administration",
+      "title": "Roles and permissions",
+      "subtitle": "The role × module × action matrix: what each profile may read, write, validate and delete.",
+      "newCustomRole": "New custom role",
+      "cancel": "Cancel",
+      "tiles": {
+        "builtin": "Built-in roles",
+        "custom": "Custom roles",
+        "catalogue": "Catalogue permissions",
+        "grantedCustom": "Permissions granted (custom)"
+      },
+      "tabs": {
+        "builtin": "Built-in roles ({{count}})",
+        "custom": "Custom roles ({{count}})"
+      },
+      "builtinNote": "These four profiles are defined in the platform's code, not in the database: every request checks the caller's rights, and querying a table at that point would put a database round trip at the heart of every access check. They are therefore viewable here but only editable through deployment. For a different need, create a custom role.",
+      "builtinLabels": {
+        "ADMIN": "Administrator",
+        "HR": "HR / HR Director",
+        "MANAGER": "Manager",
+        "EMPLOYEE": "Employee"
+      },
+      "roleUsage": "{{users}} account(s) · {{permissions}} permission(s)",
+      "customUsage": "{{code}} · {{count}} permission(s)",
+      "form": {
+        "editTitle": "Edit \"{{name}}\"",
+        "createTitle": "New custom role",
+        "code": "Code",
+        "codePlaceholder": "QUALITY_AUDITOR",
+        "codeHintExisting": "An existing role's code cannot be changed.",
+        "codeHintNew": "Upper case, no spaces.",
+        "name": "Name",
+        "description": "Description",
+        "permissions": "Permissions ({{count}} selected)",
+        "saving": "Saving…",
+        "save": "Save the role",
+        "saveFailed": "Saving the role failed.",
+        "deleteFailed": "Deletion failed."
+      },
+      "confirmDelete": "Delete the role \"{{name}}\"?",
+      "customEmpty": "No custom roles",
+      "customEmptyDetail": "The four built-in profiles cover everyday use. Create a custom role for a need none of them describes — an external auditor, for instance, who would read without ever writing.",
+      "builtinRoleTag": "Built-in role — not editable",
+      "edit": "Edit",
+      "delete": "Delete",
+      "customFootnote": "A custom role is saved durably, with its permissions validated against the platform's catalogue. It is not yet assignable to an account: assignment goes through the four built-in codes, the only ones the authorisation layer recognises. Defining the role is the durable part; wiring it to assignment is a change to that layer, not to this screen.",
+      "actionColumns": {
+        "read": "Read",
+        "update": "Write",
+        "validate": "Validate",
+        "delete": "Delete"
+      },
+      "resources": {
+        "organization_unit": "Org units",
+        "position": "Positions",
+        "assignment": "Assignments",
+        "job": "Jobs",
+        "job_description": "Job descriptions",
+        "competency": "Competencies",
+        "assessment": "Assessments",
+        "onboarding_template": "Onboarding templates",
+        "onboarding_instance": "Onboarding journeys",
+        "onboarding_task": "Onboarding tasks",
+        "remark": "Remarks",
+        "kaizen_action": "Kaizen actions",
+        "document": "Documents",
+        "report": "Reports",
+        "dashboard": "Dashboards",
+        "notification": "Notifications",
+        "survey": "Surveys",
+        "training": "Training",
+        "user": "Accounts",
+        "role": "Roles",
+        "audit_log": "Audit log",
+        "setting": "Settings"
+      },
+      "matrix": {
+        "module": "Module",
+        "notApplicable": "This action does not exist for this module",
+        "granted": "Granted",
+        "notGranted": "Not granted"
+      }
+    },
+    "security": {
+      "loading": "Loading configuration…",
+      "loadError": "Unable to load the security configuration.",
+      "eyebrow": "Administration",
+      "title": "Security",
+      "subtitle": "What the service actually enforces, and the recorded policy alongside it.",
+      "tiles": {
+        "activeSessions": "Open sessions",
+        "revokedSessions": "Revoked sessions",
+        "failedLogins24h": "Failed logins (24h)",
+        "sessionDuration": "Session duration"
+      },
+      "inEffect": {
+        "title": "In effect",
+        "subtitle": "Values read from the configuration validated at start-up. They change at deployment, not from this screen.",
+        "passwords": "Passwords",
+        "passwordsDetail": "Minimum length: {{length}} characters. Hashed with Argon2id, never stored or logged in any other form.",
+        "argon2Detail": "Argon2id · memory {{memory}} KiB · {{iterations}} iteration(s) · parallelism {{parallelism}}",
+        "sessions": "Sessions",
+        "sessionsDetail": "{{hours}}-hour duration, extended at most once per {{minutes}}-minute window. Immediate revocation on the next request.",
+        "encryption": "Encryption",
+        "encryptionDetail": "Exchanges encrypted in transit (TLS). Encryption at rest depends on the host and cannot be verified from the application.",
+        "replayProtection": "Replay protection",
+        "replayProtectionDetail": "Every mutation requires a CSRF token, and login attempts are rate-limited. Access denials are logged."
+      },
+      "recordedPolicy": {
+        "title": "Recorded policy",
+        "subtitle": "This policy is saved and logged, but <strong>no component reads it yet</strong>: it expresses an intention, not an enforced constraint. The values actually in effect remain those in the block above.",
+        "neverSavedNote": " No policy has been saved yet — the values shown are the default values.",
+        "minLength": "Minimum password length",
+        "minLengthHint": "Between 8 and 128 characters.",
+        "mfaRequired": "Multi-factor authentication required",
+        "mfaRequiredHint": "Not implemented: planned via Entra ID rather than reimplemented here.",
+        "sessionDuration": "Desired session duration",
+        "sessionDurationHint": "In hours. The duration actually enforced remains that of the deployment.",
+        "ipAllowlist": "IP address restrictions",
+        "ipAllowlistHint": "One entry per line. Recorded only: filtering happens at the network or reverse-proxy level, not in the application.",
+        "ipAllowlistPlaceholder": "10.0.0.0/8",
+        "lastModified": "Last modified: {{date}}",
+        "neverModified": "Never modified.",
+        "saved": "Saved.",
+        "saveFailed": "Saving the policy failed."
+      }
+    },
+    "settings": {
+      "loading": "Loading settings…",
+      "loadError": "Unable to load settings.",
+      "eyebrow": "Administration",
+      "title": "Settings",
+      "subtitle": "Settings that can be changed without a deployment. Every change is logged.",
+      "updateFailed": "Updating \"{{key}}\" failed.",
+      "orgTree": {
+        "title": "Org chart visibility",
+        "subtitle": "How many levels an employee sees around their own position. Management roles and HR are not limited by these values.",
+        "depthUp": "Levels visible upward",
+        "depthUpHint": "From the position towards management.",
+        "depthDown": "Levels visible downward",
+        "depthDownHint": "From the position towards the teams.",
+        "showPeers": "Show peers",
+        "showPeersHint": "Positions at the same hierarchical level."
+      },
+      "sections": {
+        "brand": "Brand",
+        "locale": "Languages",
+        "email": "E-mail templates",
+        "emailNote": "Saved only: no SMTP relay is connected, so nothing is actually sent from the platform.",
+        "milestones": "Milestones",
+        "flags": "Features"
+      },
+      "defaultValue": "default value",
+      "saved": "Saved.",
+      "footnote": "Other settings — session durations, hashing parameters, database URL — are fixed at deployment and cannot be changed here."
+    },
+    "provisioning": {
+      "loading": "Loading the queue…",
+      "loadError": "Unable to load the provisioning queue.",
+      "eyebrow": "Administration",
+      "title": "Provisioning queue",
+      "subtitle": "The two sides of the handoff: what HR has requested that IT has not yet created, and what IT has created that nobody has yet assigned.",
+      "refresh": "Refresh",
+      "createAccount": "Create an account",
+      "tiles": {
+        "openRequests": "Open HR requests",
+        "unplacedAccounts": "Unassigned accounts",
+        "aging": "Waiting > {{days}}d",
+        "oldest": "Longest wait"
+      },
+      "requestsSide": {
+        "title": "Requests awaiting creation",
+        "description": "Opened by HR for an upcoming hire. Each one is waiting for an account to be created on the Accounts page.",
+        "empty": "No requests waiting",
+        "emptyDetail": "HR has no open account requests: nothing is stuck on this side of the handoff.",
+        "positionUnspecified": "Position not specified",
+        "requestedBy": "Requested by",
+        "plannedHire": "Planned hire date",
+        "plannedHireUnspecified": "Not specified",
+        "openedOn": "Opened on",
+        "waiting": "Waiting:",
+        "waitingDays_one": "{{count}} day",
+        "waitingDays_other": "{{count}} days"
+      },
+      "unplacedSide": {
+        "title": "Accounts created, unassigned",
+        "description": "The account exists and the person can log in, but no position is attached to them: no org chart, no onboarding journey, no manager.",
+        "empty": "No accounts pending",
+        "emptyDetail": "Every created account is attached to a position.",
+        "createdOn": "Created on {{date}}"
+      },
+      "urgency": {
+        "HIGH": "Urgent",
+        "NORMAL": "Normal",
+        "LOW": "Can wait"
+      },
+      "footnote": "This page observes the handoff, it does not carry it out: creating an account is done on <0>Accounts</0>, and assigning it to a position is HR's responsibility. No automatic reminder is sent — no scheduler runs in the application, and no SMTP relay is connected. The waiting times above are therefore to be read, not waited on."
+    },
+    "users": {
+      "loading": "Loading accounts…",
+      "loadError": "Unable to load accounts.",
+      "eyebrow": "Administration",
+      "title": "Accounts",
+      "subtitle": "Create, grant, suspend and reset access for the platform's accounts.",
+      "provisioningLink": "Provisioning queue",
+      "bulkImport": "Bulk import",
+      "newAccount": "New account",
+      "tiles": {
+        "total": "Accounts",
+        "active": "Active",
+        "suspended": "Suspended",
+        "withoutRole": "Without a role"
+      },
+      "roles": {
+        "ADMIN": "Administrator",
+        "HR": "HR / HR Director",
+        "MANAGER": "Manager",
+        "EMPLOYEE": "Employee"
+      },
+      "statuses": {
+        "ACTIVE": "Active",
+        "SUSPENDED": "Suspended",
+        "DISABLED": "Disabled"
+      },
+      "roleAssignFailedFallback": "The account was created, but the role could not be granted. Use \"Grant a role\" below.",
+      "accountCreated": "Account created.",
+      "createFailed": "Creating the account failed.",
+      "importFailed": "The import failed: no account was created.",
+      "roleGranted": "Role granted.",
+      "selfAssignmentRefused": "You cannot grant yourself a role.",
+      "grantFailed": "Granting the role failed.",
+      "confirmSuspend": "Suspend {{name}}'s account? Their open sessions will be closed immediately.",
+      "accountReactivated": "Account reactivated.",
+      "accountSuspended": "Account suspended and sessions closed.",
+      "statusChangeFailed": "Changing the status failed.",
+      "confirmResetAccess": "Reset {{name}}'s access? All their sessions will be revoked; their password stays unchanged.",
+      "resetAccessResult_one": "{{count}} session revoked. {{name}} will need to log back in.",
+      "resetAccessResult_other": "{{count}} sessions revoked. {{name}} will need to log back in.",
+      "resetAccessFailed": "The reset failed.",
+      "createForm": {
+        "title": "Create an account",
+        "email": "Work e-mail",
+        "displayName": "Display name",
+        "phone": "Phone",
+        "phoneHint": "Optional.",
+        "password": "Temporary password",
+        "passwordHint": "Handed over in person: without an SMTP relay, the platform cannot send it.",
+        "role": "Platform role",
+        "roleHint": "Granted at global scope; refine the scope below if needed.",
+        "roleNone": "No role for now",
+        "cancel": "Cancel",
+        "creating": "Creating…",
+        "create": "Create the account"
+      },
+      "importForm": {
+        "title": "Bulk import",
+        "description": "One line per account, semicolon-separated: e-mail ; display name ; phone ; role. Phone and role are optional. The import is atomic: if a single line is rejected, no account is created.",
+        "placeholder": "amina.belkacem@soficlef.dz ; Amina Belkacem ; 0550 00 00 00 ; MANAGER\nkarim.saidi@soficlef.dz ; Karim Saïdi ; ; EMPLOYEE",
+        "sharedPassword": "Shared temporary password",
+        "sharedPasswordHint": "The same for the whole batch; everyone will have to change it. No notification is sent.",
+        "recognisedLines_one": "{{count}} line recognised",
+        "recognisedLines_other": "{{count}} lines recognised",
+        "toFix_one": " · {{count}} to fix",
+        "toFix_other": " · {{count}} to fix",
+        "createdAccounts_one": "{{count}} account created.",
+        "createdAccounts_other": "{{count}} accounts created.",
+        "roleNotGranted": " (role {{role}} not granted: role catalogue unavailable)",
+        "close": "Close",
+        "importing": "Importing…",
+        "importButton_one": "Import {{count}} account",
+        "importButton_other": "Import {{count}} accounts",
+        "lineErrors": {
+          "invalidEmail": "Line {{line}}: missing or invalid e-mail.",
+          "missingName": "Line {{line}}: missing display name.",
+          "unknownRole": "Line {{line}}: unknown role \"{{role}}\"."
+        }
+      },
+      "grantForm": {
+        "title": "Grant a role",
+        "account": "Account",
+        "accountPlaceholder": "Choose…",
+        "role": "Role",
+        "scope": "Scope",
+        "scopeGlobal": "Global scope",
+        "cancel": "Cancel",
+        "granting": "Granting…",
+        "grant": "Grant"
+      },
+      "filters": {
+        "searchPlaceholder": "Search by name or e-mail…",
+        "allStatuses": "All statuses",
+        "grantRole": "Grant a role",
+        "count_one": "{{count}} account",
+        "count_other": "{{count}} accounts"
+      },
+      "empty": "No accounts match",
+      "emptyDetail": "Adjust the search or the status filter.",
+      "table": {
+        "account": "Account",
+        "roles": "Roles",
+        "status": "Status",
+        "lastLogin": "Last login",
+        "actions": "Actions",
+        "noRole": "No role",
+        "never": "Never",
+        "resetAccess": "Reset access",
+        "suspend": "Suspend",
+        "reactivate": "Reactivate"
+      },
+      "entraSync": {
+        "title": "Entra ID synchronisation",
+        "unavailable": "Unavailable",
+        "detail": "No Entra ID directory is connected to this deployment: there is no tenant to import accounts from. A \"Synchronise\" button could here only do nothing, or invent people."
+      },
+      "entraLink": {
+        "title": "Link an Entra identity",
+        "unavailable": "Unavailable",
+        "detail": "Same reason. Passwords are managed by the platform and verified with Argon2; single sign-on will arrive with the integration, visible on the Integrations page."
+      },
+      "footnote": "\"Reset access\" revokes all of the account's open sessions and forces a fresh login. No new password is generated: without an SMTP relay, the platform would have no way to send it, and displaying it here would mean writing a live credential into a browser."
+    }
+  }
+}
